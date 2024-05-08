@@ -1,0 +1,49 @@
+"""
+author Kaan Apaydin
+This file contains code for describing the process model.
+"""
+
+import ollama
+import pm4py
+from pm4py.objects.process_tree.obj import ProcessTree, Operator
+
+
+def description_with_local_llm(process_tree):
+    response = ollama.chat(model='llama2', messages=[
+        {
+            'role': 'user',
+            'content': f'You are an expert in process modeling, especially by using process trees and you can easily '
+                       f'interpret process models. Make a process description based on this process tree: {process_tree}',
+        },
+    ])
+    print(response['message']['content'])
+
+
+def pm4py_abstraction_of_petri_net(net, im, fm):
+    """
+    Not natural language text at all unfortunately...
+    :param net: Petri Net
+    :param im: Initial Markings
+    :param fm: Final Markings
+    :return: Text that contains the places, transitions and arcs, as well as the initial and final markings but in object form
+    """
+    abstraction = pm4py.llm.abstract_petri_net(net, im, fm)
+    return abstraction
+
+
+def process_tree_to_text(process_tree: ProcessTree):
+    """
+    Our own implementation to translate a process tree into natural language text
+    :param process_tree: Process Tree
+    :return: A description of the process tree
+    """
+    # whole_process_tree = ProcessTree(operator=Operator.SEQUENCE,
+    #                                 children=[A, ProcessTree(operator=Operator.LOOP, children=[
+    #                                     ProcessTree(operator=Operator.XOR, children=[D, ProcessTree(
+    #                                         operator=Operator.SEQUENCE, children=[E, F])])])])
+    translation_for_starting_operators = {
+        "sequence": "On the highest level the process contains {number_of_children} that are executed after another.",
+        "sequence1": "The process is composed of {number_of_children} that are sequentially done.",
+        "sequence2": "..."
+
+    }
