@@ -19,6 +19,22 @@ def description_with_local_llm(process_tree):
     print(response['message']['content'])
 
 
+def describe_with_local_llm_and_store_description(process_tree, description_of_process_tree_path):
+    description_text_file = open(description_of_process_tree_path, "x")
+
+    response = ollama.chat(model='llama3', messages=[
+        {
+            'role': 'user',
+            'system': 'test',
+            'content': f'You are an expert in process modeling, especially by using process trees and you can easily '
+                       f'interpret process models. Make a process description based on this process tree: {process_tree}',
+        },
+    ])
+    #print( response['message']['content'])
+    description_text_file.write(response['message']['content'])
+    description_text_file.close()
+
+
 def pm4py_abstraction_of_petri_net(net, im, fm):
     """
     Not natural language text at all unfortunately...
