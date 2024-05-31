@@ -1,7 +1,8 @@
 import pm4py
 import random
+import asyncio
 from pm4py.objects.process_tree.obj import ProcessTree, Operator
-
+import ActivityNames
 
 class CustomRandomProcessTree:
 
@@ -14,10 +15,14 @@ class CustomRandomProcessTree:
         # start building the tree
         all_operators = (Operator.SEQUENCE, Operator.PARALLEL, Operator.XOR, Operator.OR, Operator.LOOP)
         root_operator_node = random.choice(all_operators)
+        loop = asyncio.get_event_loop()
+        starting_activity = loop.run_until_complete(ActivityNames.async_llm_picks_best_starting_activity(root_operator_node))
+        #starting_activity = ActivityNames.llm_picks_best_starting_activity(root_operator_node)
         self.process_tree = ProcessTree(operator=root_operator_node)
         #minimum_number_of_children_for_root = 1 if root_operator_node != Operator.LOOP else 0
         self.open_leafs = 0 #TODO correct calculation for minimum number of children for root and set it as the value for number of open leafs
         self.process_tree.children = self.build_child_trees_of_root(parent=self.process_tree)
+
 
     def build_child_trees_of_root(self, parent):
         child_trees = []

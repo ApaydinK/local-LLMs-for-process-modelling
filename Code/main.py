@@ -62,8 +62,8 @@ def generate_and_store_examples(number_of_examples):
 
 
 if __name__ == '__main__':
-    #generate_and_view_one_example()
-    generate_and_store_examples(10)
+    generate_and_view_one_example()
+    #generate_and_store_examples(10)
 
     print("test")
 

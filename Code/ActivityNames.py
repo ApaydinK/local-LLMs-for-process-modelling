@@ -6,7 +6,9 @@ I've also tried using word databases but a random combination there didn't resul
 TODO: My Professor had a great idea to prompt an LLM for a next logical activity. Something we should definitely implement
 """
 import random
-
+import ollama
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 def read_verbs_from_file(file_path):
     """
@@ -108,6 +110,57 @@ def generate_random_activities(number_of_activities):
         activities.append(f"{random_verb} {random_noun}")
     return activities
 
+executor = ThreadPoolExecutor(max_workers=1)
+
+async def async_llm_picks_best_starting_activity(operator):
+    operator_translation = ""
+    match operator:
+        case "->":
+            operator_translation = "sequence"
+        case "+":
+            operator_translation = "parallel"
+        case "X":
+            operator_translation = "xor"
+        case "O":
+            operator_translation = "or"
+        case "*":
+            operator_translation = "loop"
+
+    candidate_activities = generate_random_activities(number_of_activities=10)
+    loop = asyncio.get_running_loop()
+
+    response = await loop.run_in_executor(
+        executor,
+        ollama.chat,
+        'llama3',
+        [
+            {
+                'role': 'user',
+                'content': f'You are an expert in process modeling using process trees.'
+                       f'Help to build an illustrative and realistic example for a process tree that begins with a {operator} {operator_translation} operator. '
+                       f'by picking one of the verb noun combinations from the following list that is going to be the start activity of the process: {candidate_activities}'
+                       f'Your answer will be used as the starting activity name, so only exactly answer with the activity and the noun you have picked. Nothing else.',
+            },
+        ]
+    )
+    # Assuming the response structure you need to adjust to your actual response format
+    starting_activity = response['message']['content']
+    print(starting_activity)
+    return starting_activity
+"""
+def llm_picks_best_starting_activity(node):
+    candidate_activities = generate_random_activities(number_of_activities=10)
+    response = ollama.chat(model='llama3', messages=[
+        {
+            'role': 'user',
+            'content': f'You are an expert in process modeling using process trees.'
+                       f'Help to build an illustrative and realistic example for a process tree that begins with a {node}.'
+                       f'by picking one of the verb noun combinations from the following list that is going to be the start activity of the process: {candidate_activities}'
+                       f'Your answer will be used as the starting activity name, so only exactly answer with the activity and the noun you have picked. Nothing else.',
+        },
+    ])
+    print(response['message']['content'])
+"""
 
 """
 I have tried using word libraries and installed their word databases but it contains too many words that we wouldn't use

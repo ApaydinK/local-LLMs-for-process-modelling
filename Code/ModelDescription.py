@@ -9,7 +9,7 @@ from pm4py.objects.process_tree.obj import ProcessTree, Operator
 
 
 def description_with_local_llm(process_tree):
-    response = ollama.chat(model='llama2', messages=[
+    response = ollama.chat(model='llama3', messages=[
         {
             'role': 'user',
             'content': f'You are an expert in process modeling, especially by using process trees and you can easily '
