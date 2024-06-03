@@ -46,7 +46,7 @@ illustrative_and_realistic_activities = {
     'u': "Update Records",
     'v': "Evaluate Solution"
 }
-
+#test
 def replace_activity_labels_in_process_tree(root_node:ProcessTree, activity_mappings:dict):
     for child in root_node.children:
         if not child.children:
