@@ -31,6 +31,7 @@ def describe_with_local_llm_and_store_description(process_tree, description_of_p
         },
     ])
     #print( response['message']['content'])
+    description_text_file.write(f"process tree structure: {process_tree}")
     description_text_file.write(response['message']['content'])
     description_text_file.close()
 

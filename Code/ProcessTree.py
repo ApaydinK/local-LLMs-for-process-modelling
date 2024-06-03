@@ -3,6 +3,7 @@ import random
 import asyncio
 from pm4py.objects.process_tree.obj import ProcessTree, Operator
 import ActivityNames
+import json
 
 class CustomRandomProcessTree:
 
@@ -86,7 +87,7 @@ def pm4py_process_tree_generator(parameters: dict = None):
     }
     :return: process tree
     """
-    tree = pm4py.generate_process_tree(parameters)
+    tree = pm4py.generate_process_tree()
     return tree
 
 
@@ -94,12 +95,12 @@ def pm4py_process_tree_generator(parameters: dict = None):
 following a little example on how you would manually build a process tree
 """
 # Leaf nodes (activities)
-A = ProcessTree(label='A')
-B = ProcessTree(label='B')
-C = ProcessTree(label='C')
-D = ProcessTree(label='D')
-E = ProcessTree(label='E')
-F = ProcessTree(label='F')
+A = ProcessTree(label='a')
+B = ProcessTree(label='b')
+C = ProcessTree(label='c')
+D = ProcessTree(label='d')
+E = ProcessTree(label='e')
+F = ProcessTree(label='f')
 
 # Inner nodes (operators)
 seq_node = ProcessTree(operator=Operator.SEQUENCE, children=[E, F])
@@ -117,3 +118,8 @@ F.parent = seq_node
 
 # pm4py.view_process_tree(root_node)
 # print(root_node)
+
+def pm4py_process_tree_string_to_object(process_tree_string):
+    with open("../pm4py_generated_models_and_descriptions/0_process_tree_revised_byChatGPT.txt", "r") as file:
+        process_description = file.read()
+    pm4py.convert_to_process_tree(process_tree_string)

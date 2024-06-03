@@ -5,10 +5,12 @@ It contains two lists with the most common verbs and nouns generally and also sp
 I've also tried using word databases but a random combination there didn't result in anything meaningful
 TODO: My Professor had a great idea to prompt an LLM for a next logical activity. Something we should definitely implement
 """
+import json
 import random
 import ollama
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+
 
 def read_verbs_from_file(file_path):
     """
@@ -110,7 +112,9 @@ def generate_random_activities(number_of_activities):
         activities.append(f"{random_verb} {random_noun}")
     return activities
 
+
 executor = ThreadPoolExecutor(max_workers=1)
+
 
 async def async_llm_picks_best_starting_activity(operator):
     operator_translation = ""
@@ -137,9 +141,9 @@ async def async_llm_picks_best_starting_activity(operator):
             {
                 'role': 'user',
                 'content': f'You are an expert in process modeling using process trees.'
-                       f'Help to build an illustrative and realistic example for a process tree that begins with a {operator} {operator_translation} operator. '
-                       f'by picking one of the verb noun combinations from the following list that is going to be the start activity of the process: {candidate_activities}'
-                       f'Your answer will be used as the starting activity name, so only exactly answer with the activity and the noun you have picked. Nothing else.',
+                           f'Help to build an illustrative and realistic example for a process tree that begins with a {operator} {operator_translation} operator. '
+                           f'by picking one of the verb noun combinations from the following list that is going to be the start activity of the process: {candidate_activities}'
+                           f'Your answer will be used as the starting activity name, so only exactly answer with the activity and the noun you have picked. Nothing else.',
             },
         ]
     )
@@ -147,20 +151,79 @@ async def async_llm_picks_best_starting_activity(operator):
     starting_activity = response['message']['content']
     print(starting_activity)
     return starting_activity
-"""
-def llm_picks_best_starting_activity(node):
-    candidate_activities = generate_random_activities(number_of_activities=10)
-    response = ollama.chat(model='llama3', messages=[
-        {
-            'role': 'user',
-            'content': f'You are an expert in process modeling using process trees.'
-                       f'Help to build an illustrative and realistic example for a process tree that begins with a {node}.'
-                       f'by picking one of the verb noun combinations from the following list that is going to be the start activity of the process: {candidate_activities}'
-                       f'Your answer will be used as the starting activity name, so only exactly answer with the activity and the noun you have picked. Nothing else.',
-        },
-    ])
-    print(response['message']['content'])
-"""
+
+
+async def replace_activity_names():
+    loop = asyncio.get_running_loop()
+    response = await loop.run_in_executor(
+        executor,
+        ollama.chat,
+        'llama3',
+        [
+            {
+                'role': 'user',
+                'content': f"You are an expert in process modelling. I will present you a structure of a process tree "
+                           f"where the activities are abstracted by letters. Make an illustrative and realistic "
+                           f"example based on the following process tree structure be suggesting how the letters "
+                           f"should be replaced with activities that are represented by verb noun pairs:" +
+                           f"->( X( *( X( 'g', *( 'f', X( 'h', *( 't', 's' ) ) ) ), *( X( 'c', +( 'p', *( 'n', 'v' ) ) ), +( 'q', 'm' ) ) ), +( +( 'e', 'd' ), ->( ->( 'j', 'k' ), ->( 'b', 'l' ) ) ) ), *( tau, +( 'a', *( ->( 'o', 'r' ), X( 'u', 'i' ) ) ) )" +
+                           "Describe the process in detail after replacing the letters with activities.  Finally "
+                           "complete this dictionary that represents the mapping of the letters with your activities: "
+                           "illustrative_and_realistic_activities = {" +
+                           "'a'=''," +
+                           "'b'=''," +
+                           "'c'=''," +
+                           "'d'=''," +
+                           "'e'=''," +
+                           "'f'=''," +
+                           "'g'=''," +
+                           "'h'=''," +
+                           "'i'=''," +
+                           "'j'=''," +
+                           "'k'=''," +
+                           "'l'=''," +
+                           "'m'=''," +
+                           "'n'=''," +
+                           "'o'=''," +
+                           "'p'=''," +
+                           "'q'=''," +
+                           "'r'=''," +
+                           "'s'=''," +
+                           "'t'=''," +
+                           "'u'=''," +
+                           "'v'=''," +
+                           "}"
+                ,
+            },
+        ]
+    )
+    # Assuming the response structure you need to adjust to your actual response format
+    answer_with_mappings = response['message']['content']
+    print(answer_with_mappings)
+    loop2 = asyncio.get_running_loop()
+    response2 = await loop2.run_in_executor(
+        executor,
+        ollama.chat,
+        'llama3',
+        [
+            {
+                'role': 'user',
+                'content': f"Extract the python dictionary and only answer with the python dictionary {answer_with_mappings}"
+            },
+        ]
+    )
+    # Assuming the response structure you need to adjust to your actual response format
+    mappings_only = response2['message']['content']
+
+    #mappings_only: dict = {}
+    #mappings_only = json.JSONDecoder(mappings_only)
+
+    print(mappings_only)
+    return mappings_only
+
+
+loop = asyncio.get_event_loop()
+starting_activity = loop.run_until_complete(replace_activity_names())
 
 """
 I have tried using word libraries and installed their word databases but it contains too many words that we wouldn't use
