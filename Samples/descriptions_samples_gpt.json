@@ -1,0 +1,488 @@
+{
+    "json_data": [
+      {
+        "process_tree_json": {
+          "process": "Order Fulfillment Process",
+          "sub_processes": [
+            {
+              "process": "Order Processing",
+              "activities": [
+                {
+                  "activity": "Receive Order",
+                  "duration": "1 day"
+                },
+                {
+                  "activity": "Verify Payment",
+                  "duration": "2 hours"
+                }
+              ]
+            },
+            {
+              "process": "Inventory Management",
+              "activities": [
+                {
+                  "activity": "Check Stock Availability",
+                  "duration": "4 hours"
+                },
+                {
+                  "activity": "Update Inventory",
+                  "duration": "1 hour"
+                }
+              ]
+            },
+            {
+              "process": "Shipping",
+              "activities": [
+                {
+                  "activity": "Pack Items",
+                  "duration": "3 hours"
+                },
+                {
+                  "activity": "Select Shipping Method",
+                  "duration": "30 minutes"
+                }
+              ]
+            },
+            {
+              "process": "Delivery",
+              "activities": [
+                {
+                  "activity": "Handover to Courier",
+                  "duration": "15 minutes"
+                },
+                {
+                  "activity": "Track Shipment",
+                  "duration": "2 days"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "process_tree": {
+          "type": "operator",
+          "label": null,
+          "operator": "SEQUENCE",
+          "children": [
+            {
+              "type": "leaf",
+              "label": "Record Interaction",
+              "operator": null,
+              "children": []
+            },
+            {
+              "type": "operator",
+              "label": null,
+              "operator": "XOR",
+              "children": [
+                {
+                  "type": "leaf",
+                  "label": "Draft Email",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Update Records",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Write Summary",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Send Confirmation",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Check Inventory",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Consult Specialist",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Collect Data",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Review Feedback",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Approve Summary",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Update Database",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Notify Customer",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Assign Task",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Send Notification",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Close Ticket",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Schedule Follow up",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Archive Document",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Resolve Issue",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Analyze Data",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Evaluate Solution",
+                  "operator": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "process_description": {
+          "process_tree_json": {
+            "process": "Order Fulfillment Process",
+            "sub_processes": [
+              {
+                "process": "Order Processing",
+                "activities": [
+                  {
+                    "activity": "Receive Order",
+                    "duration": "1 day"
+                  },
+                  {
+                    "activity": "Verify Payment",
+                    "duration": "2 hours"
+                  }
+                ]
+              },
+              {
+                "process": "Inventory Management",
+                "activities": [
+                  {
+                    "activity": "Check Stock Availability",
+                    "duration": "4 hours"
+                  },
+                  {
+                    "activity": "Update Inventory",
+                    "duration": "1 hour"
+                  }
+                ]
+              },
+              {
+                "process": "Shipping",
+                "activities": [
+                  {
+                    "activity": "Pack Items",
+                    "duration": "3 hours"
+                  },
+                  {
+                    "activity": "Select Shipping Method",
+                    "duration": "30 minutes"
+                  }
+                ]
+              },
+              {
+                "process": "Delivery",
+                "activities": [
+                  {
+                    "activity": "Handover to Courier",
+                    "duration": "15 minutes"
+                  },
+                  {
+                    "activity": "Track Shipment",
+                    "duration": "2 days"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sample_1": {
+          "process_tree_json": {
+            "name": "Order Processing",
+            "children": [
+              {
+                "name": "Order Placement",
+                "children": [
+                  {
+                    "name": "Customer creates new order"
+                  },
+                  {
+                    "name": "Order details validation"
+                  },
+                  {
+                    "name": "Payment processing"
+                  }
+                ]
+              },
+              {
+                "name": "Order Fulfillment",
+                "children": [
+                  {
+                    "name": "Inventory check"
+                  },
+                  {
+                    "name": "Order packaging"
+                  },
+                  {
+                    "name": "Shipping"
+                  }
+                ]
+              },
+              {
+                "name": "Order Completion",
+                "children": [
+                  {
+                    "name": "Delivery confirmation"
+                  },
+                  {
+                    "name": "Customer feedback collection"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "process_tree": {
+          "type": "operator",
+          "label": null,
+          "operator": "SEQUENCE",
+          "children": [
+            {
+              "type": "operator",
+              "label": null,
+              "operator": "LOOP",
+              "children": [
+                {
+                  "type": "leaf",
+                  "label": "Notify Customer",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Close Ticket",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Record Interaction",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Archive Document",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Send Notification",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Assign Task",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Collect Data",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Update Database",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Analyze Data",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Approve Summary",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Draft Email",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Evaluate Solution",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Open Ticket",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Review Feedback",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Consult Specialist",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Check Inventory",
+                  "operator": null,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "operator",
+              "label": null,
+              "operator": "SEQUENCE",
+              "children": [
+                {
+                  "type": "leaf",
+                  "label": "Resolve Issue",
+                  "operator": null,
+                  "children": []
+                },
+                {
+                  "type": "leaf",
+                  "label": "Write Summary",
+                  "operator": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "process_description": {
+          "process_tree_json": {
+            "name": "Order Processing",
+            "children": [
+              {
+                "name": "Order Placement",
+                "children": [
+                  {
+                    "name": "Customer creates new order"
+                  },
+                  {
+                    "name": "Order details validation"
+                  },
+                  {
+                    "name": "Payment processing"
+                  }
+                ]
+              },
+              {
+                "name": "Order Fulfillment",
+                "children": [
+                  {
+                    "name": "Inventory check"
+                  },
+                  {
+                    "name": "Order packaging"
+                  },
+                  {
+                    "name": "Shipping"
+                  }
+                ]
+              },
+              {
+                "name": "Order Completion",
+                "children": [
+                  {
+                    "name": "Delivery confirmation"
+                  },
+                  {
+                    "name": "Customer feedback collection"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+  
