@@ -763,5 +763,133 @@
                   ]
             },
             "Description": "{ \"process_tree_json\": {\n    \"name\": \"Order Fulfillment Process\",\n    \"children\": [\n        {\n            \"name\": \"Receive Order\",\n            \"children\": [\n                {\n                    \"name\": \"Check Stock\",\n                    \"children\": []\n                },\n                {\n                    \"name\": \"Place Order\",\n                    \"children\": []\n                }\n            ]\n        },\n        {\n            \"name\": \"Prepare Order\",\n            \"children\": [\n                {\n                    \"name\": \"Pick Items\",\n                    \"children\": []\n                },\n                {\n                    \"name\": \"Pack Items\",\n                    \"children\": []\n                }\n            ]\n        },\n        {\n            \"name\": \"Ship Order\",\n            \"children\": [\n                {\n                    \"name\": \"Generate Shipping Label\",\n                    \"children\": []\n                },\n                {\n                    \"name\": \"Deliver to Carrier\",\n                    \"children\": []\n                }\n            ]\n        },\n        {\n            \"name\": \"Deliver Order\",\n            \"children\": [\n                {\n                    \"name\": \"Carrier Delivers Package\",\n                    \"children\": []\n                },\n                {\n                    \"name\": \"Customer Receives Package\",\n                    \"children\": []\n                }\n            ]\n        }\n    ]\n}\n}"
+      },
+      {
+            "Note": "Sample 5 with following activities",
+            "Serialized Process Tree": {
+                  "type": "operator",
+                  "label": null,
+                  "operator": "SEQUENCE",
+                  "children": [
+                        {
+                              "type": "operator",
+                              "label": null,
+                              "operator": "XOR",
+                              "children": [
+                                    {
+                                          "type": "leaf",
+                                          "label": "Draft Email",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Receive Call",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Open Ticket",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Analyze Data",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Send Confirmation",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Collect Data",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Update Database",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Send Notification",
+                                          "operator": null,
+                                          "children": []
+                                    }
+                              ]
+                        }
+                  ]
+            },
+            "Process Tree": {
+                  "type": "operator",
+                  "label": null,
+                  "operator": "SEQUENCE",
+                  "children": [
+                        {
+                              "type": "operator",
+                              "label": null,
+                              "operator": "XOR",
+                              "children": [
+                                    {
+                                          "type": "leaf",
+                                          "label": "Draft Email",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Receive Call",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Open Ticket",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Analyze Data",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Send Confirmation",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Collect Data",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Update Database",
+                                          "operator": null,
+                                          "children": []
+                                    },
+                                    {
+                                          "type": "leaf",
+                                          "label": "Send Notification",
+                                          "operator": null,
+                                          "children": []
+                                    }
+                              ]
+                        }
+                  ]
+            },
+            "Description": "{\n  \"process_tree_json\": {\n    \"process\": \"Order Fulfillment Process\",\n    \"sub_processes\": {\n      \"Receive Order\": {\n        \"description\": \"Receive customer order through online platform or phone call.\",\n        \"tasks\": {\n          \"Verify Order\": \"Verify the details of the order including product, quantity, and delivery address.\",\n          \"Confirm Order\": \"Confirm the order with the customer and provide an estimated delivery date.\"\n        }\n      },\n      \"Pick and Pack Items\": {\n        \"description\": \"Pick items from inventory, pack them securely, and prepare for shipping.\",\n        \"tasks\": {\n          \"Pick Items\": \"Retrieve items from the warehouse based on the order details.\",\n          \"Pack Items\": \"Carefully pack the items to ensure they are protected during shipping.\"\n        }\n      },\n      \"Ship Order\": {\n        \"description\": \"Arrange for shipping and send the order to the customer.\",\n        \"tasks\": {\n          \"Arrange Shipping\": \"Select a shipping provider and arrange for the package to be sent.\",\n          \"Send Order\": \"Hand over the package to the shipping provider for delivery.\"\n        }\n      },\n      \"Update Order Status\": {\n        \"description\": \"Update the order status and notify the customer.\",\n        \"tasks\": {\n          \"Update Status\": \"Mark the order as shipped and provide tracking information.\",\n          \"Notify Customer\": \"Send an email or SMS to the customer with the updated order status.\"\n        }\n      }"
       }
 ]
