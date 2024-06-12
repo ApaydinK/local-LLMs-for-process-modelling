@@ -69,11 +69,11 @@ class CustomRandomProcessTree:
         return self.process_tree
 
 
-def pm4py_process_tree_generator(parameters: dict = None):
+def pm4py_process_tree_generator(number_of_activities, parameters: dict = None):
     """
     :param parameters: dictionary containing everything about the process tree. The standard parameters are:
     parameters = {
-        "mode": 20,
+        "mode": 10,
         "min": 10,
         "max": 30,
         "sequence": 0.25,
@@ -81,13 +81,18 @@ def pm4py_process_tree_generator(parameters: dict = None):
         "parallel": 0.25,
         "loop": 0.25,
         "or": 0.0,
-        "silent": 0.2,
+        "silent": 0.0, #TODO What are silent transitions? When should a proces include these?
         "duplicate": 0,
         "no_models": 1
     }
     :return: process tree
     """
-    tree = pm4py.generate_process_tree()
+    kwargs = {
+        "mode": number_of_activities,
+        "min": number_of_activities - 5,
+        "max": number_of_activities + 5,
+    }
+    tree = pm4py.generate_process_tree(**kwargs)
     return tree
 
 

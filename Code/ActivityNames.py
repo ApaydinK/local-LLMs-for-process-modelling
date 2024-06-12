@@ -10,6 +10,7 @@ import random
 import ollama
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+from pm4py.objects.process_tree.obj import ProcessTree, Operator
 
 
 def read_verbs_from_file(file_path):
@@ -153,7 +154,7 @@ async def async_llm_picks_best_starting_activity(operator):
     return starting_activity
 
 
-async def replace_activity_names():
+async def replace_activity_names(process_tree):
     loop = asyncio.get_running_loop()
     response = await loop.run_in_executor(
         executor,
@@ -166,7 +167,7 @@ async def replace_activity_names():
                            f"where the activities are abstracted by letters. Make an illustrative and realistic "
                            f"example based on the following process tree structure be suggesting how the letters "
                            f"should be replaced with activities that are represented by verb noun pairs:" +
-                           f"->( X( *( X( 'g', *( 'f', X( 'h', *( 't', 's' ) ) ) ), *( X( 'c', +( 'p', *( 'n', 'v' ) ) ), +( 'q', 'm' ) ) ), +( +( 'e', 'd' ), ->( ->( 'j', 'k' ), ->( 'b', 'l' ) ) ) ), *( tau, +( 'a', *( ->( 'o', 'r' ), X( 'u', 'i' ) ) ) )" +
+                           f"{process_tree}" +
                            "Describe the process in detail after replacing the letters with activities.  Finally "
                            "complete this dictionary that represents the mapping of the letters with your activities: "
                            "illustrative_and_realistic_activities = {" +
@@ -200,6 +201,11 @@ async def replace_activity_names():
     # Assuming the response structure you need to adjust to your actual response format
     answer_with_mappings = response['message']['content']
     print(answer_with_mappings)
+    illustrative_and_realistic_activity_mappings = extract_dict_from_string(answer_with_mappings)
+
+    replace_activity_labels_in_process_tree(process_tree, illustrative_and_realistic_activity_mappings)
+
+    """
     loop2 = asyncio.get_running_loop()
     response2 = await loop2.run_in_executor(
         executor,
@@ -215,15 +221,49 @@ async def replace_activity_names():
     # Assuming the response structure you need to adjust to your actual response format
     mappings_only = response2['message']['content']
 
-    #mappings_only: dict = {}
-    #mappings_only = json.JSONDecoder(mappings_only)
+    # mappings_only: dict = {}
+    # mappings_only = json.JSONDecoder(mappings_only)
 
     print(mappings_only)
-    return mappings_only
+    print(extract_dict_from_string(mappings_only))
+    """
+
+    return process_tree
 
 
-loop = asyncio.get_event_loop()
-starting_activity = loop.run_until_complete(replace_activity_names())
+def extract_dict_from_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        extract_dict_from_string(content)
+
+
+def extract_dict_from_string(content):
+    start = content.find('{')
+    end = content.rfind('}') + 1
+
+    if start == -1 or end == -1:
+        raise ValueError("Dictionary not found in the file")
+
+    # Extract the dictionary part
+    dict_str = content[start:end]
+
+    # Convert string to dictionary
+    mappings_dict = eval(dict_str)
+
+    return mappings_dict
+
+
+def replace_activity_labels_in_process_tree(root_node: ProcessTree, activity_mappings: dict):
+    for child in root_node.children:
+        if not child.children:
+            try:
+                if activity_mappings[child.label] != '':
+                    child.label = activity_mappings[child.label]
+            except:
+                "activity couldn't be replaced, continue.."
+        elif child.children:
+            replace_activity_labels_in_process_tree(child, activity_mappings)
+
 
 """
 I have tried using word libraries and installed their word databases but it contains too many words that we wouldn't use

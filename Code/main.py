@@ -5,6 +5,8 @@ from ProcessTree import CustomRandomProcessTree
 import ActivityNames
 import ModelDescription
 import ProcessTree
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 def generate_and_view_one_example():
     activities = ActivityNames.generate_random_activities(6)
@@ -62,23 +64,29 @@ def generate_and_store_examples(number_of_examples):
         description_of_process_tree_path = f"../generated_models_and_descriptions/{i}_process_tree_description.txt"
         ModelDescription.describe_with_local_llm_and_store_description(process_tree, description_of_process_tree_path)
 
-def generate_and_store_pm4py_process_trees(number_of_examples):
+number_of_files_already_in_folder = 12
+def generate_and_store_pm4py_process_trees(number_of_examples, number_of_activities):
     for i in range(number_of_examples):
-        process_tree = ProcessTree.pm4py_process_tree_generator()
+        process_tree = ProcessTree.pm4py_process_tree_generator(number_of_activities)
+
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(ActivityNames.replace_activity_names(process_tree))
 
         # store visualization of the process graph
-        process_tree_image_file_path = f"../pm4py_generated_models_and_descriptions/{i}_process_tree.png"
+        process_tree_image_file_path = f"../pm4py_generated_models_and_descriptions/{number_of_files_already_in_folder + i}_process_tree.png"
         pm4py.vis.save_vis_process_tree(process_tree, process_tree_image_file_path)
         print(process_tree)
 
+        pm4py.write_ptml(process_tree, f"../pm4py_generated_models_and_descriptions/{number_of_files_already_in_folder + i}_process_tree.ptml")
+
         # convert process tree to a BPMN graph and store the visualization
         bpmn_graph = pm4py.convert_to_bpmn(process_tree)
-        bpmn_image_file_path = f"../pm4py_generated_models_and_descriptions/{i}_bpmn.png"
+        bpmn_image_file_path = f"../pm4py_generated_models_and_descriptions/{number_of_files_already_in_folder + i}_bpmn.png"
         pm4py.vis.save_vis_bpmn(bpmn_graph, bpmn_image_file_path)
 
         # convert process tree to a petri net and store the visualization
         net, im, fm = pm4py.convert_to_petri_net(process_tree)
-        petri_net_image_file_path = f"../pm4py_generated_models_and_descriptions/{i}_petri_net.png"
+        petri_net_image_file_path = f"../pm4py_generated_models_and_descriptions/{number_of_files_already_in_folder + i}_petri_net.png"
         pm4py.vis.save_vis_petri_net(net, im, fm, petri_net_image_file_path)
 
         """
@@ -88,7 +96,7 @@ def generate_and_store_pm4py_process_trees(number_of_examples):
         description_of_petri_net_text_file.close()
         """
 
-        description_of_process_tree_path = f"../pm4py_generated_models_and_descriptions/{i}_process_tree_description.txt"
+        description_of_process_tree_path = f"../pm4py_generated_models_and_descriptions/{number_of_files_already_in_folder + i}_process_tree_description.txt"
         ModelDescription.describe_with_local_llm_and_store_description(process_tree, description_of_process_tree_path)
 
 
@@ -96,19 +104,9 @@ def generate_and_store_pm4py_process_trees(number_of_examples):
 if __name__ == '__main__':
     #generate_and_view_one_example()
     #generate_and_store_examples(10)
-    #generate_and_store_pm4py_process_trees(1)
-    process_tree = pm4py.ProcessTree("->( 't', 's' )")
-    pm4py.view_process_tree(process_tree)
+    generate_and_store_pm4py_process_trees(10,10)
 
-    print(process_tree)
-    with open("../pm4py_generated_models_and_descriptions/0_process_tree_revised_byChatGPT.txt", "r") as file:
-        process_description = file.read()
-    #pm4py.convert_to_process_tree(process_tree_string)
-    #process_tree = pm4py.ProcessTree(
-    #    "->( X( *( X( 'g', *( 'f', X( 'h', *( 't', 's' ) ) ) ), *( X( 'c', +( 'p', *( 'n', 'v' ) ) ), +( 'q', 'm' ) ) ), +( +( 'e', 'd' ), ->( ->( 'j', 'k' ), ->( 'b', 'l' ) ) ) ), *( tau, +( 'a', *( ->( 'o', 'r' ), X( 'u', 'i' ) ) ) ) )")
-    #pm4py.view_process_tree(process_tree)
-    print("test")
 
-    json.JSONEncoder(process_tree)
+
 
 

@@ -47,15 +47,7 @@ illustrative_and_realistic_activities = {
     'v': "Evaluate Solution"
 }
 #test
-def replace_activity_labels_in_process_tree(root_node:ProcessTree, activity_mappings:dict):
-    for child in root_node.children:
-        if not child.children:
-            child.label = activity_mappings[child.label]
-        elif child.children:
-            replace_activity_labels_in_process_tree(child, activity_mappings)
-print(root_node)
-replace_activity_labels_in_process_tree(root_node,illustrative_and_realistic_activities)
-print(root_node)
+
 
 """
 def deserialize_process_tree(json_data):

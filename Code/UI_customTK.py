@@ -9,10 +9,10 @@ from PIL import Image
 load_dotenv()  # This loads the variables from .env
 # TODO put into shared Resources Class TODO save as dotenv
 
-total_number_of_processes = 10
+total_number_of_processes = 18
 
 last_nav_button = None
-
+folder = "pm4py_generated_models_and_descriptions"
 
 class GUI(customtkinter.CTk):
     def __init__(self):
@@ -59,15 +59,15 @@ class GUI(customtkinter.CTk):
 def retrieve_file_path(kind, id):
     match kind:
         case "process_tree":
-            return f"../generated_models_and_descriptions/{id}_process_tree.png"
+            return f"../{folder}/{id}_process_tree.png"
         case "bpmn":
-            return f"../generated_models_and_descriptions/{id}_bpmn.png"
+            return f"../{folder}/{id}_bpmn.png"
         case "petri_net":
-            return f"../generated_models_and_descriptions/{id}_petri_net.png"
+            return f"../{folder}/{id}_petri_net.png"
         case "process_tree_description":
-            return f"../generated_models_and_descriptions/{id}_process_tree_description.txt"
+            return f"../{folder}/{id}_process_tree_description.txt"
         case "petri_net_description":
-            return f"../generated_models_and_descriptions/{id}_petri_net_description.txt"
+            return f"../{folder}/{id}_petri_net_description.txt"
         case _:
             return "error"
 
@@ -80,7 +80,7 @@ class MyInfoView(customtkinter.CTkFrame):
         super().__init__(master, **kwargs)
         # create widgets
         self.configure(bg_color="white", fg_color="white")
-        self.process_tree_image_path = retrieve_file_path("process_tree", process_id)
+        self.process_tree_image_path = retrieve_file_path("bpmn", process_id)
         image = Image.open(self.process_tree_image_path)
         self.process_tree_image = customtkinter.CTkImage(light_image=image, size=image.size)
         self.my_label = customtkinter.CTkLabel(self, text="", image=self.process_tree_image, anchor="n", compound="center",
