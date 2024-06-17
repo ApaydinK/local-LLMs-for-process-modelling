@@ -17,6 +17,10 @@ total_number_of_processes = 100
 
 last_nav_button = None
 folder = "pm4py_generated_models_and_descriptions"
+current_path= os.path.dirname(os.path.abspath(__file__))
+print(current_path)
+folder_path = os.path.join(os.path.dirname(current_path), folder)
+print(folder_path)
 
 class GUI(customtkinter.CTk):
     def __init__(self):
@@ -33,48 +37,71 @@ class GUI(customtkinter.CTk):
         self.nav_rows_frame.grid(row=0, column=0, padx=0, pady=10, sticky="nsew")
         self.nav_rows_frame.grid_columnconfigure(0, weight=1)
         self.nav_rows_frame.grid_rowconfigure(0, weight=1)
+
+        self.display_frame = customtkinter.CTkFrame(self)
+        self.display_frame.grid(row=0, column=1, padx = 5, pady=5, sticky='nsew')
+        self.display_frame.grid_rowconfigure(0, weight=1)
+        self.display_frame.grid_columnconfigure(0, weight=1)
+
+        self.selected_process = {} # will trace the processes
+
         self.add_all_process_nav_ids()
 
     def add_all_process_nav_ids(self):
 
-        for process_id in range(total_number_of_processes):
-            nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
-                                                 font=("Maitree", 20), width=60, height=25)
-            nav_button.configure(
-                command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
-            nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
+        process_ids = [f"Process {i}" for i in range(total_number_of_processes)]
+        #for process_id in range(total_number_of_processes):
+            #nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
+            #                                     font=("Maitree", 20), width=60, height=25)
+            #nav_button.configure(
+            #    command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
+            #nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
+        self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
+                                                        font=("Maitree", 20), width=200, height=35, justify='center',
+                                                        command=self.process_selected) 
+        self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        self.choose_process.set("Select a Process")
+        
 
-        global last_nav_button
-        last_nav_button = nav_button
+        #global last_nav_button
+        #last_nav_button = choose_process
 
 
     def activate_nav_item_and_display_graph_and_description(self, button, process_id):
-        self.change_color(button)
+        #self.change_color(button)
+        if hasattr(self, 'info_frame') and self.info_frame.winfo_exists():
+            self.info_frame.destroy()
+        
         self.info_frame = MyInfoView(self, process_id=process_id)
         self.info_frame.grid(row=0, column=1, pady=10, sticky="nsew")
         self.info_frame.grid_rowconfigure(1, weight=1)
 
 
 
-    def change_color(self, button):
+    def change_color(self, combo_box): # button
         global last_nav_button
-        last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
-        button.configure(fg_color="blue")
-        last_nav_button = button
+        #last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
+        #button.configure(fg_color="blue")
+        #last_nav_button = button
+        combo_box.configure(fg_color="blue")
+
+    def process_selected(self, selected_value):
+        process_id = int(selected_value.split()[-1])
+        self.activate_nav_item_and_display_graph_and_description(self.choose_process, process_id)
 
 
 def retrieve_file_path(kind, id):
     match kind:
         case "process_tree":
-            return f"../{folder}/{id}_process_tree.png"
+            return f"{folder_path}/{id}_process_tree.png"
         case "bpmn":
-            return f"../{folder}/{id}_bpmn.png"
+            return f"{folder_path}/{id}_bpmn.png"
         case "petri_net":
-            return f"../{folder}/{id}_petri_net.png"
+            return f"{folder_path}/{id}_petri_net.png"
         case "process_tree_description":
-            return f"../{folder}/{id}_process_tree_description.txt"
+            return f"{folder_path}/{id}_process_tree_description.txt"
         case "petri_net_description":
-            return f"../{folder}/{id}_petri_net_description.txt"
+            return f"{folder_path}/{id}_petri_net_description.txt"
         case _:
             return "error"
 
