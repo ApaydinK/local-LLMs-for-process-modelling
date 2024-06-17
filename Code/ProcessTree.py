@@ -5,6 +5,7 @@ from pm4py.objects.process_tree.obj import ProcessTree, Operator
 import ActivityNames
 import json
 
+
 class CustomRandomProcessTree:
 
     def __init__(self, list_of_activities: list[str]):
@@ -17,13 +18,13 @@ class CustomRandomProcessTree:
         all_operators = (Operator.SEQUENCE, Operator.PARALLEL, Operator.XOR, Operator.OR, Operator.LOOP)
         root_operator_node = random.choice(all_operators)
         loop = asyncio.get_event_loop()
-        starting_activity = loop.run_until_complete(ActivityNames.async_llm_picks_best_starting_activity(root_operator_node))
-        #starting_activity = ActivityNames.llm_picks_best_starting_activity(root_operator_node)
+        starting_activity = loop.run_until_complete(
+            ActivityNames.async_llm_picks_best_starting_activity(root_operator_node))
+        # starting_activity = ActivityNames.llm_picks_best_starting_activity(root_operator_node)
         self.process_tree = ProcessTree(operator=root_operator_node)
-        #minimum_number_of_children_for_root = 1 if root_operator_node != Operator.LOOP else 0
-        self.open_leafs = 0 #TODO correct calculation for minimum number of children for root and set it as the value for number of open leafs
+        # minimum_number_of_children_for_root = 1 if root_operator_node != Operator.LOOP else 0
+        self.open_leafs = 0  # TODO correct calculation for minimum number of children for root and set it as the value for number of open leafs
         self.process_tree.children = self.build_child_trees_of_root(parent=self.process_tree)
-
 
     def build_child_trees_of_root(self, parent):
         child_trees = []
@@ -71,6 +72,7 @@ class CustomRandomProcessTree:
 
 def pm4py_process_tree_generator(number_of_activities, parameters: dict = None):
     """
+    :param number_of_activities:
     :param parameters: dictionary containing everything about the process tree. The standard parameters are:
     parameters = {
         "mode": 10,
@@ -89,8 +91,16 @@ def pm4py_process_tree_generator(number_of_activities, parameters: dict = None):
     """
     kwargs = {
         "mode": number_of_activities,
-        "min": number_of_activities - 5,
-        "max": number_of_activities + 5,
+        "min": number_of_activities,  # int(number_of_activities - number_of_activities/2),
+        "max": number_of_activities,  # int(number_of_activities + number_of_activities*2),
+        "sequence": 0.25,
+        "choice": 0.25,
+        "parallel": 0.25,
+        "loop": 0.25,
+        "or": 0.0,
+        "silent": 0.0,
+        "duplicate": 0,
+        "no_models": 1
     }
     tree = pm4py.generate_process_tree(**kwargs)
     return tree
@@ -120,6 +130,7 @@ seq_node.parent = choice_node
 D.parent = choice_node
 E.parent = seq_node
 F.parent = seq_node
+
 
 # pm4py.view_process_tree(root_node)
 # print(root_node)

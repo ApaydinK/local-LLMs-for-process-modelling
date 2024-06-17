@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="e98ed899-68b1-4a03-855a-c9dc93db1f26" root="39422c2f-6ed3-4ef2-934e-196402ccf186" id="5af7e023-933d-4018-a60e-e16a5f5eee42">
+    <sequence name="" id="39422c2f-6ed3-4ef2-934e-196402ccf186"/>
+    <xor name="" id="133c9115-747e-451f-bb38-27ba2b944c7b"/>
+    <xor name="" id="7bad4ea6-f8f3-4361-aae2-f105649f1bb1"/>
+    <sequence name="" id="f5283d12-a65b-42c5-90bf-7eff97edd1d5"/>
+    <xor name="" id="2c5bb6bc-982d-443d-b3a1-1f1f7012067e"/>
+    <manualTask name="book a conference room" id="ec813436-0d23-46c0-8d83-b22ab602d326"/>
+    <sequence name="" id="43e2ff07-1149-4b40-9b88-a72c6fe12a75"/>
+    <manualTask name="design a new hotel interior" id="7a7a156c-facf-4870-8c7c-38fb3a146023"/>
+    <xor name="" id="c8be5df1-5716-4097-bd8e-ac70f193e68c"/>
+    <manualTask name="evaluate market trends for hotels" id="02acc9e1-21c8-43c9-99d5-4ff490f4289d"/>
+    <manualTask name="analyze customer data" id="77aacfeb-542c-4116-b8ba-023e1aa562c1"/>
+    <manualTask name="finance a hotel expansion project" id="50179e96-22c6-4e21-8100-c9f8efdb4807"/>
+    <manualTask name="graphic design a hotel brochure" id="04aaeb6f-8aa4-4443-abb0-2997c37d856f"/>
+    <manualTask name="create a hotel design concept" id="cbe6fad2-32ae-4c4e-80b4-3697c4eb0a89"/>
+    <manualTask name="hotel management planning" id="73353255-f606-45e9-b79e-c3f137b5dd58"/>
+    <parentsNode id="0b958a47-de8a-4808-9a27-14c7b4e55557" sourceId="39422c2f-6ed3-4ef2-934e-196402ccf186" targetId="133c9115-747e-451f-bb38-27ba2b944c7b"/>
+    <parentsNode id="08582e33-4296-46d9-85d4-a80f6af9f44e" sourceId="39422c2f-6ed3-4ef2-934e-196402ccf186" targetId="7bad4ea6-f8f3-4361-aae2-f105649f1bb1"/>
+    <parentsNode id="98fa5c14-38a2-4904-bbb6-e1b036c75646" sourceId="133c9115-747e-451f-bb38-27ba2b944c7b" targetId="f5283d12-a65b-42c5-90bf-7eff97edd1d5"/>
+    <parentsNode id="7e408d26-de17-4dbe-82a8-bb566221d6ad" sourceId="133c9115-747e-451f-bb38-27ba2b944c7b" targetId="2c5bb6bc-982d-443d-b3a1-1f1f7012067e"/>
+    <parentsNode id="f7b1d065-4d22-4ae9-9a86-f2c9d06c370e" sourceId="7bad4ea6-f8f3-4361-aae2-f105649f1bb1" targetId="ec813436-0d23-46c0-8d83-b22ab602d326"/>
+    <parentsNode id="bff27125-5242-45c8-b889-0c3434f5eb88" sourceId="7bad4ea6-f8f3-4361-aae2-f105649f1bb1" targetId="43e2ff07-1149-4b40-9b88-a72c6fe12a75"/>
+    <parentsNode id="a26052d7-4358-4cd9-9224-06d074f79139" sourceId="f5283d12-a65b-42c5-90bf-7eff97edd1d5" targetId="7a7a156c-facf-4870-8c7c-38fb3a146023"/>
+    <parentsNode id="de2d97da-a78a-49f0-9384-72ab1f475da4" sourceId="f5283d12-a65b-42c5-90bf-7eff97edd1d5" targetId="c8be5df1-5716-4097-bd8e-ac70f193e68c"/>
+    <parentsNode id="e2e0c7fa-63da-4f52-b3a3-d8ce7771ab74" sourceId="2c5bb6bc-982d-443d-b3a1-1f1f7012067e" targetId="02acc9e1-21c8-43c9-99d5-4ff490f4289d"/>
+    <parentsNode id="86271785-6922-4d2f-80e0-81d8a4686308" sourceId="2c5bb6bc-982d-443d-b3a1-1f1f7012067e" targetId="77aacfeb-542c-4116-b8ba-023e1aa562c1"/>
+    <parentsNode id="02506395-6a93-47ca-ae21-a95438e87e9b" sourceId="43e2ff07-1149-4b40-9b88-a72c6fe12a75" targetId="50179e96-22c6-4e21-8100-c9f8efdb4807"/>
+    <parentsNode id="05f9643d-bd6a-4a0f-a802-3e4bf45fb752" sourceId="43e2ff07-1149-4b40-9b88-a72c6fe12a75" targetId="04aaeb6f-8aa4-4443-abb0-2997c37d856f"/>
+    <parentsNode id="f90cc05a-4ecb-4d6a-8c39-cc9cc5932518" sourceId="c8be5df1-5716-4097-bd8e-ac70f193e68c" targetId="cbe6fad2-32ae-4c4e-80b4-3697c4eb0a89"/>
+    <parentsNode id="397eebed-fac3-4e8f-b208-4f6fdcd7b2b0" sourceId="c8be5df1-5716-4097-bd8e-ac70f193e68c" targetId="73353255-f606-45e9-b79e-c3f137b5dd58"/>
+  </processTree>
+</ptml>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="9d23bf08-3c99-4052-ae27-7c8d7869c82b" root="f18ef057-9764-4571-8b4c-9907c09c838c" id="1b0197e7-c8f1-4cf7-bc48-4b1a128844b9">
+    <and name="" id="f18ef057-9764-4571-8b4c-9907c09c838c"/>
+    <sequence name="" id="95160d93-8103-4dc7-ad27-7e4933ed7acc"/>
+    <and name="" id="5c034df3-508e-4527-8856-a1a62583792d"/>
+    <manualTask name="Conduct Experiment" id="d41039a8-9269-441b-9db8-532a581b6d6e"/>
+    <sequence name="" id="44239689-4e98-4f01-8ae6-f75a6d12760d"/>
+    <manualTask name="Summarize Findings" id="a186c989-48fc-4e65-84b0-6c764fe45472"/>
+    <manualTask name="Prepare Data" id="9565302f-1f82-471c-beec-3ee2615055c5"/>
+    <manualTask name="Analyze Results" id="7c9c60cb-55ba-423d-9936-d08ebf7bd3eb"/>
+    <manualTask name="Collect Samples" id="3c8aaed4-f5fd-461d-953e-4238d9fe4939"/>
+    <parentsNode id="e000814d-99c1-4a24-953f-4b4ee45a7a65" sourceId="f18ef057-9764-4571-8b4c-9907c09c838c" targetId="95160d93-8103-4dc7-ad27-7e4933ed7acc"/>
+    <parentsNode id="7e561393-3fa4-497b-89cd-3803315177a7" sourceId="f18ef057-9764-4571-8b4c-9907c09c838c" targetId="5c034df3-508e-4527-8856-a1a62583792d"/>
+    <parentsNode id="80f8dc68-cf47-4403-b620-4d81170847a7" sourceId="95160d93-8103-4dc7-ad27-7e4933ed7acc" targetId="d41039a8-9269-441b-9db8-532a581b6d6e"/>
+    <parentsNode id="1fa82be3-d257-49cd-8b88-3b5133c4cf1d" sourceId="95160d93-8103-4dc7-ad27-7e4933ed7acc" targetId="44239689-4e98-4f01-8ae6-f75a6d12760d"/>
+    <parentsNode id="167182f5-4c87-49e0-a030-4698ae881886" sourceId="5c034df3-508e-4527-8856-a1a62583792d" targetId="a186c989-48fc-4e65-84b0-6c764fe45472"/>
+    <parentsNode id="fba351cf-68d5-408d-bc1f-61cb65328280" sourceId="5c034df3-508e-4527-8856-a1a62583792d" targetId="9565302f-1f82-471c-beec-3ee2615055c5"/>
+    <parentsNode id="bbd6dc34-981b-48fc-9f09-50b79989d370" sourceId="44239689-4e98-4f01-8ae6-f75a6d12760d" targetId="7c9c60cb-55ba-423d-9936-d08ebf7bd3eb"/>
+    <parentsNode id="6430bea1-dd94-48c7-993c-1b9fb0616f1c" sourceId="44239689-4e98-4f01-8ae6-f75a6d12760d" targetId="3c8aaed4-f5fd-461d-953e-4238d9fe4939"/>
+  </processTree>
+</ptml>

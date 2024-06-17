@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="53d4fea4-7792-4c76-9013-b902591efbd1" root="19a53fec-4d1b-4863-861e-4d2f991aa9f9" id="59740a94-7c68-4abc-9389-43d9c8e4675f">
+    <and name="" id="19a53fec-4d1b-4863-861e-4d2f991aa9f9"/>
+    <sequence name="" id="142f6e9a-6a04-40c8-8d0a-88bc8dd9a05b"/>
+    <xor name="" id="7e66c07b-4e84-4282-8602-47354f2bcef4"/>
+    <manualTask name="c" id="580e3110-72a5-481d-ac12-5da6f892e50c"/>
+    <manualTask name="b" id="6825e8ed-f51c-4024-8ad7-b92e33d2634c"/>
+    <and name="" id="c2ba62d5-f881-4b05-beb5-9495b6074d4e"/>
+    <xor name="" id="1b207b72-fd97-4f8a-844a-42a9d2f3a51b"/>
+    <sequence name="" id="cacf60a4-238b-464e-9ede-eb2d01606dfa"/>
+    <xorLoop name="" id="51d30baa-dfa4-42dd-bbe8-c9d6a0e3b40f"/>
+    <manualTask name="Glaze Cake" id="df466111-0412-4604-9c95-3a86c3d6d13c"/>
+    <xor name="" id="0b2761ac-9e87-4869-a19b-d3122ec40bc6"/>
+    <manualTask name="Prepare Ingredients" id="2fa8cd51-c886-4ffb-9dfb-1c5ce45c0992"/>
+    <manualTask name="Bake Cake" id="43b7c7d1-fde4-4316-a0a3-5e6bf3c943f6"/>
+    <manualTask name="Mix Batter" id="9cc71a78-c567-4aac-93a2-e35ee5353690"/>
+    <manualTask name="Pour into Molds" id="ae947839-bdea-4706-aafc-cccdf1404f65"/>
+    <automaticTask name="" id="dd3c02c6-dd86-416c-9d2e-11e3cef81f53"/>
+    <manualTask name="Slice and Serve" id="fe4e3843-c141-433a-8e16-3138034f8701"/>
+    <manualTask name="Package for Storage" id="1fcd7281-a2dd-43ee-aa34-5596d6d76f9c"/>
+    <parentsNode id="0651b52c-69a3-4d22-9f9c-84ea4d62892a" sourceId="19a53fec-4d1b-4863-861e-4d2f991aa9f9" targetId="142f6e9a-6a04-40c8-8d0a-88bc8dd9a05b"/>
+    <parentsNode id="c7dca168-f729-4345-b535-9632c3c789ff" sourceId="19a53fec-4d1b-4863-861e-4d2f991aa9f9" targetId="7e66c07b-4e84-4282-8602-47354f2bcef4"/>
+    <parentsNode id="98ca0395-a549-4d03-93e2-31bccbbc8a5f" sourceId="142f6e9a-6a04-40c8-8d0a-88bc8dd9a05b" targetId="580e3110-72a5-481d-ac12-5da6f892e50c"/>
+    <parentsNode id="219467d5-b470-4036-83dd-973436d47308" sourceId="142f6e9a-6a04-40c8-8d0a-88bc8dd9a05b" targetId="6825e8ed-f51c-4024-8ad7-b92e33d2634c"/>
+    <parentsNode id="e3163bb6-cab5-43fa-96b9-48c88732beab" sourceId="7e66c07b-4e84-4282-8602-47354f2bcef4" targetId="c2ba62d5-f881-4b05-beb5-9495b6074d4e"/>
+    <parentsNode id="82258e39-e699-4de4-9342-672cee0c30dd" sourceId="7e66c07b-4e84-4282-8602-47354f2bcef4" targetId="1b207b72-fd97-4f8a-844a-42a9d2f3a51b"/>
+    <parentsNode id="acbb93f4-138c-45d2-a5b3-011cd6a28b10" sourceId="c2ba62d5-f881-4b05-beb5-9495b6074d4e" targetId="cacf60a4-238b-464e-9ede-eb2d01606dfa"/>
+    <parentsNode id="7f39aaec-ad45-4ce3-905c-91c5f90d1f24" sourceId="c2ba62d5-f881-4b05-beb5-9495b6074d4e" targetId="51d30baa-dfa4-42dd-bbe8-c9d6a0e3b40f"/>
+    <parentsNode id="8fd49c46-25b6-4547-ac5d-ac2c6ca21850" sourceId="1b207b72-fd97-4f8a-844a-42a9d2f3a51b" targetId="df466111-0412-4604-9c95-3a86c3d6d13c"/>
+    <parentsNode id="80e0de23-8b1c-4346-a80c-afcd91459e23" sourceId="1b207b72-fd97-4f8a-844a-42a9d2f3a51b" targetId="0b2761ac-9e87-4869-a19b-d3122ec40bc6"/>
+    <parentsNode id="c77c59b0-da58-48fe-81fc-1f47ae3f73ab" sourceId="cacf60a4-238b-464e-9ede-eb2d01606dfa" targetId="2fa8cd51-c886-4ffb-9dfb-1c5ce45c0992"/>
+    <parentsNode id="a6a77849-f234-4ef5-a69c-67cbe3371d8d" sourceId="cacf60a4-238b-464e-9ede-eb2d01606dfa" targetId="43b7c7d1-fde4-4316-a0a3-5e6bf3c943f6"/>
+    <parentsNode id="3acce0bc-6a44-42d8-808e-f2f0985e88cd" sourceId="51d30baa-dfa4-42dd-bbe8-c9d6a0e3b40f" targetId="9cc71a78-c567-4aac-93a2-e35ee5353690"/>
+    <parentsNode id="b5c1027e-b2e8-4a76-b252-340e34937b6e" sourceId="51d30baa-dfa4-42dd-bbe8-c9d6a0e3b40f" targetId="ae947839-bdea-4706-aafc-cccdf1404f65"/>
+    <parentsNode id="01aec818-efea-4427-9ffa-314afc844de5" sourceId="51d30baa-dfa4-42dd-bbe8-c9d6a0e3b40f" targetId="dd3c02c6-dd86-416c-9d2e-11e3cef81f53"/>
+    <parentsNode id="f0a39fba-b40f-42dc-8731-f17cd0a5326b" sourceId="0b2761ac-9e87-4869-a19b-d3122ec40bc6" targetId="fe4e3843-c141-433a-8e16-3138034f8701"/>
+    <parentsNode id="a03863e3-de56-46f3-8620-9f2767a25646" sourceId="0b2761ac-9e87-4869-a19b-d3122ec40bc6" targetId="1fcd7281-a2dd-43ee-aa34-5596d6d76f9c"/>
+  </processTree>
+</ptml>

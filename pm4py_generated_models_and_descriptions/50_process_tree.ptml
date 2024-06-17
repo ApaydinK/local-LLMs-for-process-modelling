@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="fee2c703-9d36-4f4d-9938-12e60a34e973" root="85850b8f-522a-4790-a4b1-426c236d1066" id="d69954f6-717d-4293-8a31-6c5c1bb77acb">
+    <and name="" id="85850b8f-522a-4790-a4b1-426c236d1066"/>
+    <and name="" id="87c00979-27b2-485c-9301-03c10c987f36"/>
+    <sequence name="" id="11aaf6e4-5842-4881-856b-164e4c28b87b"/>
+    <manualTask name="Prepare Order" id="631d8b24-bb42-48cc-a2ff-ae7a04ba7dbb"/>
+    <sequence name="" id="fb8a77d4-02ce-4544-9a52-160a93ddcd80"/>
+    <manualTask name="Fill Order" id="365df842-b411-4295-b55e-37537e01e713"/>
+    <manualTask name="Package and Ship" id="f15d0a94-2876-4a1f-a96d-b8929c172bfd"/>
+    <manualTask name="Review Order" id="a0e89a31-f542-40c7-867f-7f1f873c7124"/>
+    <manualTask name="Process Payment" id="fb49284c-8ca6-4616-b8f1-62c902524668"/>
+    <parentsNode id="86ce59a4-7490-463a-9da8-19d926810153" sourceId="85850b8f-522a-4790-a4b1-426c236d1066" targetId="87c00979-27b2-485c-9301-03c10c987f36"/>
+    <parentsNode id="a82e2a97-0811-42de-a638-eea6c35903af" sourceId="85850b8f-522a-4790-a4b1-426c236d1066" targetId="11aaf6e4-5842-4881-856b-164e4c28b87b"/>
+    <parentsNode id="33706fa7-7596-41f8-952e-6e51f402c141" sourceId="87c00979-27b2-485c-9301-03c10c987f36" targetId="631d8b24-bb42-48cc-a2ff-ae7a04ba7dbb"/>
+    <parentsNode id="1ccf6860-948b-481b-9eb2-afd5acc91dd5" sourceId="87c00979-27b2-485c-9301-03c10c987f36" targetId="fb8a77d4-02ce-4544-9a52-160a93ddcd80"/>
+    <parentsNode id="da9619e3-83f4-4ea8-92dd-5a14dd2672d4" sourceId="11aaf6e4-5842-4881-856b-164e4c28b87b" targetId="365df842-b411-4295-b55e-37537e01e713"/>
+    <parentsNode id="98d1adcd-94a4-4047-abb6-48ee468bd01a" sourceId="11aaf6e4-5842-4881-856b-164e4c28b87b" targetId="f15d0a94-2876-4a1f-a96d-b8929c172bfd"/>
+    <parentsNode id="e4a06e81-7920-484d-b2a6-9cf39f0f680b" sourceId="fb8a77d4-02ce-4544-9a52-160a93ddcd80" targetId="a0e89a31-f542-40c7-867f-7f1f873c7124"/>
+    <parentsNode id="85aa2b63-8c01-4a95-b8c3-fc2751e1a389" sourceId="fb8a77d4-02ce-4544-9a52-160a93ddcd80" targetId="fb49284c-8ca6-4616-b8f1-62c902524668"/>
+  </processTree>
+</ptml>

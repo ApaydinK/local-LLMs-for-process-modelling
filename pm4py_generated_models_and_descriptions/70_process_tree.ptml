@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="3070b201-f56e-43cf-854d-74a07bcab978" root="a8bf0294-9b23-474f-b10a-4aa0e0cd48e4" id="e02a148c-933e-4239-8a75-02cdc131c563">
+    <xorLoop name="" id="a8bf0294-9b23-474f-b10a-4aa0e0cd48e4"/>
+    <sequence name="" id="474dab6f-7941-4c65-bda7-153661657cb7"/>
+    <xor name="" id="7cda09be-c3b6-4621-9840-39c4bc683255"/>
+    <automaticTask name="" id="ea79b1dd-75f9-4c23-acd4-4632d693c7a9"/>
+    <manualTask name="Extract Reports" id="08074957-9951-46f7-966e-b648afc1c10c"/>
+    <and name="" id="0108fcef-bf20-42ad-a75a-f0343893a3c3"/>
+    <manualTask name="Analyze Financials" id="b7a5a7ab-0aa0-4361-a467-cbb72ff1f2bd"/>
+    <manualTask name="Generate Balance Sheets" id="301214e8-b8bc-42bf-8e3e-fbd515d6b835"/>
+    <manualTask name="Check Invoices" id="aafe22b9-bca7-422e-bb38-dd3bf40f0f93"/>
+    <manualTask name="Process Payments" id="0497dfca-fe93-469a-8d53-f41c5fe741bd"/>
+    <parentsNode id="9b254bd6-ed7b-4bcf-9c72-9deae94420cb" sourceId="a8bf0294-9b23-474f-b10a-4aa0e0cd48e4" targetId="474dab6f-7941-4c65-bda7-153661657cb7"/>
+    <parentsNode id="ac139245-7f9d-4d51-81d3-a664795eaab8" sourceId="a8bf0294-9b23-474f-b10a-4aa0e0cd48e4" targetId="7cda09be-c3b6-4621-9840-39c4bc683255"/>
+    <parentsNode id="0b44bbe3-4cbb-47ab-8d1e-803ce82b0308" sourceId="a8bf0294-9b23-474f-b10a-4aa0e0cd48e4" targetId="ea79b1dd-75f9-4c23-acd4-4632d693c7a9"/>
+    <parentsNode id="9c3da661-7408-42cd-a15f-b10c389d8918" sourceId="474dab6f-7941-4c65-bda7-153661657cb7" targetId="08074957-9951-46f7-966e-b648afc1c10c"/>
+    <parentsNode id="c8a5a725-70c2-42dd-b6a4-201339d9ff65" sourceId="474dab6f-7941-4c65-bda7-153661657cb7" targetId="0108fcef-bf20-42ad-a75a-f0343893a3c3"/>
+    <parentsNode id="3683ffa7-4466-4f29-8c42-7a3f4f1f4c54" sourceId="7cda09be-c3b6-4621-9840-39c4bc683255" targetId="b7a5a7ab-0aa0-4361-a467-cbb72ff1f2bd"/>
+    <parentsNode id="7bf59049-71f9-4c8a-9353-d4086c4a8eee" sourceId="7cda09be-c3b6-4621-9840-39c4bc683255" targetId="301214e8-b8bc-42bf-8e3e-fbd515d6b835"/>
+    <parentsNode id="efd14bf6-7329-413a-b115-1b31b64b8c52" sourceId="0108fcef-bf20-42ad-a75a-f0343893a3c3" targetId="aafe22b9-bca7-422e-bb38-dd3bf40f0f93"/>
+    <parentsNode id="9ceabae4-fb2e-4fc9-b057-cc65a898a87f" sourceId="0108fcef-bf20-42ad-a75a-f0343893a3c3" targetId="0497dfca-fe93-469a-8d53-f41c5fe741bd"/>
+  </processTree>
+</ptml>

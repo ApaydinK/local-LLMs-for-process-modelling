@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="ad7636da-2ce3-4bb2-99a2-e9806f5c1d8e" root="f681c3b2-816a-4c53-bcde-16e465a27284" id="855c07a4-1f9e-4f5f-bd6f-6e2953fac1a2">
+    <and name="" id="f681c3b2-816a-4c53-bcde-16e465a27284"/>
+    <xor name="" id="98f48a1d-1a95-4c93-a0a0-dd7b80b63805"/>
+    <xorLoop name="" id="ec8a41cf-d78f-417b-890e-7dfe6d3a37a5"/>
+    <manualTask name="Prepare Report for Manager" id="e29bd1c7-a975-4047-acd8-0ac8d671a1ae"/>
+    <sequence name="" id="84e35bf9-342c-4d2f-85a8-131748cb0901"/>
+    <manualTask name="Check Email Inbox" id="33ddd0b5-2be8-4802-9df5-686c93ecb2ab"/>
+    <sequence name="" id="7cd77783-6b68-4ce6-a430-a4d5c645aeff"/>
+    <automaticTask name="" id="89adf8f6-c0e5-45cc-ae16-8756b4f2b15c"/>
+    <manualTask name="Review Document by Editor" id="74e5d99a-b871-42b2-8b5c-dcabdea4a1a4"/>
+    <manualTask name="Finalize Report" id="929d735f-6c05-4381-b8d8-da730208195c"/>
+    <manualTask name="Respond to Important Message from Client" id="8d6f3b7a-0548-4296-b9e2-4d405fd5e658"/>
+    <manualTask name="Update Project Status" id="f8e1749c-73eb-4f07-a277-289676fc278c"/>
+    <parentsNode id="afe8fc9b-4225-4a0d-9121-b7624eb3076f" sourceId="f681c3b2-816a-4c53-bcde-16e465a27284" targetId="98f48a1d-1a95-4c93-a0a0-dd7b80b63805"/>
+    <parentsNode id="fe4480f8-85ab-43cf-ab9f-1ff6c705f4c6" sourceId="f681c3b2-816a-4c53-bcde-16e465a27284" targetId="ec8a41cf-d78f-417b-890e-7dfe6d3a37a5"/>
+    <parentsNode id="9059c798-e93a-4f6b-913c-d800607697ec" sourceId="98f48a1d-1a95-4c93-a0a0-dd7b80b63805" targetId="e29bd1c7-a975-4047-acd8-0ac8d671a1ae"/>
+    <parentsNode id="93e95750-8beb-4b4b-808a-590290a70a2d" sourceId="98f48a1d-1a95-4c93-a0a0-dd7b80b63805" targetId="84e35bf9-342c-4d2f-85a8-131748cb0901"/>
+    <parentsNode id="1b8e4702-ea16-46f5-bd53-91e64c564eb5" sourceId="ec8a41cf-d78f-417b-890e-7dfe6d3a37a5" targetId="33ddd0b5-2be8-4802-9df5-686c93ecb2ab"/>
+    <parentsNode id="d0f47a56-a148-4c87-be82-4a3a36fd757d" sourceId="ec8a41cf-d78f-417b-890e-7dfe6d3a37a5" targetId="7cd77783-6b68-4ce6-a430-a4d5c645aeff"/>
+    <parentsNode id="cfd755ab-8a05-4f2c-9ad0-accd08c236c6" sourceId="ec8a41cf-d78f-417b-890e-7dfe6d3a37a5" targetId="89adf8f6-c0e5-45cc-ae16-8756b4f2b15c"/>
+    <parentsNode id="5df5e50f-13c5-40e6-84cc-9138be10e3cc" sourceId="84e35bf9-342c-4d2f-85a8-131748cb0901" targetId="74e5d99a-b871-42b2-8b5c-dcabdea4a1a4"/>
+    <parentsNode id="39de333b-1fcf-475e-8a4c-f56628ddd53b" sourceId="84e35bf9-342c-4d2f-85a8-131748cb0901" targetId="929d735f-6c05-4381-b8d8-da730208195c"/>
+    <parentsNode id="c2a927eb-1a7e-46da-a478-9b390e8aec34" sourceId="7cd77783-6b68-4ce6-a430-a4d5c645aeff" targetId="8d6f3b7a-0548-4296-b9e2-4d405fd5e658"/>
+    <parentsNode id="25d04ca3-5858-4343-b18e-0d7f71101e44" sourceId="7cd77783-6b68-4ce6-a430-a4d5c645aeff" targetId="f8e1749c-73eb-4f07-a277-289676fc278c"/>
+  </processTree>
+</ptml>

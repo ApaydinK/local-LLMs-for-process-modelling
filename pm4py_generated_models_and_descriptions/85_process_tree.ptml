@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="d6b45dcb-e2f4-49de-8fcf-aacd461c10a4" root="067b8d13-23c1-4f51-abd6-7758d8d42d8c" id="5b78f589-2f38-4bef-a2bd-952dd54ffe69">
+    <sequence name="" id="067b8d13-23c1-4f51-abd6-7758d8d42d8c"/>
+    <manualTask name="Book Order" id="17376f89-d02e-4eac-bec1-0e83740c11c3"/>
+    <sequence name="" id="7bb364b5-addd-4238-a339-69aab406c752"/>
+    <manualTask name="Validate" id="db199954-a773-4306-904e-bc137f35f209"/>
+    <sequence name="" id="2935ab32-8ea6-4796-821f-eecd98ae6835"/>
+    <manualTask name="Ship" id="7006d8a6-80be-40ec-ad9e-f01b3b3dfd15"/>
+    <xor name="" id="9cfce9af-70ba-471e-bf19-c7acb55d201b"/>
+    <manualTask name="Pay" id="63c91cf2-58a0-41a7-9128-d9c469d1a300"/>
+    <manualTask name="Deliver" id="ec22c062-9924-4c23-b631-ffe0980747da"/>
+    <parentsNode id="7afd12b2-77e5-4b6e-a553-b24a13a8f864" sourceId="067b8d13-23c1-4f51-abd6-7758d8d42d8c" targetId="17376f89-d02e-4eac-bec1-0e83740c11c3"/>
+    <parentsNode id="3897cf8e-a9f3-4bc6-a82d-dafb3bcf77d2" sourceId="067b8d13-23c1-4f51-abd6-7758d8d42d8c" targetId="7bb364b5-addd-4238-a339-69aab406c752"/>
+    <parentsNode id="5699bdae-9d1f-450d-b463-7ff9b5377855" sourceId="7bb364b5-addd-4238-a339-69aab406c752" targetId="db199954-a773-4306-904e-bc137f35f209"/>
+    <parentsNode id="609a509a-0b2a-4e80-bce3-68e87f9f8a0c" sourceId="7bb364b5-addd-4238-a339-69aab406c752" targetId="2935ab32-8ea6-4796-821f-eecd98ae6835"/>
+    <parentsNode id="301a8e53-a231-4882-8651-71aa9489e3ab" sourceId="2935ab32-8ea6-4796-821f-eecd98ae6835" targetId="7006d8a6-80be-40ec-ad9e-f01b3b3dfd15"/>
+    <parentsNode id="549afded-8ad2-440e-b028-b89d0e649966" sourceId="2935ab32-8ea6-4796-821f-eecd98ae6835" targetId="9cfce9af-70ba-471e-bf19-c7acb55d201b"/>
+    <parentsNode id="56a195d5-3ae0-450c-b829-73230a2bfe5e" sourceId="9cfce9af-70ba-471e-bf19-c7acb55d201b" targetId="63c91cf2-58a0-41a7-9128-d9c469d1a300"/>
+    <parentsNode id="e15d29b8-28d8-48d2-9be8-f619e7e69c49" sourceId="9cfce9af-70ba-471e-bf19-c7acb55d201b" targetId="ec22c062-9924-4c23-b631-ffe0980747da"/>
+  </processTree>
+</ptml>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="38efa447-8eee-47fb-b512-44f72e6000c4" root="2c829ab2-aca7-40e3-ad82-11dfcd5caa2f" id="91ac6f0a-3e1c-4f17-9beb-d8737c1d33ba">
+    <sequence name="" id="2c829ab2-aca7-40e3-ad82-11dfcd5caa2f"/>
+    <sequence name="" id="61f7ae6e-ca85-45f0-9b72-38cb5f770416"/>
+    <and name="" id="8cc550cd-1804-4d37-93c5-f71f8a430307"/>
+    <manualTask name="Plan Project" id="2ce07fdb-7048-4740-9067-55bf35f1c0d1"/>
+    <manualTask name="Create Blueprint" id="e11fa535-8ce7-4a7e-887b-17e0c690dc65"/>
+    <manualTask name="Design Architecture" id="f52dd2ce-89aa-42f0-9397-492b8c37f382"/>
+    <and name="" id="c6db7388-f212-4264-b6e9-1b5bacaa3bb5"/>
+    <manualTask name="Test Prototype" id="8bc9ebc4-ee1b-4d63-b473-0fc45b251ebf"/>
+    <manualTask name="Develop Software" id="23ebf5f5-2c90-4f14-b02d-8b0c370585bd"/>
+    <parentsNode id="4c2b3343-1ee0-4323-b769-f1c782f4ebaf" sourceId="2c829ab2-aca7-40e3-ad82-11dfcd5caa2f" targetId="61f7ae6e-ca85-45f0-9b72-38cb5f770416"/>
+    <parentsNode id="892945ff-8fa6-4613-a6ea-f7c3a923c995" sourceId="2c829ab2-aca7-40e3-ad82-11dfcd5caa2f" targetId="8cc550cd-1804-4d37-93c5-f71f8a430307"/>
+    <parentsNode id="e46aed6b-7c8a-4e76-a19d-1d325fcb6748" sourceId="61f7ae6e-ca85-45f0-9b72-38cb5f770416" targetId="2ce07fdb-7048-4740-9067-55bf35f1c0d1"/>
+    <parentsNode id="e00620a9-99be-46ae-a0e0-e4d8accb8d9e" sourceId="61f7ae6e-ca85-45f0-9b72-38cb5f770416" targetId="e11fa535-8ce7-4a7e-887b-17e0c690dc65"/>
+    <parentsNode id="7569d401-ec1b-4f79-a0bf-fd3710051a8f" sourceId="8cc550cd-1804-4d37-93c5-f71f8a430307" targetId="f52dd2ce-89aa-42f0-9397-492b8c37f382"/>
+    <parentsNode id="6aeb224a-55ad-448c-8441-133f9ce9e188" sourceId="8cc550cd-1804-4d37-93c5-f71f8a430307" targetId="c6db7388-f212-4264-b6e9-1b5bacaa3bb5"/>
+    <parentsNode id="9aa32921-dbeb-42ee-adcc-93db1ee261c9" sourceId="c6db7388-f212-4264-b6e9-1b5bacaa3bb5" targetId="8bc9ebc4-ee1b-4d63-b473-0fc45b251ebf"/>
+    <parentsNode id="9bc0d97b-d5b2-40bb-8620-a92db8229c03" sourceId="c6db7388-f212-4264-b6e9-1b5bacaa3bb5" targetId="23ebf5f5-2c90-4f14-b02d-8b0c370585bd"/>
+  </processTree>
+</ptml>

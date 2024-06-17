@@ -163,10 +163,11 @@ async def replace_activity_names(process_tree):
         [
             {
                 'role': 'user',
-                'content': f"You are an expert in process modelling. I will present you a structure of a process tree "
+                'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
+                           f"You are an expert in process modelling with process trees. I will present you a structure of a process tree "
                            f"where the activities are abstracted by letters. Make an illustrative and realistic "
-                           f"example based on the following process tree structure be suggesting how the letters "
-                           f"should be replaced with activities that are represented by verb noun pairs:" +
+                           f"example based on the following process tree structure be suggesting how each letter "
+                           f"should be replaced by one verb followed by one noun to represent a real activity:" +
                            f"{process_tree}" +
                            "Describe the process in detail after replacing the letters with activities.  Finally "
                            "complete this dictionary that represents the mapping of the letters with your activities: "
@@ -181,18 +182,18 @@ async def replace_activity_names(process_tree):
                            "'h'=''," +
                            "'i'=''," +
                            "'j'=''," +
-                           "'k'=''," +
-                           "'l'=''," +
-                           "'m'=''," +
-                           "'n'=''," +
-                           "'o'=''," +
-                           "'p'=''," +
-                           "'q'=''," +
-                           "'r'=''," +
-                           "'s'=''," +
-                           "'t'=''," +
-                           "'u'=''," +
-                           "'v'=''," +
+                           #"'k'=''," +
+                           #"'l'=''," +
+                           #"'m'=''," +
+                           #"'n'=''," +
+                           #"'o'=''," +
+                           #"'p'=''," +
+                           #"'q'=''," +
+                           #"'r'=''," +
+                           #"'s'=''," +
+                           #"'t'=''," +
+                           #"'u'=''," +
+                           #"'v'=''," +
                            "}"
                 ,
             },

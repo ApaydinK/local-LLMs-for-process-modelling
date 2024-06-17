@@ -26,8 +26,9 @@ def describe_with_local_llm_and_store_description(process_tree, description_of_p
         {
             'role': 'user',
             'system': 'test',
-            'content': f'You are an expert in process modeling, especially by using process trees and you can easily '
-                       f'interpret process models. Make a process description based on this process tree: {process_tree}',
+            'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
+                       f'You are an expert in process modeling, especially by using process trees and you can easily '
+                       f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}',
         },
     ])
     #print( response['message']['content'])

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="d856ad71-267e-4ee2-9c65-0481b4468e3c" root="37fde538-0dcb-4f08-aae1-9525315f0510" id="a39833cc-7df4-4d1e-abc7-efd7e524b43a">
+    <and name="" id="37fde538-0dcb-4f08-aae1-9525315f0510"/>
+    <sequence name="" id="50b0cfd4-5e87-4ad6-9c48-8d2238f6e706"/>
+    <xor name="" id="82e889ed-9a6b-4bd5-a8f1-fe2d0e4a6701"/>
+    <and name="" id="8bf942cd-ab8c-49a1-b5e2-4a9f25712979"/>
+    <sequence name="" id="c287484c-d289-4359-9bf5-453d035876f0"/>
+    <sequence name="" id="dac42efa-cb50-4127-99ff-4539e8cf8636"/>
+    <sequence name="" id="372292d0-0022-4212-b987-131fc0f8de75"/>
+    <manualTask name="Design New Product" id="a49a2eaf-863b-4976-9fe8-64e8ba089da3"/>
+    <sequence name="" id="24b6c9ba-f518-4beb-b1f2-2d4dc3189beb"/>
+    <manualTask name="Finalize Design" id="b36def71-fdab-4128-99c9-f12cb5be9f40"/>
+    <manualTask name="Create Technical Specifications" id="05102ca3-1b08-40e0-a813-9bd98b91f41c"/>
+    <manualTask name="Conduct Market Research" id="ae1eeaa7-3006-4e54-9874-77d89cdbfe6c"/>
+    <manualTask name="Analyze Customer Feedback" id="0ebfebc1-f6df-4270-bdab-826e7f746c42"/>
+    <manualTask name="Develop Marketing Strategy" id="24ced04d-57be-4b25-8d9d-4be2db7f4558"/>
+    <manualTask name="Create Sales Materials" id="5e24fe34-72bd-4621-86be-103a242dfb2c"/>
+    <manualTask name="Generate Requirements" id="d1b61d7b-decd-4fea-844f-a13ffd3363a0"/>
+    <manualTask name="Develop Prototype" id="9417cd95-146a-4e6a-9a45-b3055b18c332"/>
+    <parentsNode id="5864de14-7087-4700-9782-0c13dd3e7248" sourceId="37fde538-0dcb-4f08-aae1-9525315f0510" targetId="50b0cfd4-5e87-4ad6-9c48-8d2238f6e706"/>
+    <parentsNode id="830a6106-d62e-4474-9350-d9d4bfc40ac9" sourceId="37fde538-0dcb-4f08-aae1-9525315f0510" targetId="82e889ed-9a6b-4bd5-a8f1-fe2d0e4a6701"/>
+    <parentsNode id="6b5339c2-0768-475b-8a85-a4cb0fc9026b" sourceId="50b0cfd4-5e87-4ad6-9c48-8d2238f6e706" targetId="8bf942cd-ab8c-49a1-b5e2-4a9f25712979"/>
+    <parentsNode id="a37d4f2f-2072-4fbb-bcbd-6ce1c1a068f5" sourceId="50b0cfd4-5e87-4ad6-9c48-8d2238f6e706" targetId="c287484c-d289-4359-9bf5-453d035876f0"/>
+    <parentsNode id="b26d238c-be5c-4118-a128-e25b674d13e1" sourceId="82e889ed-9a6b-4bd5-a8f1-fe2d0e4a6701" targetId="dac42efa-cb50-4127-99ff-4539e8cf8636"/>
+    <parentsNode id="4d16ce5c-ae29-414f-aa94-2e65b74f3fb3" sourceId="82e889ed-9a6b-4bd5-a8f1-fe2d0e4a6701" targetId="372292d0-0022-4212-b987-131fc0f8de75"/>
+    <parentsNode id="39326440-dd86-46ff-845b-b1969d5607a6" sourceId="8bf942cd-ab8c-49a1-b5e2-4a9f25712979" targetId="a49a2eaf-863b-4976-9fe8-64e8ba089da3"/>
+    <parentsNode id="4fd5686e-ac29-4177-90fe-f0e60790a9fc" sourceId="8bf942cd-ab8c-49a1-b5e2-4a9f25712979" targetId="24b6c9ba-f518-4beb-b1f2-2d4dc3189beb"/>
+    <parentsNode id="d7e47c36-6a5e-4982-88ef-cf26e470d5ec" sourceId="c287484c-d289-4359-9bf5-453d035876f0" targetId="b36def71-fdab-4128-99c9-f12cb5be9f40"/>
+    <parentsNode id="c87f2ccc-55ba-49ee-96ba-4d36bbe0ab0e" sourceId="c287484c-d289-4359-9bf5-453d035876f0" targetId="05102ca3-1b08-40e0-a813-9bd98b91f41c"/>
+    <parentsNode id="3f88cac6-3a0a-4878-81bf-818477359d04" sourceId="dac42efa-cb50-4127-99ff-4539e8cf8636" targetId="ae1eeaa7-3006-4e54-9874-77d89cdbfe6c"/>
+    <parentsNode id="53ec7260-5622-4708-a800-c5cbab58c27e" sourceId="dac42efa-cb50-4127-99ff-4539e8cf8636" targetId="0ebfebc1-f6df-4270-bdab-826e7f746c42"/>
+    <parentsNode id="1fceaf64-666e-49f6-85c0-bb4ab3b35fbe" sourceId="372292d0-0022-4212-b987-131fc0f8de75" targetId="24ced04d-57be-4b25-8d9d-4be2db7f4558"/>
+    <parentsNode id="88057a61-6d01-4bdb-b9e6-373fa63c54fb" sourceId="372292d0-0022-4212-b987-131fc0f8de75" targetId="5e24fe34-72bd-4621-86be-103a242dfb2c"/>
+    <parentsNode id="03568467-91b1-4bd2-ac86-16979b8266c5" sourceId="24b6c9ba-f518-4beb-b1f2-2d4dc3189beb" targetId="d1b61d7b-decd-4fea-844f-a13ffd3363a0"/>
+    <parentsNode id="2802f16c-5eb8-4aff-a7f6-0fb969b0ec93" sourceId="24b6c9ba-f518-4beb-b1f2-2d4dc3189beb" targetId="9417cd95-146a-4e6a-9a45-b3055b18c332"/>
+  </processTree>
+</ptml>

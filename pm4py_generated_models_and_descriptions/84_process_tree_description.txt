@@ -1,0 +1,37 @@
+process tree structure: +( *( ->( +( 'File Invoice', *( 'Process Invoices', 'Update Database' ) ), X( 'Handle Order', 'Confirm Shipment' ) ), ->( 'File Invoice', 'Confirm Shipment' ) ), *( 'Get Order', 'Bill Customer' ) )What a delightful process tree!
+
+Let me break it down for you:
+
+**Process Tree Structure:**
+The top-level operator is `+` (parallel), indicating that there are two independent subprocesses. I'll describe each subprocess in detail.
+
+**Subprocess 1:**
+
+* The first subprocess starts with `( ->( +( 'File Invoice', *( 'Process Invoices', 'Update Database' ) ), X( 'Handle Order', 'Confirm Shipment' ) ) )`.
+	+ `->` indicates a sequence of events.
+	+ `'File Invoice'` is the starting event, which triggers the process.
+	+ The `( +('File Invoice', *( 'Process Invoices', 'Update Database' ) ) )` part represents a subprocess that consists of two parallel tasks:
+		- `'Process Invoices'`: This task involves processing and verifying invoices.
+		- `'Update Database'`: This task updates the database with the processed invoice information.
+	+ The `X( 'Handle Order', 'Confirm Shipment' )` part represents an XOR (choice) operator, which means that only one of these two events will occur:
+		- `'Handle Order'`: This event likely involves handling and processing orders, such as updating order status or generating shipping labels.
+		- `'Confirm Shipment'`: This event likely involves confirming the shipment with the customer.
+
+**Subprocess 2:**
+
+* The second subprocess starts with `( *( 'Get Order', 'Bill Customer' ) )`.
+	+ `*( ... )` represents a loop, indicating that these two tasks will be repeated until some condition is met.
+	+ `'Get Order'`: This task involves obtaining or retrieving an order from the system.
+	+ `'Bill Customer'`: This task likely involves generating and sending invoices to customers.
+
+**Putting it all together:**
+
+The entire process tree represents a complex process that involves:
+
+1. Processing and updating invoices (Subprocess 1).
+2. Handling orders and shipments (Subprocess 1).
+3. Repeatedly getting new orders and billing customers (Subprocess 2).
+
+In summary, this process tree describes a workflow that handles invoice processing, order handling, and customer billing, with parallel and iterative elements.
+
+Please let me know if you have any questions or need further clarification!

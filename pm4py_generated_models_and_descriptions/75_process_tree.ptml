@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="823d2d29-b940-49c5-bcb6-0ad5b88e9496" root="6da946f3-8987-4ce4-aa3d-6cba7c059008" id="9743e44a-7d17-4339-a6e4-117f5fa499d3">
+    <xor name="" id="6da946f3-8987-4ce4-aa3d-6cba7c059008"/>
+    <manualTask name="Verify Report" id="4f84e791-814d-462c-9aa3-d5b3de5a2306"/>
+    <xorLoop name="" id="6dc3bcea-d581-4bf0-b76e-9ef9125a5020"/>
+    <xor name="" id="83fda4c9-c5a5-49ac-adab-40c335f1f017"/>
+    <xor name="" id="ecba2622-2937-40ac-b4e4-b9ac77b24a38"/>
+    <automaticTask name="" id="118e8098-1d13-483d-b6c3-7352e40d0d3f"/>
+    <manualTask name="Conduct Interview" id="16c1a071-835e-4f03-995b-db4c70ce4828"/>
+    <manualTask name="Review Application" id="3a11dda5-469d-4abe-8de2-8b00f2b45482"/>
+    <manualTask name="Evaluate Candidate" id="f9afb50a-1082-4c5b-865f-1623612740fc"/>
+    <manualTask name="Generate Proposal" id="b60b8e39-0b05-49ec-aa3c-fc4e054d4bc9"/>
+    <parentsNode id="5a21bef4-d70f-45c7-b1d1-768020f80481" sourceId="6da946f3-8987-4ce4-aa3d-6cba7c059008" targetId="4f84e791-814d-462c-9aa3-d5b3de5a2306"/>
+    <parentsNode id="98d31d16-a87f-43b3-b473-b7e230a82ebe" sourceId="6da946f3-8987-4ce4-aa3d-6cba7c059008" targetId="6dc3bcea-d581-4bf0-b76e-9ef9125a5020"/>
+    <parentsNode id="58dc07d2-b019-4875-892a-fcb0fd1141ef" sourceId="6dc3bcea-d581-4bf0-b76e-9ef9125a5020" targetId="83fda4c9-c5a5-49ac-adab-40c335f1f017"/>
+    <parentsNode id="9e198604-3438-4ca6-9be8-4eb9f20e8a53" sourceId="6dc3bcea-d581-4bf0-b76e-9ef9125a5020" targetId="ecba2622-2937-40ac-b4e4-b9ac77b24a38"/>
+    <parentsNode id="927c2690-1204-458e-ba7b-033315470d5f" sourceId="6dc3bcea-d581-4bf0-b76e-9ef9125a5020" targetId="118e8098-1d13-483d-b6c3-7352e40d0d3f"/>
+    <parentsNode id="c73e7a7e-15f0-4214-9de1-82898f5b5b27" sourceId="83fda4c9-c5a5-49ac-adab-40c335f1f017" targetId="16c1a071-835e-4f03-995b-db4c70ce4828"/>
+    <parentsNode id="46c89df0-be95-40b7-9572-19e914414bb8" sourceId="83fda4c9-c5a5-49ac-adab-40c335f1f017" targetId="3a11dda5-469d-4abe-8de2-8b00f2b45482"/>
+    <parentsNode id="a6ccc416-6a7c-4f33-b25b-9aa5476cad90" sourceId="ecba2622-2937-40ac-b4e4-b9ac77b24a38" targetId="f9afb50a-1082-4c5b-865f-1623612740fc"/>
+    <parentsNode id="201e9061-e87a-4cc8-b73e-d241150560b9" sourceId="ecba2622-2937-40ac-b4e4-b9ac77b24a38" targetId="b60b8e39-0b05-49ec-aa3c-fc4e054d4bc9"/>
+  </processTree>
+</ptml>

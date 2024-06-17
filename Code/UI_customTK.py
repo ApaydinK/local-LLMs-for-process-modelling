@@ -4,12 +4,14 @@ import os
 from dotenv import load_dotenv
 import threading
 import dotenv
-from PIL import Image
+from PIL import Image, ImageTk, ImageEnhance, ImageFilter
+import ctypes
+ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
 load_dotenv()  # This loads the variables from .env
 # TODO put into shared Resources Class TODO save as dotenv
 
-total_number_of_processes = 18
+total_number_of_processes = 100
 
 last_nav_button = None
 folder = "pm4py_generated_models_and_descriptions"
@@ -22,10 +24,11 @@ class GUI(customtkinter.CTk):
         self.geometry("1200x750")  # Adjusted size for better visibility
 
         self.grid_rowconfigure(0, weight=1)
+
         self.grid_columnconfigure(1, weight=1)
 
         self.nav_rows_frame = customtkinter.CTkScrollableFrame(self)
-        self.nav_rows_frame.grid(row=0, column=0, padx=20, pady=10, sticky="nsew")
+        self.nav_rows_frame.grid(row=0, column=0, padx=0, pady=10, sticky="nsew")
         self.nav_rows_frame.grid_columnconfigure(0, weight=1)
         self.nav_rows_frame.grid_rowconfigure(0, weight=1)
         self.add_all_process_nav_ids()
@@ -34,7 +37,7 @@ class GUI(customtkinter.CTk):
 
         for process_id in range(total_number_of_processes):
             nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
-                                                 font=("Maitree", 20), width=100, height=30)
+                                                 font=("Maitree", 20), width=60, height=25)
             nav_button.configure(
                 command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
             nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
@@ -46,7 +49,9 @@ class GUI(customtkinter.CTk):
     def activate_nav_item_and_display_graph_and_description(self, button, process_id):
         self.change_color(button)
         self.info_frame = MyInfoView(self, process_id=process_id)
-        self.info_frame.grid(row=0, column=1, padx=20, pady=20, sticky="nsew")
+        self.info_frame.grid(row=0, column=1, pady=10, sticky="nsew")
+        self.info_frame.grid_rowconfigure(1, weight=1)
+
 
 
     def change_color(self, button):
@@ -81,36 +86,73 @@ class MyInfoView(customtkinter.CTkFrame):
         # create widgets
         self.configure(bg_color="white", fg_color="white")
         self.process_tree_image_path = retrieve_file_path("bpmn", process_id)
-        image = Image.open(self.process_tree_image_path)
-        self.process_tree_image = customtkinter.CTkImage(light_image=image, size=image.size)
-        self.my_label = customtkinter.CTkLabel(self, text="", image=self.process_tree_image, anchor="n", compound="center",
+        self.image = Image.open(self.process_tree_image_path)
+        self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size)
+        self.process_tree_image_label = customtkinter.CTkLabel(self, text="", image=self.process_tree_image, anchor="n", compound="center",
                                                bg_color="white", fg_color="white")
-        self.my_label.grid(row=0, column=0, padx=20, sticky="ew")
+        self.process_tree_image_label.grid(row=0, column=0, sticky="ew")
 
-        process_tree_description_path = retrieve_file_path("process_tree_description", process_id)
-        with open(process_tree_description_path, "r") as file:
+        self.process_tree_description_path = retrieve_file_path("process_tree_description", process_id)
+        with open(self.process_tree_description_path, "r") as file:
             process_description = file.read()
 
+        self.textbox_process_description = customtkinter.CTkTextbox(self,
+                                                          width=self.winfo_width(),
+                                                          height=1000,#self.winfo_height(),  # Adjust the height as needed
+                                                          wrap="word")
+        self.textbox_process_description.insert("1.0", process_description)
+        self.textbox_process_description.grid(row=1, column=0, sticky="ew")
 
-        self.label_process_description = customtkinter.CTkLabel(self,
-                                                                text=process_description,
-                                                                anchor="w",
-                                                                compound="left",
-                                                                bg_color="white",
-                                                                fg_color="white",
-                                                                wraplength= self.winfo_width(),
-                                                                font=("Maitree", 18)
-                                                                )
-        self.label_process_description.grid(row=1, column=0, padx=20, pady=20, sticky="ew")
-        # Bind the update function to the <Configure> event of the frame
-        self.bind("<Configure>", self.update_wraplength)
-        self.label_process_description.configure(anchor="w")  # Re-emphasize text alignment
+        self.save_button = customtkinter.CTkButton(self, text="Save updated description", command=self.save_text)
+        self.save_button.grid(row=2, column=0, sticky="ew")
 
-    def update_wraplength(self, event):
-        # Set the wraplength to the current width of the frame
-        new_width = self.winfo_width()
-        self.label_process_description.configure(wraplength=new_width - 100)  # Subtract some padding if necessary
-        self.label_process_description.configure(anchor="w")  # Re-emphasize text alignment
+        self.bind("<Configure>", self.on_resize)
+
+    def save_text(self):
+        updated_text = self.textbox_process_description.get("1.0", "end-1c")
+        with open(self.process_tree_description_path, "w") as file:
+            file.write(updated_text)
+
+    def on_resize(self, event):
+        # Get the size of the parent frame
+
+        self.image = Image.open(self.process_tree_image_path)
+
+        new_width = self.winfo_width() - 40  # Subtract padding
+        new_height = self.winfo_height() - 40  # Subtract padding
+
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+
+        if self.winfo_screenwidth() > 3000:
+            screen_normalization = 0.5
+            new_width = int(new_width * screen_normalization)
+            new_height = int(new_width * screen_normalization)
+
+        # Preserve aspect ratio
+        aspect_ratio = self.image.width / self.image.height
+        if new_width / new_height > aspect_ratio:
+            new_width = int(new_height * aspect_ratio)
+        else:
+            new_height = int((new_width / aspect_ratio))
+
+        # Resize the image using high-quality resizing algorithm
+        resized_image = self.image.resize((new_width, new_height), Image.LANCZOS)
+
+        # Apply anti-aliasing filter
+        #resized_image = resized_image.filter(ImageFilter.SMOOTH)
+
+        # Enhance the image sharpness
+        #enhancer = ImageEnhance.Sharpness(resized_image)
+        #resized_image = enhancer.enhance(2.0)  # Increase sharpness (adjust factor as needed)
+
+        self.process_tree_image = customtkinter.CTkImage(light_image=resized_image, size=(new_width, new_height))
+
+        self.process_tree_image = customtkinter.CTkImage(light_image=resized_image, size=(new_width, new_height))
+
+        # Update the label with the resized image
+        self.process_tree_image_label.configure(image=self.process_tree_image)
+
 
 def count_files(directory):
     #Count the number of files in the given directory.
