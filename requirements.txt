@@ -4,3 +4,5 @@ ollama==0.1.9
 graphviz # need to download graphviz https://graphviz.org/download/ and save in sys path, restart computer
 openai
 python-dotenv
+instructor
+customtkinter
