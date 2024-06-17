@@ -1,3 +1,8 @@
+#argilla.io
+#no yapping!
+#few shot prompts
+#simulation
+
 #from tkinter import filedialog
 import customtkinter
 import os
@@ -7,9 +12,6 @@ import dotenv
 from PIL import Image, ImageTk, ImageEnhance, ImageFilter
 import ctypes
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
-
-load_dotenv()  # This loads the variables from .env
-# TODO put into shared Resources Class TODO save as dotenv
 
 total_number_of_processes = 100
 
@@ -102,6 +104,10 @@ class MyInfoView(customtkinter.CTkFrame):
                                                           wrap="word")
         self.textbox_process_description.insert("1.0", process_description)
         self.textbox_process_description.grid(row=1, column=0, sticky="ew")
+
+        # Set the font size (and optionally the font family)
+        font = ("Helvetica", 18)  # Example: "Helvetica" font with size 14
+        self.textbox_process_description.configure(font=font)
 
         self.save_button = customtkinter.CTkButton(self, text="Save updated description", command=self.save_text)
         self.save_button.grid(row=2, column=0, sticky="ew")

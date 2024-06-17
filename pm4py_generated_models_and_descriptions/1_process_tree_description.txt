@@ -1,35 +1,4 @@
-process tree structure: ->( 'Order_Pizza', ->( X( 'Design_Pattern', *( 'Cut_Toppings', 'Assemble_Slices' ) ), ->( 'Bake_Crust', 'Serve_Fresh' ) ) )What a delicious process!
+process tree structure: ->( 'Order_Pizza', ->( X( 'Design_Pattern', *( 'Cut_Toppings', 'Assemble_Slices' ) ), ->( 'Bake_Crust', 'Serve_Fresh' ) ) )
 
-Based on the provided process tree, I'll break down the process into its individual steps and describe each part in detail.
-
-**Root Process:** `Order_Pizza`
-This is the top-level process that represents a pizza ordering and preparation workflow. It's divided into two main branches: one for designing the pizza pattern and another for preparing the crust and serving the finished product.
-
-**Left Branch:** `->( X( 'Design_Pattern', *( 'Cut_Toppings', 'Assemble_Slices' ) ) )`
-This branch represents the design phase of the pizza. The `X` operator indicates that this process has multiple choices, which in this case are:
-
-* `Design_Pattern`: This step involves creating a pattern for the pizza toppings.
-* `( 'Cut_Toppings', 'Assemble_Slices' )`: This is a loop that repeats two sub-steps:
-	+ `Cut_Toppings`: Cut the desired toppings (e.g., pepperoni, mushrooms, olives) into smaller pieces.
-	+ `Assemble_Slices`: Assemble the sliced toppings onto the pizza dough.
-
-The loop `( 'Cut_Toppings', 'Assemble_Slices' )` will repeat until all toppings are cut and assembled. The result is a designed pizza pattern with toppings in place.
-
-**Right Branch:** `->( 'Bake_Crust', 'Serve_Fresh' )`
-This branch represents the preparation phase of the pizza. It consists of two sequential steps:
-
-* `Bake_Crust`: Bake the pizza crust to the desired level of crispiness.
-* `Serve_Fresh`: Serve the freshly baked and topped pizza.
-
-**Process Flow:**
-Here's how the process flows:
-
-1. The order is received, triggering the `Order_Pizza` process.
-2. The design phase begins, and the process chooses one of the two possible paths:
-	+ If the `Design_Pattern` step is taken, the process will repeat the loop until all toppings are cut and assembled.
-	+ If the other path is chosen (not shown in this tree), it might represent a different design or modification option.
-3. Once the design phase is complete, the preparation phase begins:
-	+ The crust is baked to perfection.
-	+ The finished pizza is served fresh.
-
-This process tree represents a realistic and illustrative example of a pizza ordering and preparation workflow. It highlights the importance of designing the pizza pattern, cutting toppings, assembling slices, baking the crust, and serving the final product fresh and hot!
+simple description:
+Every Process begins when a pizza is ordered. Some pizzas only require designing a pattern before the curst is baked and everything is served fresh, other pizzas require toppings that needs to be cut before the curst is baked and the pizza is freshly served. Rarely toppings need not only to be cut but also followed by an assembly of the topping slices. If the slices need to be assembled then toppings need to be cut again. As soon as all toppings are cut and no further assembling of slices is needed, the curst can be baked and the pizza can be served fresh. 

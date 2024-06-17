@@ -6,6 +6,7 @@ This file contains code for describing the process model.
 import ollama
 import pm4py
 from pm4py.objects.process_tree.obj import ProcessTree, Operator
+import pm4py.algo.simulation.playout.process_tree.algorithm as pm4py_simulation
 
 
 def description_with_local_llm(process_tree):
@@ -65,3 +66,6 @@ def process_tree_to_text(process_tree: ProcessTree):
         "sequence2": "..."
 
     }
+
+def generate_playouts_and_new_description(process_tree: ProcessTree):
+    playout = pm4py_simulation.extensive(process_tree)
