@@ -1,24 +1,15 @@
-process tree structure: *( 'Process Customer Order', *( 'Verify Product Availability', +( 'Prepare Shipping Box', ->( 'Process Order', 'Ship Package' ) ) ) )What a delightful process model!
+process tree structure: *( 'Process Customer Order', *( 'Verify Product Availability', +( 'Prepare Shipping Box', ->( 'Process Order', 'Ship Package' ) ) ) )
 
-Let's break down this process tree step by step, and I'll provide an illustrative example of what the underlying process might look like.
+Process Customer Order: The outermost loop represents the processing of customer orders. This means that multiple orders can be processed simultaneously, and each order will go through a similar flow.
 
-***( 'Process Customer Order', ...)**
-The outermost loop represents the processing of customer orders. This means that multiple orders can be processed simultaneously, and each order will go through a similar flow.
+Verify Product Availability:  Inside the "Process Customer Order" procedure, we have another process representing the verification of product availability for each order. This ensures that the products ordered are actually available in stock before proceeding with processing the order.
 
-***( 'Verify Product Availability', ...)**
-Inside the "Process Customer Order" loop, we have another loop representing the verification of product availability for each order. This ensures that the products ordered are actually available in stock before proceeding with processing the order.
+- Prepare Shipping Box: Within the "Verify Product Availability", there are 2 options to choose between preparing a shipping box and processing the order (either by packing it or sending an update to the customer). If product availability is verified, the process can proceed with either preparing a shipping box (e.g., for physical products) or processing the order directly. We cannot prepare a shipping box and also process the order simultaneously.
 
-**+( 'Prepare Shipping Box', ->( 'Process Order', 'Ship Package' ) )**
-Within the "Verify Product Availability" loop, we have a choice between preparing a shipping box and processing the order (either by packing it or sending an update to the customer). If product availability is verified, the process can proceed with either preparing a shipping box (e.g., for physical products) or processing the order directly. The "->" operator indicates that these two options are mutually exclusive, meaning we cannot prepare a shipping box and also process the order simultaneously.
-
-Now, let's illustrate a realistic example based on this process tree:
-
-Suppose you run an online e-commerce store specializing in selling customized phone cases. When a customer places an order, your system receives the request and triggers the "Process Customer Order" loop.
+Realistic example: Suppose you run an online e-commerce store specializing in selling customized phone cases. When a customer places an order, your system receives the request and triggers the "Process Customer Order" loop.
 
 1. The first iteration of the outermost loop starts by verifying the product availability for the ordered phone case. If it's not available, you'll need to notify the customer that their preferred design is out of stock or offer a suitable alternative.
 2. Assuming the product is in stock, the "Verify Product Availability" loop ends, and we move on to preparing a shipping box. This might involve generating a packing slip, inserting the phone case into a shipping box, and attaching any necessary labels or inserts.
 3. Alternatively, if you're offering digital products (e.g., customized wallpapers), you can skip the shipping process and directly "Process Order" by sending an email with the download link to the customer.
 
 The resulting process model represents a common workflow in e-commerce, where multiple orders are processed simultaneously while ensuring that product availability is verified before shipping or processing the order. The loop structures allow for efficient handling of both available and unavailable products, as well as parallel processing of orders when possible.
-
-In this example, we've seen how process trees can be used to model complex processes involving loops, choices, and parallel operations. By breaking down the process into smaller, manageable components, we can create a clear visual representation of the underlying workflow.

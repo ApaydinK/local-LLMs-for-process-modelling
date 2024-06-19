@@ -1,25 +1,17 @@
-process tree structure: ->( X( +( 'Prepare', 'Submit' ), *( 'Create', 'Test' ) ), ->( 'Develop', ->( 'Conduct', 'Report' ) ) )What a delightful process model! Let me break it down for you:
+process tree structure: ->( X( +( 'Prepare', 'Submit' ), *( 'Create', 'Test' ) ), ->( 'Develop', ->( 'Conduct', 'Report' ) ) )
 
-**Top-level structure**
-The process tree starts with a sequence operator (`->`) that represents the overall workflow. It consists of two subprocesses, connected in sequence.
+Scenario: Product development
+There are three subprocesses
+- Subprocess 1: Prepare and Submit.
+	+ Prepare: This task likely involves preparing resources or materials needed for the project.
+	+ Submit: This task likely involves submitting the prepared material to some authority or reviewing entity.
 
-**Subprocess 1: Prepare and Submit (+)**
-The first subprocess is a parallel operator (`+`) that combines two tasks:
-	* `'Prepare'`: This task likely involves preparing resources or materials needed for the project.
-	* `'Submit'`: This task likely involves submitting the prepared material to some authority or reviewing entity.
+- Subprocess 2: Create and Test:
+	+ Create: This task likely involves designing or developing some aspect of the project (e.g., a report, a prototype, or a design).
+	+ Test: This task likely involves verifying or evaluating the created item to ensure it meets certain criteria.
 
-These tasks can be executed concurrently, as they don't depend on each other's outcomes. Once both are completed, the process moves on to the next step.
-
-**Subprocess 2: Create and Test (*)**
-The second subprocess is a loop operator (`*`) that iteratively executes two tasks:
-	* `'Create'`: This task likely involves designing or developing some aspect of the project (e.g., a report, a prototype, or a design).
-	* `'Test'`: This task likely involves verifying or evaluating the created item to ensure it meets certain criteria.
-
-The loop operator (`*`) indicates that this subprocess will repeat until the test is successful. Once the test passes, the process moves on to the next step.
-
-**Subprocess 3: Develop and Report (->)**
-The third subprocess is a sequence operator (`->`) that represents a linear workflow:
-	* `'Develop'`: This task likely involves refining or elaborating on the created item.
-	* `->( 'Conduct', 'Report' )` : This indicates that once development is complete, the process moves on to another sequential subprocess. The `'Conduct'` and `'Report'` tasks are connected in sequence, implying that conducting some activity (e.g., testing or evaluation) is a prerequisite for reporting the results.
+- Subprocess 3: Develop and Report
+	+ Develop: This task likely involves refining or elaborating on the created item.
+	+ Conduct and Report: This indicates that once development is complete, the process moves on to another sequential subprocess. The `'Conduct'` and `'Report'` tasks are connected in sequence, implying that conducting some activity (e.g., testing or evaluation) is a prerequisite for reporting the results.
 
 In summary, this process model describes a workflow that involves preparing resources, creating and testing an item, developing it further, and finally, conducting and reporting on the outcome. The process tree structure captures the iterative nature of development and testing, as well as the sequential dependencies between tasks.

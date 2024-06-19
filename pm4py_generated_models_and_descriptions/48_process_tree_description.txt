@@ -1,30 +1,22 @@
-process tree structure: *( 'Interview Candidate', *( 'Hire Manager', +( 'Train Trainer', X( *( 'Recruit Recruiter', *( 'Screen Applicants', 'Group Interviews' ) ), +( 'Evaluate Resumes', 'Hire Committee' ) ) ) ) )What a fascinating process tree!
+process tree structure: *( 'Interview Candidate', *( 'Hire Manager', +( 'Train Trainer', X( *( 'Recruit Recruiter', *( 'Screen Applicants', 'Group Interviews' ) ), +( 'Evaluate Resumes', 'Hire Committee' ) ) ) ) )
 
-Let's break it down step by step to understand the illustrative and realistic process of hiring a candidate.
-
-**Root Process:** Hire Candidate
+Main Process: Hire Candidate
 This is the main process we're interested in, which involves recruiting, interviewing, evaluating, and hiring a candidate.
 
-**Top-Level Loop:** *( 'Interview Candidate', ...)
-The root process is a loop that repeats until a candidate is hired. This means we'll have multiple iterations of the recruitment process until we find the right fit.
+Interview Candidate until we find the right fit. There are 2 sub-processes:
 
-**Sub-Process 1: Recruitment**
-*( 'Hire Manager', ...)
+Sub-Process 1: Recruitment
 This sub-process represents the overall recruitment effort, managed by the Hire Manager.
 
-**Parallel Branches:** +( ... , ...)
 The Hire Manager oversees two parallel branches:
 
-1. **Training and Development**: +( 'Train Trainer', ...)
-In this branch, we train a trainer to help with the interview process.
-2. **Applicant Screening and Evaluation**: +( ..., X( ... , ... ) )
-This branch involves screening applicants (Screen Applicants) and evaluating their resumes (Evaluate Resumes). The Hire Committee is responsible for making hiring decisions based on these evaluations.
+1. Training and Development: company trains a trainer to help with the interview process.
+2. Applicant Screening and Evaluation: involves screening applicants (Screen Applicants) and evaluating their resumes (Evaluate Resumes). The Hire Committee is responsible for making hiring decisions based on these evaluations.
 
-**Sub-Process 2: Recruitment Loop**
-*( 'Recruit Recruiter', *( 'Screen Applicants', 'Group Interviews' ) ), +( 'Evaluate Resumes', 'Hire Committee' ) )
+Sub-Process 2: Recruitment Loop
 This sub-process is a loop that repeats until we find the right candidate. It involves recruiting applicants (Recruit Recruiter), screening and interviewing them (Screen Applicants, Group Interviews), and evaluating their resumes (Evaluate Resumes). The Hire Committee makes the final hiring decision.
 
-**Key Insights:**
+Key Insights:
 
 1. The process involves multiple iterations of recruitment, training, and evaluation until a candidate is hired.
 2. The Hire Manager oversees the entire process, while the Hire Committee makes the final hiring decision based on resume evaluations.
