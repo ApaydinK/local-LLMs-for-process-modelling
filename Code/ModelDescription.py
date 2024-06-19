@@ -68,7 +68,12 @@ def process_tree_to_text(process_tree: ProcessTree):
 
     }
 from UI_customTK import retrieve_file_path
+import os
 number_of_generated_examples = 100
+
+current_path= os.path.dirname(os.path.abspath(__file__))
+
+
 def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting():
     # load process tree
     for process_id in range(number_of_generated_examples):
@@ -77,7 +82,7 @@ def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting
 
     retrieve_file_path("ptml", 1)
 
-    description_text_file = open(description_of_process_tree_path, "x")
+    
     # TODO Write Few Shot Prompt for in Context learning
     response = ollama.chat(model='llama3', messages=[
         {
@@ -87,21 +92,31 @@ def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting
                        f'You are an expert in process modeling, especially by using process trees and you can easily '
                        f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}'
                        f' This is what I exemplary expect you to do: '
-                       f' <<process tree >>'
-                       f' The expected description'
-                       f' <<process tree2 >>'
-                       f' The expected description2'
-                       f' <<process tree3 >>'
-                       f' The expected description3'
+                       f" process tree 1: +( 'analyze', *( 'implement', +( 'assess', 'produce' ) ) ), X( 'review', 'execute' ) ), +( 'refine', 'monitor' ) )"
+                       f' The expected description 1: This process starts with analyze, a critical step to understand the context and requirements. It then moves to refine, ensuring all aspects are perfected. Next, implement leads to two nested activities: assess to evaluate the situation and produce to create outputs. Finally, it offers alternative paths: review to check for quality or execute to carry out tasks, ensuring flexibility in workflow management.'
+                       f" process tree 2: +( 'plan', *( 'design', +( 'develop', 'integrate' ) ) ), X( 'test', 'document' ) ), +( 'deploy', 'maintain' )" 
+                       f' The expected description 2: This process starts with plan, setting the foundation for subsequent steps. It then proceeds to design, leading into a nested sequence where develop creates the core functionality and integrate combines components. The next phase offers alternatives: test to ensure quality or document to record details. Finally, it moves to deploy to launch the product and maintain for ongoing support, ensuring a comprehensive and adaptable workflow.'
+                       f" process tree 3: +( 'browse', *( 'select', +( 'order', 'pay' ) ) ), X( 'ship', 'track' ) ), +( 'deliver', 'feedback' ) " 
+                       f' The expected description 3: This e-commerce process starts with browse, allowing customers to explore products. Next, they select items, leading to a nested sequence where they order their chosen products and then pay for them. The process provides alternatives: ship the products or track the order status. Finally, it concludes with deliver, ensuring the products reach the customer, and feedback, where customers can provide their input on the experience, ensuring a complete and customer-centric workflow. '
             ,
         },
     ])
-    # print( response['message']['content'])
+    #print( response['message']['content'])
     # Save new descriptions
-    description_text_file.write(f"process tree structure: {process_tree}")
-    description_text_file.write(response['message']['content'])
-    description_text_file.close()
+    description_path = os.path.join(os.path.dirname(current_path), 'pm4py_fewshot_prompting')
+    for process_id in range(number_of_generated_examples):
+        filename = f'{process_id}_process_tree_description.txt'
+        file_path = os.path.join(description_path, filename)
 
+        try:
+            with open(file_path, 'w') as description_text_file:
+                description_text_file.write(f"process tree structure: {process_tree}")
+                description_text_file.write(response['message']['content'])
+                description_text_file.close()
+        except IOError as e:
+            print(f"Cannot access the files: {e}")
+
+#load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting()
 
 def simulate_process_trees_and_generate_new_descriptions():
     # load process tree
