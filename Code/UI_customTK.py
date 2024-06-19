@@ -51,18 +51,12 @@ class GUI(customtkinter.CTk):
     def add_all_process_nav_ids(self):
 
         process_ids = [f"Process {i}" for i in range(total_number_of_processes)]
-        #for process_id in range(total_number_of_processes):
-            #nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
-            #                                     font=("Maitree", 20), width=60, height=25)
-            #nav_button.configure(
-            #    command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
-            #nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
-        self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
-                                                        font=("Maitree", 20), width=200, height=35, justify='center',
-                                                        command=self.process_selected) 
-        self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
-        self.choose_process.set("Select a Process")
-        
+        for process_id in range(total_number_of_processes):
+            nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
+                                                 font=("Maitree", 20), width=60, height=25)
+            nav_button.configure(
+                command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
+            nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
 
         global last_nav_button
         last_nav_button = nav_button
@@ -79,12 +73,12 @@ class GUI(customtkinter.CTk):
 
 
 
-    def change_color(self, combo_box): # button
+    def change_color(self, button): # button
         global last_nav_button
-        #last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
-        #button.configure(fg_color="blue")
-        #last_nav_button = button
-        combo_box.configure(fg_color="blue")
+        last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
+        button.configure(fg_color="blue")
+        last_nav_button = button
+
 
     def process_selected(self, selected_value):
         process_id = int(selected_value.split()[-1])

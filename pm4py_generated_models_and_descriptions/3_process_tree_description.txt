@@ -1,10 +1,3 @@
 process tree structure: +( ->( ->( 'design', *( 'compile', +( 'evaluate', 'generate' ) ) ), X( 'validation', 'test' ) ), +( 'optimize', 'process' ) )
 
-1. `compile`: Compile the designed code into an executable form.
-2. `evaluate`: Evaluate the compiled code against a set of predefined criteria or metrics, such as performance, security, or usability.
-3. `generate`: Generate test data or inputs for the compiled code.In a real-world scenario, this process tree could be applied to various domains, such as:
-
-* Software development: Design, compile, test, and optimize code.
-* Business process re-engineering: Analyze, optimize, and automate existing workflows.
-* Data analysis: Collect, evaluate, generate insights, and refine data models.
-
+Optimization and processing has to be done once but it does not matter when next to the main work. The main work starts with designing. Then compiling the designed code into an executable form. Evaluate the compiled code against a set of predefined criteria or metrics, such as performance, security, or usability. Sometimes the evaluation is done first and then the generation. If generations and evaluations are performed then this leads to a restart of compile. Finally the compiled code is ready to be either validated by a focus group or tested by the developer. 

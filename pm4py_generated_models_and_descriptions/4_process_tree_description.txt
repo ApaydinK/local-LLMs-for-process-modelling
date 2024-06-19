@@ -1,35 +1,4 @@
-process tree structure: *( X( 'Create_Report', ->( 'Review_Document', ->( 'Prepare_Proposal', X( 'Gather_Data', 'Analyze_Findings' ) ) ) ), +( 'Schedule_Meeting', +( 'Hold_Video_Call', X( 'Invite_Collaborators', 'Brainstorm_Ideas' ) ) ) )What a delightfully complex process tree!
+process tree structure: *( X( 'Create_Report', ->( 'Review_Document', ->( 'Prepare_Proposal', X( 'Gather_Data', 'Analyze_Findings' ) ) ) ), +( 'Schedule_Meeting', +( 'Hold_Video_Call', X( 'Invite_Collaborators', 'Brainstorm_Ideas' ) ) ) )
 
-After carefully analyzing the process tree, I'll describe a realistic and illustrative process:
 
-**Process:** Developing a Research Proposal and Presenting it to Stakeholders
-
-**Overview:**
-
-The process involves creating a research proposal by gathering data, preparing the document, reviewing and revising it, and finally presenting it to stakeholders through a meeting. The process has two main branches: (1) developing the proposal and (2) scheduling and conducting the presentation.
-
-**Main Branch 1: Developing the Proposal**
-
-The process starts with creating a report, which involves three sequential steps:
-
-1. **Prepare Proposal**: Gather information, structure the document, and draft the initial version.
-2. **Review Document**: Review and revise the proposal based on feedback from colleagues or mentors.
-3. **Analyze Findings**: Finalize the proposal by analyzing findings and making any necessary adjustments.
-
-**Main Branch 2: Scheduling and Presenting the Proposal**
-
-The second branch involves scheduling a meeting to present the proposal to stakeholders. This branch is parallel to the first one, meaning that both branches can progress simultaneously:
-
-1. **Schedule Meeting**: Arrange a time and date for the presentation.
-2. **Hold Video Call**: Conduct a video conference or online meeting with stakeholders.
-3. **Collaborate and Brainstorm**: Invite collaborators and stakeholders to brainstorm ideas and provide feedback on the proposal.
-
-**Looping Back:**
-
-The process tree uses loops (represented by `*`) to indicate that some steps can be repeated until certain conditions are met. In this case, the process of preparing the proposal (steps 1-3) is looped back into itself, meaning that it may require multiple iterations before being finalized.
-
-**In Parallel:**
-
-The process tree uses parallel operators (`+`) to represent concurrent activities. In this example, scheduling a meeting and holding a video call are done in parallel, while preparing the proposal and analyzing findings occur sequentially.
-
-This complex process tree represents a realistic scenario where developing a research proposal involves multiple iterations of gathering information, reviewing drafts, and presenting the final version to stakeholders. The parallel branches allow for efficient use of time by allowing scheduling and presentation tasks to be performed simultaneously with proposal development.
+This process can be finished quickly but sometimes it takes more input and feedback. So sometimes the organization just creates a report and then the process is already finished. In other instances the organization reviews a document and then prepares a research proposal, because they feel so inspired by the new information. The proposal then is finalized by analyzing findings and making any necessary adjustments or gathering additional data to be presented. However, sometimes additional information is needed. In this case, a meeting with the professor is scheduled as well as a video call with the project partner is hold. The meeting with the professor and the project partners are independend from each other. Also a decision has to be made about inviting more collaborators with expertise or simply conduct a brainstorming session to gather ideas from the people already involved in the proposal. If additional information is gathered in this way, then the process is kicked of again, i.e. either a report is created or the new document is reviewed etc. 
