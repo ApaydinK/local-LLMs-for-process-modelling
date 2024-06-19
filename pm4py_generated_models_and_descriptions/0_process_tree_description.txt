@@ -1,27 +1,10 @@
-process tree structure: ->( X( 'Receive_Order', +( 'Place_Order_for_Supply_Chains', 'Fill_Consolidation_Orders' ) ), ->( 'Confirm_Product_Return', 'Process_Returned_Items' ) )What a delight! I love digging into process trees.
+process tree structure: ->( X( 'Receive_Order', +( 'Place_Order_for_Supply_Chains', 'Fill_Consolidation_Orders' ) ), ->( 'Confirm_Product_Return', 'Process_Returned_Items' ) )
 
-The given process tree describes a realistic process in the context of supply chain management, specifically in the area of product returns. Let me break it down for you:
+Simple description: 
+A process in the context of supply chain management, specifically in the area of product returns.
+The process either starts with receive order or with the two activities "place order for supply chains" and "fill consolidation order" whose order does not matter. Afterwards the sales department confirms the product return, so that the returned items are processed. 
 
-**Root Process:** Receive_Order
-
-This is the initial trigger that sets off the entire process. It represents the receipt of an order from a customer or a supplier. The order can be either a new one or a consolidation of existing orders.
-
-**Subprocesses:**
-
-The root process has two parallel subprocesses, represented by +(). These subprocesses run concurrently and are triggered simultaneously when the order is received.
-
-1. **Place_Order_for_Supply_Chains**: This subprocess handles the logistics of placing orders with suppliers for the necessary components or products to fulfill the customer's request. It ensures that all required materials are ordered in a timely manner.
-2. **Fill_Consolidation_Orders**: As part of the consolidation process, this subprocess fills individual orders by combining them into a single order. This step simplifies the ordering process and streamlines inventory management.
-
-**Concurrent Completion:** Both subprocesses complete concurrently, which means that once both are finished, the next stage of the process can begin.
-
-**Next Stage:** Confirm_Product_Return & Process_Returned_Items
-
-The parallel subprocesses finish, and the focus shifts to handling product returns. The process tree now represents a sequence (->) of two subprocesses:
-
-1. **Confirm_Product_Return**: This subprocess confirms that the customer has indeed returned the product(s). It may involve verifying the return against an inventory record or a database.
-2. **Process_Returned_Items**: Once the return is confirmed, this subprocess takes care of processing the returned items. This could include inspecting the products for damage or defects, re-packaging them, and preparing them for re-sale or disposal.
-
-**Sequential Completion:** The process tree shows that these two subprocesses are sequential (->), meaning that they must complete in order. Confirmation of the product return happens before processing the returned items can begin.
+Detailed description: 
+The initial trigger that sets off the entire process is either the receival of an order or a parallel subprocess. The parallel subprocess consists of the activities "place order for supply chains" and "fill consolidation order". Once the receival of an order or the parallel subprocesses finishes, the focus shifts to handling product returns. For this, the product return has to be confirmed. Once the return is confirmed, the returned items are processed. 
 
 In summary, this process tree models a supply chain management process that handles customer orders and product returns. It highlights the importance of parallel processing for ordering materials and consolidating individual orders, while also emphasizing the need to confirm and process product returns sequentially.

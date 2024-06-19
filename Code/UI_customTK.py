@@ -1,3 +1,8 @@
+#argilla.io
+#no yapping!
+#few shot prompts
+#simulation
+
 #from tkinter import filedialog
 import customtkinter
 import os
@@ -7,9 +12,6 @@ import dotenv
 from PIL import Image, ImageTk, ImageEnhance, ImageFilter
 import ctypes
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
-
-load_dotenv()  # This loads the variables from .env
-# TODO put into shared Resources Class TODO save as dotenv
 
 total_number_of_processes = 100
 
@@ -36,29 +38,30 @@ class GUI(customtkinter.CTk):
         self.nav_rows_frame.grid_columnconfigure(0, weight=1)
         self.nav_rows_frame.grid_rowconfigure(0, weight=1)
 
+        """
         self.display_frame = customtkinter.CTkFrame(self)
         self.display_frame.grid(row=0, column=1, padx = 5, pady=5, sticky='nsew')
         self.display_frame.grid_rowconfigure(0, weight=1)
         self.display_frame.grid_columnconfigure(0, weight=1)
-
+        
         self.selected_process = {} # will trace the processes
-
+        """
         self.add_all_process_nav_ids()
 
     def add_all_process_nav_ids(self):
 
         process_ids = [f"Process {i}" for i in range(total_number_of_processes)]
-        for process_id in range(total_number_of_processes):
-            nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
-                                                 font=("Maitree", 20), width=60, height=25)
-            nav_button.configure(
-                command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
-            nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
-        #self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
-        #                                                font=("Maitree", 20), width=200, height=35, justify='center',
-        #                                                command=self.process_selected) 
-        #self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
-        #self.choose_process.set("Select a Process")
+        #for process_id in range(total_number_of_processes):
+            #nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
+            #                                     font=("Maitree", 20), width=60, height=25)
+            #nav_button.configure(
+            #    command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
+            #nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
+        self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
+                                                        font=("Maitree", 20), width=200, height=35, justify='center',
+                                                        command=self.process_selected) 
+        self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        self.choose_process.set("Select a Process")
         
 
         global last_nav_button
@@ -66,7 +69,7 @@ class GUI(customtkinter.CTk):
 
 
     def activate_nav_item_and_display_graph_and_description(self, button, process_id):
-        #self.change_color(button)
+        self.change_color(button)
         if hasattr(self, 'info_frame') and self.info_frame.winfo_exists():
             self.info_frame.destroy()
         
@@ -76,12 +79,12 @@ class GUI(customtkinter.CTk):
 
 
 
-    def change_color(self, button): #  combo_box
+    def change_color(self, combo_box): # button
         global last_nav_button
-        last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
-        button.configure(fg_color="blue")
-        last_nav_button = button
-        #combo_box.configure(fg_color="blue")
+        #last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
+        #button.configure(fg_color="blue")
+        #last_nav_button = button
+        combo_box.configure(fg_color="blue")
 
     def process_selected(self, selected_value):
         process_id = int(selected_value.split()[-1])
@@ -135,7 +138,11 @@ class MyInfoView(customtkinter.CTkFrame):
         self.textbox_process_description.insert("1.0", process_description)
         self.textbox_process_description.grid(row=1, column=0, sticky="ew")
 
-        self.save_button = customtkinter.CTkButton(self, text="Save updated description", command=self.save_text)
+        # Set the font size (and optionally the font family)
+        font = ("Helvetica", 18)  # Example: "Helvetica" font with size 14
+        self.textbox_process_description.configure(font=font)
+
+        self.save_button = customtkinter.CTkButton(self, text="Save updated description", font=font, command=self.save_text)
         self.save_button.grid(row=2, column=0, sticky="ew")
 
         self.bind("<Configure>", self.on_resize)
