@@ -1,17 +1,6 @@
 process tree structure: ->( X( +( 'Prepare', 'Submit' ), *( 'Create', 'Test' ) ), ->( 'Develop', ->( 'Conduct', 'Report' ) ) )
 
-Scenario: Product development
-There are three subprocesses
-- Subprocess 1: Prepare and Submit.
-	+ Prepare: This task likely involves preparing resources or materials needed for the project.
-	+ Submit: This task likely involves submitting the prepared material to some authority or reviewing entity.
-
-- Subprocess 2: Create and Test:
-	+ Create: This task likely involves designing or developing some aspect of the project (e.g., a report, a prototype, or a design).
-	+ Test: This task likely involves verifying or evaluating the created item to ensure it meets certain criteria.
-
-- Subprocess 3: Develop and Report
-	+ Develop: This task likely involves refining or elaborating on the created item.
-	+ Conduct and Report: This indicates that once development is complete, the process moves on to another sequential subprocess. The `'Conduct'` and `'Report'` tasks are connected in sequence, implying that conducting some activity (e.g., testing or evaluation) is a prerequisite for reporting the results.
-
-In summary, this process model describes a workflow that involves preparing resources, creating and testing an item, developing it further, and finally, conducting and reporting on the outcome. The process tree structure captures the iterative nature of development and testing, as well as the sequential dependencies between tasks.
+Use Case: Product development
+- If the resources are not available, process starts with parallel processes Prepare (preparing resources or material needed for the project) and Submit (available materials to authorities or stakeholders)
+- If the resources are available, process starts with Create the design, report or prototype and then do a test. If anything changes in criteria/alerts during test phase, then return to Create step
+- Both of two above starting points continue process with Develop step which involves refining or elaborating on the created item. Once development is complete, the process moves on to Conduct the tasks (e.g., testing or evaluation) and then does Report for the results.   

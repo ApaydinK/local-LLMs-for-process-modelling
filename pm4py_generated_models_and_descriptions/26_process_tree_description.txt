@@ -1,7 +1,6 @@
 process tree structure: *( *( 'Prepare a Proposal', ->( 'Review Contract', 'Sign Document' ) ), ->( 'Send Invoice', *( 'Process Payment', 'Verify Account Balance' ) ) )
 
-Situation: Customer Proposals
-This includes 2 stages:
-- Stage 1: draft the proposal and review contract. The team starts by preparing a proposal or quotation in detail for potential customers. If customers interest in the proposal, then result in contract process where the team reviews contracts and signs documents with customers.
-- Stage 2: Follow-up process. After all documents are signed and confirmed, then an invoice is sent to customers to ask for payment process. This also compose of verifying the customer account balance. 
+Use Case: Customer Proposals
+The team starts by preparing a proposal or quotation in detail for potential customers. If customers interest in the proposal, then result in contract process where the team reviews contracts and signs documents with customers. If more conditions are required to be added in document, then the document is returned to team to prepare again another proposal and continue the process.
+After all documents are signed and confirmed, then an invoice is sent to customers to ask for payment process. This also compose of verifying the customer account balance. 
 The process will continue until all proposals are processed with all steps above.

@@ -1,24 +1,5 @@
 process tree structure: X( 'Design System', ->( X( 'Define Requirements', 'Conduct User Testing' ), X( 'Develop Prototype', *( 'Enlist Stakeholder Feedback', ->( 'Finalize Product Specs', ->( 'Harmonize Design Elements', 'Gather User Feedback' ) ) ) ) ) )
 
-The process is about designing a system, which involves several subprocesses that need to be executed in a specific order. Here's the breakdown:
+Use Case: User experiment on new product
 
-Design System is the overall goal of the process: to design a system.
-The design process consists of two parallel sub-processes: Define Requirements and Develop Prototype.
-
-1. Define Requirements: This subprocess gathers information about the system's needs, goals, and constraints.
-2. Conduct User Testing: This subprocess involves testing the system with real users to validate its usability and effectiveness.
-3. Develop Prototype: This subprocess creates a functional representation of the system, which can be tested and refined.
-
-The Define Requirements and Conduct User Testing processes run in parallel with the Develop Prototype process.
-
-1. Enlist Stakeholder Feedback: This subprocess gathers feedback from stakeholders (e.g., team members, customers) to refine the system's design.
-2. Finalize Product Specs: This subprocess defines the final specifications for the system based on stakeholder input and user testing results.
-3. Harmonize Design Elements: This subprocess ensures that all aspects of the system's design are consistent and cohesive.
-4. Gather User Feedback: This subprocess collects feedback from users to validate the system's usability and effectiveness.
-
-The Enlist Stakeholder Feedback process is repeated until the following two processes are complete:
-
-1. Finalize Product Specs: This ensures that all stakeholder input has been incorporated into the system's design.
-2. Gather User Feedback: This validates that the final product meets user needs and expectations.
-
-In summary, this process tree represents a systematic approach to designing a system, involving parallel sub-processes for defining requirements, conducting user testing, and developing prototypes, as well as iterative refinement through stakeholder feedback and user validation.
+This process involves designing a system with several alternative and sequential tasks. It begins with Design System and directly complete the process. Besides, the process provide two alternatives to start: Define Requirements to outline system needs or Conduct User Testing to gather user insights. Next, it offers a choice between Develop Prototype or a nested sequence. In the nested sequence, Enlist Stakeholder Feedback gathers input from key stakeholders. This is followed by Finalize Product Specs, specifying the system details, leading to Harmonize Design Elements, ensuring consistency. The final step in this path is to Gather User Feedback to validate the design, creating a flexible and comprehensive approach to system development.

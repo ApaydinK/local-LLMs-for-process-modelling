@@ -1,27 +1,4 @@
 process tree structure: *( 'Review Meeting', X( +( 'Assign Task', *( 'Conduct Research Study', 'Analyze Data' ) ), +( 'Write Report', ->( 'Prepare Presentation', 'Obtain Stakeholder Feedback' ) ) ) )
 
-Process Name: Conducting a Research Study with Stakeholder Feedback
-
-Review Meeting is the first activity representing the overall research study with stakeholder feedback. The process will repeat until all tasks are completed or a review meeting is held to evaluate the progress and outcomes.
-
-Inner Loop: 
-- Conduct Research Study and Analyze Data are core research activities, which involve conducting research studies (e.g., surveys, interviews) and analyzing the collected data. This process will be repeated until all required data is gathered or a certain milestone is reached.
-
-Besides, we have two parallel branches:
-
-1. Task Assignment: represents the process of assigning tasks to team members or stakeholders. The task can be related to conducting research studies, analyzing data, writing reports, or preparing presentations.
-
-2. Writing and Presentation: this include two subprocesses:
-
-- Report Writing: is based on the research findings.
-
-b. Presentation Preparation and Feedback: involves preparing a presentation based on the report's contents and obtaining feedback from stakeholders, which can include experts, peers, or end-users.
-
-Choice Point: The outcome of this choice will determine the next steps in the process:
-
-- If the research study is deemed complete, the process may move on to writing a report and preparing a presentation.
-- If additional data collection or analysis is required, the loop will restart from the beginning.
-
-Final Review Meeting: represents the culmination of the research study with stakeholder feedback. This meeting will likely involve presenting findings, discussing outcomes, and making decisions on future actions based on the insights gathered during the study.
-
-In summary, this process tree illustrates a realistic scenario for conducting a research study with stakeholder feedback, involving task assignment, data collection and analysis, report writing, presentation preparation, and final review meetings. 
+Use Case: Conducting a Research Study with Stakeholder Feedback
+This process model begins with Review Meeting, where the team gathers to assess progress and discuss plans. It then branches into two alternative paths. The first path involves Assign Task, followed by two parallel activities: Conduct Research Study to gather insights and Analyze Data to interpret findings. The second path starts with Write Report, documenting the results, and continues with Prepare Presentation, creating a visual summary. This path also involves Obtain Stakeholder Feedback, gathering input and approval from key stakeholders. 

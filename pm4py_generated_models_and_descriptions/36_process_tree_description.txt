@@ -1,17 +1,6 @@
 process tree structure: *( +( 'Design Prototype', X( 'Develop Algorithm', X( 'Evaluate Data', 'Conduct Experiment' ) ) ), ->( 'Finalize Report', 'Prepare Materials' ) )
 
-The process is about designing and developing a new product, which involves prototyping, algorithm development, data evaluation, experimentation, reporting, and material preparation. Here's how the process tree translates to a realistic process:
+Use Case: Product development
 
-Inner Process: Within the loop, we have a sub-process that consists of:
-
-1. Design Prototype: This step represents the initial design phase where ideas are generated and rough prototypes are created.
-2. Multiple way to choose, and Develop Algorithm is One option is to develop a specific algorithm (e.g., machine learning model) to analyze and optimize the design.
-3. Another choice amongst multiple ways to evaluate data for the prototype (e.g., simulation-based validation, experimental testing, or theoretical analysis).
-- Evaluate Data: One option is to conduct simulations or experiments to validate the design's performance.
-- Conduct Experiment: Another option is to perform actual experiments to test and refine the design.
-
-Outer Process: Once the prototype design and algorithm development are complete, we have two tasks to be performed:
-- Finalize Report: Prepare a comprehensive report summarizing the design process, results, and findings.
-- Prepare Materials: Gather all necessary materials (physical or digital) to support the final product.
-
-In summary, this process model represents an iterative design and development process that involves exploring different options for algorithm development and data evaluation. The outer sequence indicates that a report must be finalized and materials prepared before the process is complete.
+The process is about designing and developing a new product, which involves prototyping, algorithm development, data evaluation, experimentation, reporting, and material preparation. 
+This process starts with Design Prototype, initiating the creation of a preliminary model. Parallel operation is that the process branches into two paths: Develop Algorithm, focusing on creating computational methods, or choosing between Evaluate Data, which involves analyzing collected data, and Conduct Experiment, for testing hypotheses. After that Finalize Report is conducted, where findings are compiled, followed by Prepare Materials, ensuring all necessary documentation and resources are ready. 

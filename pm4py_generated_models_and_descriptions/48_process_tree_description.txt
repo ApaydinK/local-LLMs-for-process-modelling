@@ -1,25 +1,6 @@
 process tree structure: *( 'Interview Candidate', *( 'Hire Manager', +( 'Train Trainer', X( *( 'Recruit Recruiter', *( 'Screen Applicants', 'Group Interviews' ) ), +( 'Evaluate Resumes', 'Hire Committee' ) ) ) ) )
 
-Main Process: Hire Candidate
-This is the main process we're interested in, which involves recruiting, interviewing, evaluating, and hiring a candidate.
-
-Interview Candidate until we find the right fit. There are 2 sub-processes:
-
-Sub-Process 1: Recruitment
-This sub-process represents the overall recruitment effort, managed by the Hire Manager.
-
-The Hire Manager oversees two parallel branches:
-
-1. Training and Development: company trains a trainer to help with the interview process.
-2. Applicant Screening and Evaluation: involves screening applicants (Screen Applicants) and evaluating their resumes (Evaluate Resumes). The Hire Committee is responsible for making hiring decisions based on these evaluations.
-
-Sub-Process 2: Recruitment Loop
-This sub-process is a loop that repeats until we find the right candidate. It involves recruiting applicants (Recruit Recruiter), screening and interviewing them (Screen Applicants, Group Interviews), and evaluating their resumes (Evaluate Resumes). The Hire Committee makes the final hiring decision.
-
-Key Insights:
-
-1. The process involves multiple iterations of recruitment, training, and evaluation until a candidate is hired.
-2. The Hire Manager oversees the entire process, while the Hire Committee makes the final hiring decision based on resume evaluations.
-3. Training is crucial for ensuring consistency in the interview process.
-
-This process tree effectively models the complex hiring process, highlighting the key roles and decisions involved. As an expert in process modeling, I can attest that this representation accurately captures the nuances of the recruitment process.
+Use Case: Recruitment
+This process model begins with Interview Candidate, who is one of potential new hires. Following this, it progresses to Hire Manager, where a managerial position is filled. The next step involves Train Trainer, focusing on preparing a trainer for their role. 
+Concurrently, it offers two alternative paths. The first path involves Recruit Recruiter, bringing on someone to handle future recruitment processes, and continues with Screen Applicants, reviewing potential candidates, and Group Interviews, conducting collective candidate assessments.
+The second path includes parallel process with Evaluate Resumes, assessing the qualifications of applicants, and Hire Committee, assembling a team to oversee and make hiring decisions. 

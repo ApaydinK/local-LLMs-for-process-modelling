@@ -1,22 +1,3 @@
 process tree structure: ->( 'Order_books', *( 'Review_proposals', ->( 'Create_presentation', *( 'Edit_text', 'Finalize_report' ) ) ) )
 
-Process: Request for Funding (RFF) Process
-
-1. Order_books: The process begins with creating order books, which means gathering all necessary documents and information required for a funding request. This step involves collecting data on the proposed project, including budget breakdowns, timelines, and expected outcomes.
-2. Review_proposals: In this parallel branch, multiple reviewers (experts or stakeholders) are assigned to review the proposals submitted by different teams or individuals. Each reviewer will assess the proposals based on specific criteria, such as feasibility, impact, and resource allocation.
-
-3. Create_presentation: Once all proposals have been reviewed, the next step is to create a presentation that summarizes the findings and recommendations. This presentation will be used for internal approval or external communication (e.g., with investors).
-
-4. Edit text and Finalize_report: In this loop, the presenter will refine the presentation text and finalize the report. The editing process may involve multiple iterations of feedback and revisions to ensure clarity and concision.
-
-Realistic Scenario:
-
-In a fictional scenario, let's say a university is seeking funding for various research projects from external organizations or government agencies. The RFF Process starts with collecting all relevant documents (order books) and proposal submissions. A panel of experts reviews each proposal independently and provides feedback. Meanwhile, the presenters create a comprehensive presentation summarizing their findings.
-
-As they refine the presentation text, they also finalize the report, ensuring that it accurately reflects the review outcomes. The final report will be used to justify the funding request, highlighting the project's benefits, feasibility, and potential impact.
-
-Key Takeaways
-
-1. The process begins with data collection (Order_books) and involves multiple parallel branches for proposal reviews.
-2. The Create_presentation step represents the consolidation of feedback from various reviewers into a coherent presentation.
-3. The loop involving Edit_text and Finalize_report ensures that the presentation is accurate, concise, and well-structured.
+This process begins with Order Books, setting the foundation for gathering necessary materials. It then moves into Review Proposals, which aim to evaluate and choose the best options. Following this, the process proceeds to Create Presentation, where the outline and main content are developed. This step branches into two concurrent activities: Edit Text to refine the content and Finalize Report to complete the documentation, ensuring a thorough and well-organized workflow from gathering information to finalizing deliverables.

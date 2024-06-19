@@ -1,26 +1,5 @@
 process tree structure: +( 'publish', +( 'write book', X( +( 'edit chapter', 'design chapter' ), ->( 'publish book', *( 'design header', *( 'format headline', 'headline design' ) ) ) ) ) )
 
-The process tree represents the publication of a book, which involves several steps.
+Use Case: Book publication
 
-1. The root operator indicates that two parallel processes will be executed concurrently.
-
-2. publish: This is the final goal of the entire process: publishing the book. It's the "goal node" that the process aims to achieve.
-
-3. write book: This represents the initial writing of the book.
-
-4. edit chapter and design chapter
-   - edit chapter: This task involves editing individual chapters.
-   - design chapter: This task involves designing chapter layouts or formats.
-
-5. publish book: After the parallel tasks (write book, edit chapter/designed chapter) are completed, this continue the actual publishing of the book (e.g., printing, digital distribution).
-
-6. design header and format headline:
-   - design header: This task involves designing the book's headers (e.g., title page, table of contents).
-   - format headline: Format the headline text.
-
-In summary, this process model represents the publication of a book. The main tasks include:
-
-1. Writing the book (in parallel with).
-2. Editing or designing individual chapters (in parallel).
-3. Publishing the book.
-4. Designing and formatting the book's headers and headlines.
+The process tree represents the publication of a book. It starts with publish, setting the overall goal of making content available and end of process. The parallel operation is to write book, where the main content is created, and also end of process. The next step offers an alternative path: either simultaneously design chapter for visual layout and edit chapter to refine the content, or proceed with publish book, leading to further steps. After publishing book, the next step includes design header for creating section headings and a following process involving format headline to ensure proper structure and headline design for consistency. 

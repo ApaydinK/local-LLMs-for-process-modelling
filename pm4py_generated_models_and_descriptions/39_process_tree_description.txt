@@ -1,25 +1,6 @@
 process tree structure: +( ->( 'Create Report', ->( 'Conduct Interview', 'Identify Risks' ) ), *( X( 'Estimate Costs', *( 'Design Prototype', +( 'Handle Feedback', 'Gather Requirements' ) ) ), X( 'Finalize Proposal', 'Review Document' ) ) )
 
-Overview: The process is about creating a proposal for a project. It involves several tasks, including conducting interviews, identifying risks, estimating costs, designing prototypes, gathering requirements, handling feedback, finalizing the proposal, reviewing documents, and creating reports.
+Use Case: Risk management report
 
-Process Flow
+This process starts with Create Report, initiating the documentation process. It then moves sequentially to Conduct Interview, gathering insights, followed by Identify Risks, assessing potential challenges. Concurrently, the process offers alternatives: Estimate Costs, focusing on financial planning, or a nested sequence involving Design Prototype, where initial models are created, along with handling feedback and gathering requirements. Additionally, it provides a choice between Finalize Proposal, completing the project plan, or Review Document, ensuring all documentation is thorough and accurate. 
 
-1. Create Report: This is the starting point of the process. The goal is to create a report that summarizes the project's progress.
-2. Conduct Interview + Identify Risks: These two tasks are executed sequentially, and their outcomes are not dependent on each other.
-- Conduct Interview: Gather information from stakeholders or subject matter experts to better understand the project requirements.
-- Identify Risks: Analyze potential risks associated with the project and develop a risk mitigation plan.
-3. Estimate Costs: it will be repeated until a satisfactory outcome is achieved. The estimate costs process involves calculating the financial resources required for the project.
-
- Inside the loop, there are two parallel branches (X):
-- Design Prototype + Gather Requirements: These tasks work together to design and gather requirements for the project.
-- Handle Feedback: This task can be executed multiple times until feedback is handled satisfactorily. This might involve revising the prototype or gathering additional requirements.
-
-4. Finalize Proposal + Review Document: These two tasks are executed sequentially. They represent the final stages of the proposal creation process, where the proposal is finalized and reviewed for accuracy and completeness.
-
-Key Takeaways
-
-- The process involves creating a report as well as proposing a project.
--  Conducting interviews and identifying risks can be done simultaneously, but they are not dependent on each other's outcomes.
--  Estimating costs requires iterating until a satisfactory estimate is achieved.
--  Gathering requirements and designing prototypes can involve iterative feedback loops to ensure accuracy.
--  Finalizing the proposal and reviewing documents are the final stages of the process.
