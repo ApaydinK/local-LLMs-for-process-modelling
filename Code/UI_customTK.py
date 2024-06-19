@@ -48,21 +48,21 @@ class GUI(customtkinter.CTk):
     def add_all_process_nav_ids(self):
 
         process_ids = [f"Process {i}" for i in range(total_number_of_processes)]
-        #for process_id in range(total_number_of_processes):
-            #nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
-            #                                     font=("Maitree", 20), width=60, height=25)
-            #nav_button.configure(
-            #    command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
-            #nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
-        self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
-                                                        font=("Maitree", 20), width=200, height=35, justify='center',
-                                                        command=self.process_selected) 
-        self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
-        self.choose_process.set("Select a Process")
+        for process_id in range(total_number_of_processes):
+            nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {process_id}", anchor="center",
+                                                 font=("Maitree", 20), width=60, height=25)
+            nav_button.configure(
+                command=lambda btn=nav_button, p_id=process_id: self.activate_nav_item_and_display_graph_and_description(btn,p_id))  # Pass the button object to the lambda
+            nav_button.grid(row=process_id, column=0, sticky="nsew", pady=5)
+        #self.choose_process = customtkinter.CTkComboBox(self.nav_rows_frame, values=process_ids, 
+        #                                                font=("Maitree", 20), width=200, height=35, justify='center',
+        #                                                command=self.process_selected) 
+        #self.choose_process.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        #self.choose_process.set("Select a Process")
         
 
-        #global last_nav_button
-        #last_nav_button = choose_process
+        global last_nav_button
+        last_nav_button = nav_button
 
 
     def activate_nav_item_and_display_graph_and_description(self, button, process_id):
@@ -76,12 +76,12 @@ class GUI(customtkinter.CTk):
 
 
 
-    def change_color(self, combo_box): # button
+    def change_color(self, button): #  combo_box
         global last_nav_button
-        #last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
-        #button.configure(fg_color="blue")
-        #last_nav_button = button
-        combo_box.configure(fg_color="blue")
+        last_nav_button.configure(fg_color=["#3a7ebf", "#1f538d"])
+        button.configure(fg_color="blue")
+        last_nav_button = button
+        #combo_box.configure(fg_color="blue")
 
     def process_selected(self, selected_value):
         process_id = int(selected_value.split()[-1])
@@ -110,18 +110,23 @@ class MyInfoView(customtkinter.CTkFrame):
         process_id = kwargs.pop('process_id', None)  # Use None or another appropriate default
 
         super().__init__(master, **kwargs)
-        # create widgets
+
         self.configure(bg_color="white", fg_color="white")
         self.process_tree_image_path = retrieve_file_path("bpmn", process_id)
         self.image = Image.open(self.process_tree_image_path)
-        self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size)
-        self.process_tree_image_label = customtkinter.CTkLabel(self, text="", image=self.process_tree_image, anchor="n", compound="center",
-                                               bg_color="white", fg_color="white")
+        self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size) 
+        self.process_tree_image_label = customtkinter.CTkLabel(self, text="Business Process Flow", image=self.process_tree_image, anchor="center", compound="bottom",
+                                               bg_color="white", fg_color="white", padx= 0, pady=10,
+                                               font=("Geogia", 20, 'bold'))
         self.process_tree_image_label.grid(row=0, column=0, sticky="ew")
 
         self.process_tree_description_path = retrieve_file_path("process_tree_description", process_id)
         with open(self.process_tree_description_path, "r") as file:
             process_description = file.read()
+        #self.process_tree_description = customtkinter.CTkLabel(self, text="Process Description", image=self.process_tree_image, anchor="center", compound="top",
+        #                                       bg_color="white", fg_color="white", padx= 0, pady=10,
+        #                                       font=("Geogia", 20, 'bold'))
+        #self.process_tree_description.grid(row=0, column=0, sticky="ew")
 
         self.textbox_process_description = customtkinter.CTkTextbox(self,
                                                           width=self.winfo_width(),
