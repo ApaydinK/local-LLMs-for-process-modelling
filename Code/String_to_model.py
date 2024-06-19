@@ -9,10 +9,24 @@ def string_to_tree(process_string: str) -> pm4py.visualization.process_tree:
     tree = u.parse_process_tree(process_string)
     return tree
 
+def llm_response_string_to_tree(llm_response_string_with_process_tree: str) -> pm4py.visualization.process_tree:
+    # Transform a string into a process tree object
+    process_string = None #TODO cut llm_response_string_with_process_tree to only include process tree string
+    tree = u.parse_process_tree(process_string)
+    return tree
 
 def view_tree_as_png(tree: pm4py.visualization.process_tree) -> None:
     # View tree as PNG graphic
     pm4py.view_process_tree(tree)
+
+
+number_of_example_processes = 100
+def load_and_convert_all_process_trees_to_svg():
+    for i in range(number_of_example_processes):
+        #Todo load process tree
+        tree = None
+        viz = pt_visualizer.apply(tree, parameters={pt_visualizer.Variants.WO_DECORATION.value.Parameters.FORMAT: "svg"})
+        #Todo safe as f"{i}_process_tree.svg" file
 
 
 def view_tree_as_svg(tree: pm4py.visualization.process_tree) -> None:
