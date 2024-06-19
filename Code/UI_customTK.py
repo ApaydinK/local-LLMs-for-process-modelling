@@ -99,6 +99,8 @@ def retrieve_file_path(kind, id):
             return f"{folder_path}/{id}_petri_net_description.txt"
         case "ptml":
             return f"{folder_path}/{id}_process_tree.ptml"
+        case "process_tree_description_based_on_few_shot_prompting":
+            return f"{folder_path}/{id}_process_tree_description_based_on_few_shot_prompting.txt"
         case _:
             return "error"
 
@@ -106,20 +108,20 @@ def retrieve_file_path(kind, id):
 class MyInfoView(customtkinter.CTkFrame):
     def __init__(self, master, **kwargs):
         # Extract 'item_id' from kwargs and assign a default if not provided
-        process_id = kwargs.pop('process_id', None)  # Use None or another appropriate default
+        self.process_id = kwargs.pop('process_id', None)  # Use None or another appropriate default
 
         super().__init__(master, **kwargs)
 
         self.configure(bg_color="white", fg_color="white")
-        self.process_tree_image_path = retrieve_file_path("bpmn", process_id)
+        self.process_tree_image_path = retrieve_file_path("bpmn", self.process_id)
         self.image = Image.open(self.process_tree_image_path)
         self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size) 
         self.process_tree_image_label = customtkinter.CTkLabel(self, text="Business Process Flow", image=self.process_tree_image, anchor="center", compound="bottom",
                                                bg_color="white", fg_color="white", padx= 0, pady=10,
                                                font=("Geogia", 20, 'bold'))
-        self.process_tree_image_label.grid(row=0, column=0, sticky="ew")
+        self.process_tree_image_label.grid(row=0, column=0, columnspan=2, sticky="ew")
 
-        self.process_tree_description_path = retrieve_file_path("process_tree_description", process_id)
+        self.process_tree_description_path = retrieve_file_path("process_tree_description", self.process_id)
         with open(self.process_tree_description_path, "r") as file:
             process_description = file.read()
         #self.process_tree_description = customtkinter.CTkLabel(self, text="Process Description", image=self.process_tree_image, anchor="center", compound="top",
@@ -132,7 +134,7 @@ class MyInfoView(customtkinter.CTkFrame):
                                                           height=1000,#self.winfo_height(),  # Adjust the height as needed
                                                           wrap="word")
         self.textbox_process_description.insert("1.0", process_description)
-        self.textbox_process_description.grid(row=1, column=0, sticky="ew")
+        self.textbox_process_description.grid(row=1, column=0, columnspan=2, sticky="ew")
 
         # Set the font size (and optionally the font family)
         font = ("Helvetica", 18)  # Example: "Helvetica" font with size 14
@@ -141,7 +143,18 @@ class MyInfoView(customtkinter.CTkFrame):
         self.save_button = customtkinter.CTkButton(self, text="Save updated description", font=font, command=self.save_text)
         self.save_button.grid(row=2, column=0, sticky="ew")
 
+        self.change_visualization_dropdown = customtkinter.CTkOptionMenu(self, values=["bpmn", "process_tree", "petri_net"],
+                                           command=self.optionmenu_callback, font=font)
+        self.change_visualization_dropdown.grid(row=2, column=1, sticky="ew")
+        self.change_visualization_dropdown.set("bpmn")  # set initial value
         self.bind("<Configure>", self.on_resize)
+
+    def optionmenu_callback(self, choice):
+        self.process_tree_image_path = retrieve_file_path(choice, self.process_id)
+        self.on_resize(None)
+        print("optionmenu dropdown clicked:", choice)
+
+
 
     def save_text(self):
         updated_text = self.textbox_process_description.get("1.0", "end-1c")
@@ -196,30 +209,6 @@ def count_files(directory):
         if os.path.isfile(os.path.join(directory, entry)):
             total_files += 1
     return total_files
-
-
-def update_dotenv(key, new_value):
-    # Read the current contents of the .env file
-    if not os.path.isfile('.env'):
-        with open('.env', 'w'): pass
-
-    with open('.env', 'r') as file:
-        lines = [line.strip() for line in file]
-
-    # Check if the key already exists in the file
-    key_exists = False
-    with open('.env', 'w') as file:
-        for line in lines:
-            if line.startswith(f"{key}="):
-                file.write(f"{key}={new_value}\n")
-                key_exists = True
-            else:
-                file.write(line + '\n')
-
-        # If the key does not exist in the file, add it
-        if not key_exists:
-            file.write(f"{key}={new_value}\n")
-
 
 
 if __name__ == "__main__":
