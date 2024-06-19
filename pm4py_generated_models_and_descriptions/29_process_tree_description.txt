@@ -1,15 +1,4 @@
 process tree structure: *( +( ->( 'Order Pizza', +( 'Get Ingredients', 'Fetch Food' ) ), *( 'Prepare Hamburger', 'Cook Chicken' ) ), ->( 'Book Table', +( 'Eat Entree', ->( 'Deliver Dinner', 'Gather Groceries' ) ) ) )
 
-This process represents "Order Pizza" with two parallel sub-processes.
-
-- Sub-Process 1 represents ordering a pizza and obtaining its ingredients (`'Get Ingredients'`) and fetching the food (`'Fetch Food'`) in parallel. Think of it like simultaneously placing an order and having the ingredients prepared while waiting for the food to arrive.
-
-- Sub-Process 2 represents preparing a hamburger (`'Prepare Hamburger'`) and cooking chicken (`'Cook Chicken'`) in sequence. This might be part of a larger menu offering, where different protein options are prepared.
-
-The main process represents booking a table (`'Book Table'`) and then choosing between two options:
-1. Eating an entree (`'Eat Entree'`), which involves delivering dinner (`'Deliver Dinner'`) and gathering groceries (`'Gather Groceries'`) in sequence.
-2. (Implicitly, the other option is to not eat an entree.)
-
-This process model can be interpreted as a restaurant or food delivery service. The customer orders a pizza (Sub-Process 1), which is prepared while they book a table and decide what to do next.
-
-If they choose to eat an entree, they'll receive their dinner and gather groceries for future meals. If not, they might skip the meal and just enjoy the pizza or leave the restaurant altogether.
+Use Case: restaurant or food delivery service
+This process begins with Ordering Pizza, where one can either Get Ingredients by themselves or Fetch Food with prepared food from the restaurant. Concurrently, there are steps to Prepare Hamburger and Cook Chicken, focusing on diverse meal preparation. Alternatively, it offers an option to Book Table at a restaurant, followed by enjoying the Eat Entree. It then splits into Deliver Dinner, arranging meal delivery, or Gather Groceries for future meals, creating a dynamic and flexible approach to meal planning and dining.

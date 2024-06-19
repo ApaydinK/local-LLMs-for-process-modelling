@@ -1,30 +1,5 @@
 process tree structure: X( 'Conduct Interview', X( 'Review Document', +( 'Plan Meeting', X( 'Schedule Follow-up', 'Send Report' ) ) ) )
 
-Process Name: Conduct an Interview and Follow-up Process
+Use case: Recruitment/Panel-discussion
 
-Overview: This process represents a common scenario in many organizations where an interview is conducted to gather information or insights. The process involves reviewing relevant documents beforehand, planning a meeting with the interviewee, conducting the interview, and then following up on any outstanding tasks.
-
-Process Steps:
-
-1. Review Document: This step involves reviewing relevant documents or materials related to the upcoming interview. This may include reviewing background information, research findings, or previous communications with the interviewee.
-2. Conduct Interview: The next step is to conduct the actual interview with the interviewee. This may involve asking questions, taking notes, and gathering information.
-3. Plan Meeting (Parallel): While conducting the interview, a separate task is initiated to plan a follow-up meeting or action items related to the interview. This ensures that any outstanding tasks are properly scheduled and prioritized.
-
-These two parallel following tasks can be performed simultaneously. 
-4. Schedule Follow-up (Choice): After the interview is conducted, one or both of the following choices are taken:
-- Schedule a follow-up meeting with the interviewee to discuss any next steps or action items.
-- Send a report summarizing the key findings and insights gathered during the interview.
-5. Send Report: In this case, a report is sent to relevant stakeholders, such as team members or decision-makers, outlining the main takeaways from the interview.
-
-Process Flow:
-1. Review Document
-2. Conduct Interview (parallel tasks begin)
-- Plan Meeting (in parallel with Conduct Interview)
-3. Continue conducting the interview while planning the follow-up meeting/action items.
-4. Upon completing the interview, choose to either:
-- Schedule a follow-up meeting (Schedule Follow-up) or
-- Send a report summarizing the findings (Send Report)
-
-Key Insights:
-
-This process model highlights the importance of preparing for an interview by reviewing relevant documents beforehand. It also underscores the need to plan and schedule follow-up activities or action items while conducting the interview, rather than leaving them until later.
+This process model begins with Conduct Interview, gathering crucial insights and information. It then offers an alternative path to Review Document, which involves thoroughly examining relevant materials. The process continues with Plan Meeting, organizing a session for further discussion. This step provides two additional options: Schedule Follow-up, arranging a subsequent meeting for ongoing dialogue, or Send Report, disseminating findings and decisions. 

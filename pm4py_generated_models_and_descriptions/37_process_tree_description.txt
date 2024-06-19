@@ -1,22 +1,5 @@
 process tree structure: ->( ->( 'Oversee Project Meeting', +( 'Hold Project Meeting', 'Conduct Team Review' ) ), *( 'Review Reports', *( 'Review Report Content', X( 'Review Report Format', 'Submit Report' ) ) ) )
 
-The process is about overseeing a project meeting, which involves reviewing reports from team members. 
+Use Case: Project meeting
 
-1. Oversee Project Meeting: This sequence consists of two parallel activities:
-- Hold Project Meeting: This activity represents the actual meeting where the project team discusses their progress, goals, and challenges.
-- Conduct Team Review: After the meeting, this activity involves reviewing the team's performance, discussing any issues or concerns, and setting a plan for the next steps.
-2. Review Reports: This sequence is a loop that reviews reports from each team member. The loop consists of two activities:
-- Review Report Content: In this activity, we review the content of each report to understand the team members' progress, accomplishments, and challenges.
-- Review Report Format: We also check the format of the reports to ensure they are consistent and easy to understand.
-
-Sample in real-life:
-
-Imagine you're the project manager for a software development project with multiple team members. You want to oversee the progress of each team member and ensure that their reports are consistent, informative, and easy to understand.
-
-You schedule a project meeting where team members discuss their progress, goals, and challenges. After the meeting, you review the team's performance and set a plan for the next steps.
-
-Next, you start reviewing the individual reports from each team member. For each report, you:
-- Review the content of the report to understand the team member's progress, accomplishments, and challenges.
-- Check the format of the report to ensure it meets your requirements.
-
-If a report's format is acceptable, you can submit it without any issues. However, if there are formatting issues, you'll need to review the format before submitting the report. This ensures that all reports are consistent and easy to understand, making it easier for you to track project progress and make informed decisions.
+This process begins with Oversee Project Meeting, ensuring that the meeting is effectively planned and coordinated. It then progresses to two parallel tasks: Hold Project Meeting to facilitate discussion and Conduct Team Review to evaluate team performance. Following these activities, it transitions to Review Reports, focusing on analyzing and assessing report details. This step involves a detailed review of Report Content, ensuring accuracy and completeness, followed by two alternatives: Review Report Format to ensure proper formatting or Submit Report, finalizing the process. 

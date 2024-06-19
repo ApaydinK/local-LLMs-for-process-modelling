@@ -1,23 +1,6 @@
 process tree structure: *( +( 'Send Invitation', X( 'Wait Response', +( 'Prepare Report', 'Fill Form' ) ) ), X( *( 'Conduct Interview', 'Gather Data' ), ->( 'Call Meeting', 'Hold Discussion' ) ) )
 
-The given process model represents the process of conducting an interview, gathering data, and preparing a report.
+Use Case: Recruitment
 
-We have two parallel processes that are executed concurrently.
-
-1. Process A: 
-- Send an invitation (e.g., send a meeting request or schedule an interview).
-- Wait for a response from the invitee (e.g., confirmation or refusal).
-- If accepted, perform two tasks in parallel:
-	+ Prepare a report (gather necessary information and create a draft).
-	+ Fill out a form (e.g., collect data and summarize findings).
-
-2. Process B: 
-- Conduct an interview (gather information from the invitee or expert).
-- Gather data related to the report (collect relevant information).
-- Perform two tasks sequentially:
-	+ Call a meeting (schedule a discussion or consultation).
-	+ Hold a discussion (engage in a conversation, debate, or brainstorming session).
-
-The process model illustrates that both processes can be executed concurrently, as they are independent and do not require sequential execution. This allows for more efficient use of time and resources.
-
-In summary, this process model represents the steps involved in conducting an interview, gathering data, preparing a report, and holding discussions related to the report. The process is designed to maximize efficiency by executing tasks in parallel where possible, while still ensuring that all necessary steps are taken to produce a comprehensive report.
+This process starts with Send Invitation, setting the stage for further activities. It then offers two parallel paths: Wait Response, to anticipate feedback, or a sequence where Prepare Report and Fill Form are done simultaneously. In the next phase, there are two sets of alternatives: one is to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making.
+ 

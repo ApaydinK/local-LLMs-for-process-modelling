@@ -1,9 +1,5 @@
 process tree structure: *( +( 'Schedule Meetings', ->( 'Send Notifications', X( 'Hold Discussions', 'Conduct Interviews' ) ) ), ->( 'Analyze Data', 'Prepare Report' ) )
 
-The given process tree represents a recruitment process
+Use Case: recruitment process
+This process begins with Schedule Meetings with candidates. Parallel process is to Send Notifications, informing participants and stakeholders. Following this, it offers two alternative activities: Hold Discussions to facilitate conversation or Conduct Interviews for gathering in-depth information. Concurrently, the process includes Analyze Data to understand and interpret information, leading to Prepare Report, where insights are compiled into a comprehensive document. This is aiming for further activities like planning, executing, and documenting.
 
-1. The recruitment process starts by scheduling meetings with candidates.
-2. After scheduling meetings, notifications are sent to the candidates informing them of the meeting details.
-3. Concurrently, discussions (e.g., phone or video calls) are held with some candidates, while others undergo interviews (e.g., in-person).
-4. Once the meetings and discussions/interviews are complete, the process moves on to analyze the data collected from these interactions.
-5. Finally, a report is prepared summarizing the findings and outcomes of the recruitment process.
