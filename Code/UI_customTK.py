@@ -97,6 +97,8 @@ def retrieve_file_path(kind, id):
             return f"{folder_path}/{id}_process_tree_description.txt"
         case "petri_net_description":
             return f"{folder_path}/{id}_petri_net_description.txt"
+        case "ptml":
+            return f"{folder_path}/{id}_process_tree.ptml"
         case _:
             return "error"
 
