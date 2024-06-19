@@ -29,7 +29,8 @@ def describe_with_local_llm_and_store_description(process_tree, description_of_p
             'system': 'test',
             'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
                        f'You are an expert in process modeling, especially by using process trees and you can easily '
-                       f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}',
+                       f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}'
+            ,
         },
     ])
     #print( response['message']['content'])
@@ -67,5 +68,32 @@ def process_tree_to_text(process_tree: ProcessTree):
 
     }
 
-def generate_playouts_and_new_description(process_tree: ProcessTree):
-    playout = pm4py_simulation.extensive(process_tree)
+def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting(process_tree: ProcessTree):
+    # load process tree
+    #playout = pm4py_simulation.extensive(process_tree)
+
+    description_text_file = open(description_of_process_tree_path, "x")
+    # TODO Write Few Shot Prompt for in Context learning
+    response = ollama.chat(model='llama3', messages=[
+        {
+            'role': 'user',
+            'system': 'test',
+            'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
+                       f'You are an expert in process modeling, especially by using process trees and you can easily '
+                       f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}'
+                       f' This is what I exemplary expect you to do: '
+                       f' <<process tree >>'
+                       f' The expected description'
+                       f' <<process tree2 >>'
+                       f' The expected description2'
+                       f' <<process tree3 >>'
+                       f' The expected description3'
+            ,
+        },
+    ])
+    # print( response['message']['content'])
+    # Save new descriptions
+    description_text_file.write(f"process tree structure: {process_tree}")
+    description_text_file.write(response['message']['content'])
+    description_text_file.close()
+

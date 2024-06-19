@@ -7,7 +7,7 @@ import ModelDescription
 import ProcessTree
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
-
+import UI_customTK
 
 def generate_and_view_one_example():
     activities = ActivityNames.generate_random_activities(6)
@@ -110,4 +110,6 @@ def generate_and_store_pm4py_process_trees(number_of_examples):
 if __name__ == '__main__':
     # generate_and_view_one_example()
     # generate_and_store_examples(10)
-    generate_and_store_pm4py_process_trees(5)
+    #generate_and_store_pm4py_process_trees(5)
+    app = UI_customTK.GUI()
+    app.mainloop()
