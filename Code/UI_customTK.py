@@ -28,7 +28,7 @@ class GUI(customtkinter.CTk):
         self.title('Process trees with descriptions')
         # self.iconbitmap('images/codemy.ico')
         self.geometry("1200x750")  # Adjusted size for better visibility
-
+        self.configure(fg_color="white")
         self.grid_rowconfigure(0, weight=1)
 
         self.grid_columnconfigure(1, weight=1)
@@ -115,11 +115,11 @@ class MyInfoView(customtkinter.CTkFrame):
         self.configure(bg_color="white", fg_color="white")
         self.process_tree_image_path = retrieve_file_path("bpmn", self.process_id)
         self.image = Image.open(self.process_tree_image_path)
-        self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size) 
+        self.process_tree_image = customtkinter.CTkImage(light_image=self.image, size=self.image.size)
         self.process_tree_image_label = customtkinter.CTkLabel(self, text="Business Process Flow", image=self.process_tree_image, anchor="center", compound="bottom",
-                                               bg_color="white", fg_color="white", padx= 0, pady=10,
+                                               bg_color="white", fg_color="white", padx=10, pady=10,
                                                font=("Geogia", 20, 'bold'))
-        self.process_tree_image_label.grid(row=0, column=0, columnspan=2, sticky="ew")
+        self.process_tree_image_label.grid(row=0, column=0, columnspan=3, sticky="ew")
 
         self.process_tree_description_path = retrieve_file_path("process_tree_description", self.process_id)
         with open(self.process_tree_description_path, "r") as file:
@@ -134,18 +134,18 @@ class MyInfoView(customtkinter.CTkFrame):
                                                           height=1000,#self.winfo_height(),  # Adjust the height as needed
                                                           wrap="word")
         self.textbox_process_description.insert("1.0", process_description)
-        self.textbox_process_description.grid(row=1, column=0, columnspan=2, sticky="ew")
+        self.textbox_process_description.grid(row=1, column=0, padx=10, columnspan=3, sticky="ew")
 
         # Set the font size (and optionally the font family)
         font = ("Helvetica", 18)  # Example: "Helvetica" font with size 14
         self.textbox_process_description.configure(font=font)
 
         self.save_button = customtkinter.CTkButton(self, text="Save updated description", font=font, command=self.save_text)
-        self.save_button.grid(row=2, column=0, sticky="ew")
+        self.save_button.grid(row=2, column=0, columnspan=2, padx=10, sticky="ew")
 
         self.change_visualization_dropdown = customtkinter.CTkOptionMenu(self, values=["bpmn", "process_tree", "petri_net"],
                                            command=self.optionmenu_callback, font=font)
-        self.change_visualization_dropdown.grid(row=2, column=1, sticky="ew")
+        self.change_visualization_dropdown.grid(row=2, column=2, padx=10, sticky="ew")
         self.change_visualization_dropdown.set("bpmn")  # set initial value
         self.bind("<Configure>", self.on_resize)
 
@@ -212,6 +212,6 @@ def count_files(directory):
 
 
 if __name__ == "__main__":
-    #customtkinter.set_appearance_mode("light")
     app = GUI()
+    customtkinter.set_appearance_mode("light")
     app.mainloop()
