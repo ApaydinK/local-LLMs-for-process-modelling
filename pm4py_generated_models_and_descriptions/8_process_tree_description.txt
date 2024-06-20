@@ -1,11 +1,3 @@
 process tree structure: *( ->( 'Order Products', +( ->( 'Generate Reports', *( 'Pack Orders', 'Verify Inventory' ) ), +( 'Pay Invoices', 'Clear Backorders' ) ) ), *( 'Process Returns', 'Ship Goods' ) )What a delightful process tree!
 
-e-commerce platform that needs to manage orders, inventory, and customer service simultaneously
-Iterative workflow involving order fulfillment, inventory management, and customer service. An infinite loop, indicating that this process will continue until all orders are fulfilled or the system reaches a predetermined termination condition. This loop encompasses two sub-processes: the main process flow, which starts with receiving new orders. An additional process that handles returns and shipping.
-This sub-process is another infinite loop (`*`) that represents an iterative process:
-
-This process model illustrates a comprehensive order fulfillment process that incorporates:
-
-1. Order receipt and reporting
-2. Parallel processing of packing orders, verifying inventory, paying invoices, and clearing backorders
-3. Handling returns and shipping
+e-commerce platform that needs to manage orders, inventory, and customer service simultaneously. The iterative workflow begins by ordering new products, then simultaneously many activities are executed, like generate reports, pay invoices and clear backorders. After generating reports, follows pack orders and sometimes additionally verify inventory is performed. If verify inventory is performened, then more orders are packed. Verifing inventory and packing orders can happen multiple times, and can only end after packing orders is done lastly and whenever the invoices are already paid and the backorders as well already cleared. The process usually ends now, but sometimes its required to process returns which triggers the restart of the entire process. Other times processing returns also requires shipping goods, if goods are shipped than more returns have to be processed. 

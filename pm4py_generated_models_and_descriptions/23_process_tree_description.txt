@@ -1,29 +1,3 @@
 process tree structure: *( *( ->( ->( 'SendPackages', 'ProcessReturns' ), *( 'VerifyProductQuality', 'StoreData' ) ), +( 'CreateInvoice', 'GetNewStock' ) ), ->( 'PrepareOrder', 'ManageCustomer' ) )What a delightful process tree! Let me break it down for you.
 
-The process tree represents an order fulfillment process, which involves multiple tasks and dependencies. I'll guide you through each node:
-
-**Top-level loop**: `*(...)` - This indicates a looping construct, where the entire process is repeated until a certain condition is met (e.g., all orders are fulfilled).
-
-**Inner loop**: `*( ->( ..., *( ... ) ), +( ... ) )` - Within this outer loop, there are two parallel processes:
-
-1. **SendPackages and ProcessReturns**: `->( 'SendPackages', 'ProcessReturns' )` - This sequence represents the shipping process: Send packages to customers, followed by processing returns (if any).
-2. **VerifyProductQuality, StoreData**: `*( 'VerifyProductQuality', 'StoreData' )` - In this parallel branch, two tasks are performed simultaneously:
-	* Verify product quality.
-	* Store data about the order (e.g., in a database).
-
-**Parallel processes**: `+( 'CreateInvoice', 'GetNewStock' )` - These two tasks run concurrently:
-
-1. **CreateInvoice**: Generate an invoice for the customer.
-2. **GetNewStock**: Update inventory levels by reducing stock quantities.
-
-**Preparation and management**: `->( 'PrepareOrder', 'ManageCustomer' )` - This sequence represents the initial steps in processing an order:
-1. **PrepareOrder**: Prepare the order details (e.g., calculate shipping costs).
-2. **ManageCustomer**: Manage customer information, such as updating their profile or sending a confirmation email.
-
-In summary, this process tree models an order fulfillment process that involves:
-
-1. Looping: Repeat the process until all orders are fulfilled.
-2. Parallel tasks: Ship packages, verify product quality, store data, create invoices, and get new stock simultaneously.
-3. Sequential steps: Prepare each order and manage customer information before processing begins.
-
-This is a realistic process model for an e-commerce platform or a logistics company, where multiple tasks need to be performed concurrently to fulfill orders efficiently.
+Start your day always by sending all packages first and then processing the collected returns from the day before. When you are done with all packages, verify the quality of new products that the manager shows to you, sometimes you will need to store all relevant data to a database and verify the product quality for different conditions. On a busy day your work already ends with these tasks. However if you have time then prepare orders and help team A by managing some of their customers. In this case do what you would do for your own customers, i.e. first send packages and then process the returns before doing the product quality verifications and storage of data when necessary. In other cases when you have time and team A does not need assistance get some need stock and create invoices for team B. 

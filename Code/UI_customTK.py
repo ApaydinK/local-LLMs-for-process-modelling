@@ -11,6 +11,7 @@ import threading
 import dotenv
 from PIL import Image, ImageTk, ImageEnhance, ImageFilter
 import ctypes
+#import windll
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
 total_number_of_processes = 100
@@ -166,14 +167,14 @@ class MyInfoView(customtkinter.CTkFrame):
 
         self.image = Image.open(self.process_tree_image_path)
 
-        new_width = self.winfo_width() - 40  # Subtract padding
-        new_height = self.winfo_height() - 40  # Subtract padding
+        new_width = self.winfo_width() - 20  # Subtract padding
+        new_height = self.winfo_height() - 20  # Subtract padding
 
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
 
         if self.winfo_screenwidth() > 3000:
-            screen_normalization = 0.5
+            screen_normalization = 0.66
             new_width = int(new_width * screen_normalization)
             new_height = int(new_width * screen_normalization)
 
@@ -212,6 +213,9 @@ def count_files(directory):
 
 
 if __name__ == "__main__":
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)
     app = GUI()
+    #windll.shcore.SetProcessDpiAwareness(2)
     customtkinter.set_appearance_mode("light")
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)
     app.mainloop()

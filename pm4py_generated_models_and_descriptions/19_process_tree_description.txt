@@ -2,24 +2,5 @@ process tree structure: +( *( 'Capture', *( ->( 'Fetch', 'Generate' ), +( 'Brows
 
 Let me break it down for you:
 
-The top-level operator is `+`, indicating that we have two parallel processes. The first process is wrapped in an asterisk `*` symbol, representing a loop.
-
-Within the loop, we have another process tree with `->` symbols, indicating sequential execution of two subprocesses: 'Fetch' and 'Generate'. Think of this as retrieving data and then generating a report or summary.
-
-The second subprocess within the loop is a combination of two processes using the `+` operator, 'Browse' and 'Index'. This could represent searching for specific information (Browsing) and then indexing the results to make them easily searchable.
-
-Now, let's move on to the second parallel process, which starts with another `->` symbol. We have a sequence of subprocesses: 'Dispatch', followed by another sequential subprocess containing 'Extract' and a choice between 'Assign' and 'Handle'. This could represent dispatching an alert or notification, followed by extracting relevant information and then deciding whether to assign it to someone for handling or handle it internally.
-
-To summarize:
-
-* We have two parallel processes:
-	1. A loop that captures data by fetching and generating reports while browsing and indexing.
-	2. A process that dispatches notifications, extracts relevant information, and assigns or handles it accordingly.
-
-This process model could represent a workflow in various domains, such as:
-
-* Data analysis: capturing and processing data, while searching for specific patterns or insights.
-* Incident management: handling alerts, extracting relevant information, and assigning or resolving incidents.
-* Customer service: dispatching support requests, extracting customer information, and assigning or handling the issue.
-
-I hope this breakdown helps you understand the process model!
+A process that dispatches notifications, extracts relevant information, and assigns or handles it accordingly.
+Simultanously, capturing and processing data, while searching for specific patterns or insights.

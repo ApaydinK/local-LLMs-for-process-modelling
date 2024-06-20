@@ -1,16 +1,5 @@
 process tree structure: *( 'Order Package', *( ->( ->( 'Review Invoice', *( 'Create Quote', 'Include Terms' ) ), X( 'Choose Payment Method', 'Offer Discount' ) ), *( 'Send Proposal', *( 'Meet Deadline', 'Gather Requirements' ) ) ) )
 
-This process represents the steps involved in creating an order package for a customer. It's a complex process that involves reviewing invoices, creating quotes, sending proposals, and meeting deadlines.
-This process tree accurately captures the steps involved in creating an order package, which is a common process in many industries, such as sales, customer service, or project management. The process involves reviewing customer needs, creating a quote, and sending a proposal while meeting deadlines and gathering requirements. The use of loop and choice operators reflects the iterative nature of the process and the need to make decisions along the way.
-1. **Review Invoice**: This is the first step in creating an order package. The process starts by reviewing an invoice to understand the customer's needs and requirements.
-2. **Create Quote & Include Terms**: After reviewing the invoice, the next step is to create a quote that includes all the necessary terms and conditions.
-3. **Choose Payment Method or Offer Discount**: The process then moves on to decide how the payment will be made (e.g., credit card, bank transfer) or offer a discount to the customer.
-4. **Send Proposal**: Once the quote is ready, the next step is to send a proposal to the customer outlining the terms and conditions of the order package.
-5. **Meet Deadline & Gather Requirements**: To ensure timely delivery, the process must meet a deadline and gather all necessary requirements from the customer.
-
-
-The loop represents the overall Order Package process, 
-inner loop represents the iterative process of creating a quote and including terms until it's complete.
-* The `X(...)` choice operator in the Choose Payment Method or Offer Discount step allows for two possible outcomes: choosing a payment method or offering a discount.
+The first step involves ordering a package, which is commonly done as the only task of the entire process. However, the full process contains several more steps that are also commonly executed. The process involves reviewing invoices after ordering packages, then creating a quote where terms need to be included. The creation of quotes and inclusion of terms can be done again and again until the final quote is created where then a decision is made between offering a discount or choosing a payment method. From here either the process restarts with order package or a propasal needs to be send. When a proposal is sent an invoice is reviewed again and it continues as described previosly from the review of the invoice or when its urgent, a deadline needs to be meet sometimes this requires to gather requirements on what to achieve. It is possible that several deadlines need to be meet. As soon as a dealine needs to be meet that does not require to gather more requirements, the process restarts with order package. 
 
 

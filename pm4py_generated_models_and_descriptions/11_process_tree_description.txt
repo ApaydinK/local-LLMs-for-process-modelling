@@ -1,11 +1,3 @@
 process tree structure: X( ->( 'Create Menu', +( 'Prepare Order', 'Pack Goods' ) ), X( 'Process Payment', +( 'Verify Card', 'Authorize Transaction' ) ) )
 
-The process represents an online food ordering and payment system where customers create their menu, while the business prepares orders and packs goods concurrently. The payment process involves card verification and authorization. The XOR gates ensure that only one of these parallel branches can be executed, reflecting the choice between different payment processing paths.
-1. The customer creates their menu (e.g., selects items to order).
-2. Concurrently, two tasks are executed: preparing the order (e.g., assembling ingredients) and packing goods (e.g., preparing the ordered dishes for delivery).
-3. Once the menu is created, the payment process begins.
-4. In the payment process, there's a choice between verifying the customer's card information and authorizing the transaction.
-
-* If the payment verification fails, the payment processing will not be authorized, and the process will terminate (not shown in this tree, but it would require additional branches).
-* If the payment is verified and authorized, the process continues with the order preparation and packaging.
-
+The process represents an online food ordering and payment system. Where a customer creates a menu and then the restaurant is preparing an order while also packing goods. The payment system is indepentend from the rest and either is solely done by processing a payment or should be shown as simultaneously verifying cards and authorizing transactions.

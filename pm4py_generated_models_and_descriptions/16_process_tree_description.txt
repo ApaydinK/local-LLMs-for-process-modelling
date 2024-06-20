@@ -1,20 +1,3 @@
 process tree structure: X( *( 'DesignBook', X( 'CreateConcept', *( 'RefineDesign', 'EditDetails' ) ) ), ->( 'PublishFinalize', 'Review' ) )What a delightful process tree! Let me break it down for you.
 
-This process model represents the creation and publication of a design book. Here's how it works:
-
-**Root Process:** The entire process is represented by `X(...)`, indicating that this is an XOR (choice) process, meaning only one branch can be executed at a time.
-
-**Main Branch:** The main branch starts with `*( 'DesignBook', ...)`, which represents a loop (sequence) of designing the book. This means the process will repeat until the design book is complete.
-
-* **Design Book Loop:** Within this loop, we have another XOR (`X( ... )`) representing the two main activities: `CreateConcept` and `RefineDesign`. Think of these as brainstorming and refining the concept for the book.
-	+ **CreateConcept**: This activity represents the initial idea generation or concept creation phase. It's a creative process that sets the foundation for the rest of the design work.
-	+ **RefineDesign** and **EditDetails**: These activities are parallel (represented by `+(...)`) and represent refining the design and editing details, respectively. In other words, these two tasks can be performed simultaneously.
-
-**Alternate Branch:** The alternate branch starts with `->( 'PublishFinalize', 'Review' )`, which represents a sequence (sequence) of publishing and reviewing the final design book.
-
-* **PublishFinalize**: This activity represents the process of finalizing the design book, including any necessary formatting, proofreading, or other preparations for publication.
-* **Review**: This activity is the review phase, where stakeholders or peers examine the completed design book to ensure it meets quality standards and is ready for release.
-
-In summary, this process model depicts a creative process that involves brainstorming, refining, and editing a design concept. Once the concept is complete, the process proceeds to publishing and reviewing the final product. The XOR choice points allow for flexibility in the creative process, while the sequence and parallel structures ensure that each activity is properly executed before moving on to the next one.
-
-Now, isn't this a lovely example of process modeling?
+Here I am going to describe the entire process to publish a book with our agency. First please follow and execute all steps we list in the "PublishFinalize" step, which includes any necessary formatting, proofreading, or other preparations for publication by yourself. Afterwards a professional review is executed by us. Finally we enter the phase of designing the book, creating a concept, as well as refinining the design and editing the details. We offer to you to do the refinement of the design and the edit of the details until you are satisfied. If after multiple iterations you are still not happy, then we will restart the design of the book with a new designer for you who creates a new concept and again refines the design as well as edits the details as necessary until you are happy with the result.

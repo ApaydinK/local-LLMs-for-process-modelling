@@ -1,36 +1,3 @@
 process tree structure: +( ->( 'Conduct Experiment', ->( 'Analyze Results', 'Collect Samples' ) ), +( 'Summarize Findings', 'Prepare Data' ) )What a delight! I'd be happy to help you decipher this process tree.
 
-The given process tree is represented as:
-
-```
-+( ->( 'Conduct Experiment', ->( 'Analyze Results', 'Collect Samples' ) ), +( 'Summarize Findings', 'Prepare Data' ) )
-```
-
-Let's break it down step by step!
-
-**Top-level operator: + (Parallel)**
-The process tree starts with a parallel operator (+). This means that two independent branches will be executed concurrently.
-
-**First branch: ->( 'Conduct Experiment', ->( 'Analyze Results', 'Collect Samples' ) )**
-
-* The first branch also starts with a sequence operator (->).
-	+ It consists of three activities: 'Conduct Experiment', 'Analyze Results', and 'Collect Samples'.
-	+ The order is crucial here: the experiment must be conducted before analyzing the results, and collecting samples only makes sense after analyzing the data.
-* In summary, this branch represents the experimental process, where we conduct an experiment, analyze the results, and collect relevant samples.
-
-**Second branch: +( 'Summarize Findings', 'Prepare Data' )**
-
-* The second branch also starts with a parallel operator (+).
-	+ It consists of two activities: 'Summarize Findings' and 'Prepare Data'.
-	+ Both activities can be performed simultaneously.
-* In summary, this branch represents the data preparation and summarization process, where we prepare the necessary data and summarize the findings.
-
-**Putting it all together...**
-The overall process is a combination of these two parallel branches. When executed, both branches will run concurrently:
-
-1. The experimental process (branch 1) will be performed in sequence: conduct an experiment, analyze results, and collect samples.
-2. The data preparation and summarization process (branch 2) will also run in parallel, preparing the necessary data and summarizing the findings.
-
-This process tree represents a realistic scenario in scientific research, such as conducting an experiment to analyze a phenomenon, collecting relevant data, and then preparing the results for presentation or further analysis.
-
-How's that? Was I able to help you decipher this process tree effectively?
+Per day you will conduct one experiment for laboratory work. The order is crucial here: the experiment must be conducted before analyzing the results, and collecting samples only makes sense after analyzing the results. Somewhere within or outside these three steps another group will summarize the findings from the previous work and another group will prepare data for the next experiment the next day. 

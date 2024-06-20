@@ -1,37 +1,3 @@
 process tree structure: X( +( 'Take Order', *( 'Make Food', +( 'Prepare Coffee', 'Serve Food' ) ) ), +( 'Pickup Packages', +( 'Order Menu', 'Deliver Packages' ) ) )What a delightful process tree!
 
-Let me break down the process model for you:
-
-**Main Process:** X (Choice)
-
-The main process is represented by the `X` operator, which indicates that we have two alternative paths to consider.
-
-**Path 1: Take Order + Make Food**
-
-The first path consists of two operators in sequence:
-
-* `->` (Sequence): The process starts with the "Take Order" step.
-* `*(...)` (Loop): This loop represents a recursive process, where we iterate over multiple iterations of making food. Within this loop, there are two parallel processes:
-	+ `+(...)` (Parallel): We have two tasks that can be performed in parallel: "Prepare Coffee" and "Serve Food".
-
-In essence, when the customer takes an order, we make food, which involves preparing coffee and serving the food.
-
-**Path 2: Pickup Packages + Order Menu + Deliver Packages**
-
-The second path is another choice process:
-
-* `->` (Sequence): The process starts with the "Pickup Packages" step.
-* `+(...)` (Parallel): This parallel process consists of two tasks:
-	+ "Order Menu": We need to order a menu for the customer.
-	+ "Deliver Packages": We deliver packages or items ordered by the customer.
-
-In this path, we focus on fulfilling orders related to pickup packages, which may involve ordering menus and delivering items.
-
-**Overall Process**
-
-To summarize, our process tree represents two alternative scenarios:
-
-1. Take an order, make food (with parallel preparation of coffee and serving), and serve.
-2. Pick up packages, order a menu, and deliver those packages.
-
-This process model can be applied to various businesses that involve taking orders, preparing food or delivering items, such as restaurants, cafes, package delivery services, or even meal kit companies. The process tree provides a clear visualization of the different paths and dependencies involved in these processes.
+There are two main options to be followed. When following the first main option, you will need to take orders while making food, and sometimes you are also required to prepare coffee and serve food. When following the second main option, you need to pickup a packages from our partners and you are responsible for delivering packages to our customers. During your workday you can order a menu whenever you like. 

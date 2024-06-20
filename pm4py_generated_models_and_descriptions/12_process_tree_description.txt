@@ -1,18 +1,3 @@
 process tree structure: X( 'analyze data', *( X( 'develop algorithm', *( 'design model', *( 'generate report', 'execute script' ) ) ), X( 'validate results', 'test software' ) ) )
 
-The process starts with a choice between two alternatives: "Analyze Data" and a recursive process, where each iteration involves developing an algorithm to design a model, generate a report, or execute a script.
-
-This is likely the initial step in the process, where data is collected and analyzed to inform further decisions.
-This process involves creating an algorithm to solve a problem or analyze data. The algorithm might be developed through various methods, such as machine learning, statistical modeling, or computational simulation.
-This process likely involves creating a conceptual or theoretical model to explain the data and guide further analysis. The model might be based on various frameworks, such as systems thinking, causal diagrams, or statistical modeling.
-Generate Report` likely involves summarizing key findings and insights from the data analysis, while `Execute Script` might involve implementing a programming solution to automate tasks, perform simulations, or generate visualizations.
-This step is about verifying the accuracy and effectiveness of the previous processes.
-
-In summary, this process involves:
-
-1. Analyzing data
-2. Developing an algorithm to design a model (loop)
-	* Designing the model (conceptual or theoretical)
-	* Generating a report summarizing findings
-	* Executing a script to automate tasks or generate visualizations
-3. Validating results by testing software
+The process starts with a choice between two alternatives: "Analyze Data" and a recursive process, where each iteration can involve developing an algorithm or designing a model, or generating a report and executing a script. Another possibility within the recursive process is the testing of software and the validation of results. 
