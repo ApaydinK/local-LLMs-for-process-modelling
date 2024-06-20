@@ -31,3 +31,7 @@ In summary, this process model represents a complex ordering and shipping scenar
 	* Authorize transactions and verify customer information before fulfilling requests.
 
 This process model demonstrates how process trees can be used to represent complex business processes with multiple parallel and sequential activities, as well as loops and choices.
+
+================================================================
+
+I start by both generating an invoice and handling the return. After the handle return, I ship the package. After generating an invoice, I inspect the product and prepare the order, in no particular order. Simultaneously to all of this, I fulfill a request. Sometimes, when all of this is done, I am finished. Other times, I have to process a payment and either authorize a transaction or verify information, then go back to request fulfillment.

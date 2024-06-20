@@ -34,3 +34,7 @@ This branch starts by assessing the market demand (Assess Market) and analyzing 
     * `Finalize Product Design`: The final subprocess refines the product design, incorporating lessons learned from prototype testing (from Branch 1) and feature development.
 
 By combining these subprocesses, we can see how the process tree guides the development of a new product, taking into account customer needs, market trends, and competitive pressures. The parallel branches ensure that both product creation and market assessment are considered simultaneously, allowing for more informed decision-making throughout the development process.
+
+================================================================
+
+This sequential process starts with of choice of either 'Receive Order' or the sequence of 'Design Product' and 'Create Prototype'. Afterwards, it continues with either 'Assess Market' and 'Analyze Competition' in any order, or with first 'Develop Product Features' and then 'Finalize Product Design'. Afterwards, the process ends.

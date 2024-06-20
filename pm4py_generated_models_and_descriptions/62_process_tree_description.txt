@@ -50,3 +50,7 @@ c. **Send Notification (X)**:
 3. The parallel operator (*) allows for concurrent execution of tasks, improving overall efficiency.
 
 This process tree provides a comprehensive view of the online order processing and verification workflow, highlighting key activities, sequences, and dependencies. As an expert in process modeling, I can confidently say that this model accurately captures the complexities involved in managing online orders while ensuring customer satisfaction.
+
+================================================================
+
+This sequential process contains two major elements. The first element is a choice between the activity 'Prepare Order', and a loop. The mandatory loop part is 'Review Invoice', the optional part is 'Process Payment'. Following the first element, the second is also a choice. One path the process can take is 'Verify Information', after which it terminates. Another path would be 'Validate Data', after which the process can end, or 'Check Consistency' or 'Send Notification' are due. After both, the next step would again be 'Validate Data'.

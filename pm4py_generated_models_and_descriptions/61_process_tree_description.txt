@@ -23,3 +23,7 @@ The process continues until both payment and shipping are completed. At this poi
 6. The customer receives their purchased item, and the transaction is finalized.
 
 This process tree illustrates a realistic scenario for an e-commerce platform that requires authorization of payments and shipping to customers. The parallel tasks (`+`) ensure that both payment processing and shipping occur concurrently, which can improve the overall customer experience and reduce latency in completing the order.
+
+================================================================
+
+The given process starts with 'Buy'. It can then end. Or it can proceed with either 'Checkout', which leads back to 'Buy', or to 'd'. 'd' can, just like 'Checkout', lead back to 'Buy'. Or it can lead to 'Authorize'. This either leads back to 'd', or it is followed by the parallel execution of 'Pay' and 'Ship', after which the process goes back to 'Authorize'.

@@ -33,3 +33,7 @@ Here's how the entire process flows:
 This process model captures the essence of creating a product, from receiving an order to delivering the final product. It highlights the importance of parallel processing (payment and design) and concurrent execution of activities to ensure efficient product creation.
 
 As an expert in process modeling, I can confidently say that this process tree accurately represents a realistic scenario for creating a product.
+
+================================================================
+
+I start by creating a product design. Sometimes, I then prepare a prototype, after which I design the product. Sometimes I am finished and that point, but mostly, I test the prototype, after which I get back to designing the product. Other times, after creating the product design, I receive an order from a customer. This might happen several times in a row, with a special step in between that I will just call 'e'. Afterwards, I process the payment, again potentially several times. In that case, a special step called 'f' is required. After processing the payment, I have to start again with creating a process design.

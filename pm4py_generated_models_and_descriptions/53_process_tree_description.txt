@@ -40,3 +40,7 @@ If the team chooses to process the order, they will:
 4. Ship the packages to customers.
 
 In summary, this process tree represents a complex workflow that involves decision-making, iterative tasks, and parallel execution of activities. It's a great example of how process trees can be used to model and execute real-world business processes!
+
+================================================================
+
+This process has two parallel branches. The first branch is the choice of either 'Respond to Inquiry' or 'Resolve Issue'. The second branch is the parallel execution of 'Process Order' and a sub process consisting of: First 'Receive Goods', then 'Packaging and Shipping', then 'Prepare Shipping Materials'. After that, either the process terminates, or 'Seal Package' is executed. After 'Seal Package' two things can happen. Either 'Label and Ship', forming a loop with 'Seal Package'. Or looping back to 'Prepare Shipping Materials'.

@@ -73,7 +73,7 @@ import os
 number_of_generated_examples = 100
 
 current_path= os.path.dirname(os.path.abspath(__file__))
-
+description_path = os.path.join(os.path.dirname(current_path), 'pm4py_fewshot_prompting')
 
 def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting():
     # load process tree
@@ -83,7 +83,7 @@ def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting
 
         retrieve_file_path("ptml", process_id)
 
-        description_of_simulated_process_tree_path = f"../pm4py_generated_models_and_descriptions/{process_id}_process_tree_description_based_on_few_shot_prompting.txt"
+        description_of_simulated_process_tree_path = f"{description_path}/{process_id}_process_tree_description_based_on_few_shot_prompting.txt"
         description_text_file = open(description_of_simulated_process_tree_path, "x")
         # TODO Write Few Shot Prompt for in Context learning
         response = ollama.chat(model='llama3', messages=[
@@ -93,16 +93,15 @@ def load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting
                 'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
                            f'You are an expert in process modeling, especially by using process trees and you can easily '
                            f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}'
-                           f' This is how I would describe process trees, and what I would expect you to do: '
-                           f" process tree 1: ->( X( 'Receive_Order', +( 'Place_Order_for_Supply_Chains', 'Fill_Consolidation_Orders' ) ), ->( 'Confirm_Product_Return', 'Process_Returned_Items' ) ) "
-                           f' The expected description for process tree 1: The process either starts with receive order or with the two activities "place order for supply chains" and "fill consolidation order" whose order does not matter. Afterwards the sales department confirms the product return, so that the returned items are processed.'
-                           f' An alternative expected description for process tree 1: The initial trigger that sets off the entire process is either the receival of an order or a parallel subprocess. The parallel subprocess consists of the activities "place order for supply chains" and "fill consolidation order". Once the receival of an order or the parallel subprocesses finishes, the focus shifts to handling product returns. For this, the product return has to be confirmed. Once the return is confirmed, the returned items are processed.'
-                           f" process tree 2: ->( 'Order_Pizza', ->( X( 'Design_Pattern', *( 'Cut_Toppings', 'Assemble_Slices' ) ), ->( 'Bake_Crust', 'Serve_Fresh' ) ) ) " 
-                           f' The expected description for process tree 2: Every Process begins when a pizza is ordered. Some pizzas only require designing a pattern before the crust is baked and everything is served fresh, other pizzas require toppings that needs to be cut before the curst is baked and the pizza is freshly served. Rarely toppings need not only to be cut but also followed by an assembly of the topping slices. If the slices need to be assembled then toppings need to be cut again. As soon as all toppings are cut and no further assembling of slices is needed, the curst can be baked and the pizza can be served fresh. '     f" process tree 3: +( 'browse', *( 'select', +( 'order', 'pay' ) ) ), X( 'ship', 'track' ) ), +( 'deliver', 'feedback' ) "
-                           f" process tree 3: +( ->( ->( 'design', *( 'compile', +( 'evaluate', 'generate' ) ) ), X( 'validation', 'test' ) ), +( 'optimize', 'process' ) )"
-                           f' The expected description for process tree 3: Optimization and processing has to be done once but it does not matter when next to the main work. The main work starts with designing. Then compiling the designed code into an executable form. Evaluate the compiled code against a set of predefined criteria or metrics, such as performance, security, or usability. Sometimes the evaluation is done first and then the generation. If generations and evaluations are performed then this leads to a restart of compile. Finally the compiled code is ready to be either validated by a focus group or tested by the developer. '
-                           f" process tree 4: process tree structure: *( X( 'Create_Report', ->( 'Review_Document', ->( 'Prepare_Proposal', X( 'Gather_Data', 'Analyze_Findings' ) ) ) ), +( 'Schedule_Meeting', +( 'Hold_Video_Call', X( 'Invite_Collaborators', 'Brainstorm_Ideas' ) ) ) )"
-                           f' The expected description for process tree 4: This process can be finished quickly but sometimes it takes more input and feedback. So sometimes the organization just creates a report and then the process is already finished. In other instances the organization reviews a document and then prepares a research proposal, because they feel so inspired by the new information. The proposal then is finalized by analyzing findings and making any necessary adjustments or gathering additional data to be presented. However, sometimes additional information is needed. In this case, a meeting with the professor is scheduled as well as a video call with the project partner is hold. The meeting with the professor and the project partners are independend from each other. Also a decision has to be made about inviting more collaborators with expertise or simply conduct a brainstorming session to gather ideas from the people already involved in the proposal. If additional information is gathered in this way, then the process is kicked off again, i.e. either a report is created or the new document is reviewed etc. '
+                           f'The description should be in human-readable text without operators or process tree. No yapping.'
+                           f' This is what I exemplary expect you to do: '
+                           f" process tree 1: +( 'analyze', *( 'implement', +( 'assess', 'produce' ) ) ), X( 'review', 'execute' ) ), +( 'refine', 'monitor' ) )"
+                           f' The expected description 1: This process starts with analyze, a critical step to understand the context and requirements. It then moves to refine, ensuring all aspects are perfected. Next, implement leads to two nested activities: assess to evaluate the situation and produce to create outputs. Finally, it offers alternative paths: review to check for quality or execute to carry out tasks, ensuring flexibility in workflow management.'
+                           f" process tree 2: +( 'Plan Project', *( 'Define Scope', +( 'Design System Architecture', +( 'Develop Features', X( 'Integrate Components', +( 'Test Modules', 'Review Code' ) ) ) ) ) ), X( 'Create Documentation', +( 'Conduct Testing', X( 'User Acceptance Testing', 'Performance Testing' ) ) ) ), +( 'Deploy Solution', +( 'Monitor Performance', 'Implement Maintenance' ) )" 
+                           f" The expected description 2: This process begins with Plan Project and Define Scope, establishing the project's framework. It then moves to Design System Architecture and Develop Features, creating and building the system. It branches into Integrate Components with options for Test Modules and Review Code. Concurrently, Create Documentation and Conduct Testing with choices for User Acceptance Testing and Performance Testing. Finally, the process includes Deploy Solution, followed by Monitor Performance and Implement Maintenance to ensure ongoing system functionality and updates."
+                           f" process tree 3: +( 'Browse Products', *( 'Select Items', +( 'Add to Cart', 'Complete Payment' ) ) ), X( 'Pack Order', 'Track Shipment' ) ), +( 'Deliver Package', 'Collect Feedback' )" 
+                           f' The expected description 3: This e-commerce process starts with browse products, allowing customers to explore products. Next, they select items, leading to a nested sequence where they order their chosen products and then pay for them. The process provides alternatives: ship the products or track the order status. Finally, it concludes with deliver, ensuring the products reach the customer, and feedback, where customers can provide their input on the experience, ensuring a complete and customer-centric workflow. '
+                ,
             },
         ])
         description_text_file.write(f"process tree structure: {process_tree}")
@@ -156,4 +155,4 @@ def simulate_process_trees_and_generate_new_descriptions():
         print(response['message']['content'])
 
 #simulate_process_trees_and_generate_new_descriptions()
-#load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting()
+load_process_trees_and_generate_new_descriptions_based_on_few_shot_prompting()
