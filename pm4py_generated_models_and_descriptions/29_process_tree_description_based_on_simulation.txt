@@ -1,0 +1,25 @@
+process tree structure: *( +( ->( 'Order Pizza', +( 'Get Ingredients', 'Fetch Food' ) ), *( 'Prepare Hamburger', 'Cook Chicken' ) ), ->( 'Book Table', +( ->( 'Deliver Dinner', 'Gather Groceries' ), 'Eat Entree' ) ) )The process operators used in a process tree are:
+
+* ->(...) sequence: represents the order in which activities are performed.
+* X(...) choice: represents a decision point where one or more branches may be taken.
+
+In this case, the process tree consists of 15 instances that describe the steps involved in ordering pizza. The process description is as follows:
+
+1. Order Pizza
+2. Fetch Food
+3. Get Ingredients
+4. Prepare Hamburger (or Cook Chicken)
+5. Book Table
+6. Deliver Dinner
+7. Eat Entree
+8. Gather Groceries
+
+The instances can be described as follows:
+
+* Instance 1: Order Pizza -> Fetch Food -> Get Ingredients -> Prepare Hamburger -> Book Table -> Deliver Dinner -> Eat Entree -> Gather Groceries -> Prepare Hamburger -> Order Pizza
+* Instance 2-4: Same as Instance 1, but with variations in the ordering of steps.
+* Instance 5-8: Similar to Instance 1, but with more variation in the ordering of steps.
+* Instance 9-12: More variations in the ordering of steps.
+* Instance 13-15: Even more variations in the ordering of steps.
+
+This process description matches the simulated instances, and all instances are possible when following the description. The sequence operator is used to represent the order in which activities are performed, while the choice operator is not used as there are no decision points where one or more branches may be taken.

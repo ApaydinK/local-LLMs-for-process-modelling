@@ -6,5 +6,3 @@ The process either starts with receive order or with the two activities "place o
 
 Detailed description: 
 The initial trigger that sets off the entire process is either the receival of an order or a parallel subprocess. The parallel subprocess consists of the activities "place order for supply chains" and "fill consolidation order". Once the receival of an order or the parallel subprocesses finishes, the focus shifts to handling product returns. For this, the product return has to be confirmed. Once the return is confirmed, the returned items are processed. 
-
-In summary, this process tree models a supply chain management process that handles customer orders and product returns. It highlights the importance of parallel processing for ordering materials and consolidating individual orders, while also emphasizing the need to confirm and process product returns sequentially.

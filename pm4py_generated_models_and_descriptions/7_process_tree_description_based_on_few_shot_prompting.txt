@@ -1,0 +1,3 @@
+process tree structure: X( X( X( 'Deliver Product', 'Pack Box' ), 'Prepare Inventory' ), X( *( 'Handle Order', 'Process Payment' ), *( 'Ship Package', 'Track Shipment' ) ) )
+
+This process is baded on an e-commerce or logistics-related scenario where multiple activities need to be executed to ensure efficient order fulfillment. The process starts and ends with either delivering a product, or preparing the inventory or packing a box. The process could also start and end directly with handling an order, or shipping a package. However after handling a payment could be process which would retrigger handling an order. Same is valid for shipping a package, this activity could demand tracking of shipments, if this is the case then another package needs to be shipped. 

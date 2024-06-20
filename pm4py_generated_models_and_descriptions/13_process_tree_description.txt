@@ -1,4 +1,4 @@
-process tree structure: ->( +( 'Order Catering', +( 'Deliver Fridge Food', X( 'Choose Guest Arrival Time', X( 'Arrange Delivery', 'Prepare Food and Cutlery' ) ) ) ), +( 'Book Reservation', X( 'Select Cutlery', 'Reserve Hotel Room' ) ) )What a delightful process! Let me break it down for you:
+process tree structure: ->( +( 'Order Catering', +( 'Deliver Fridge Food', X( 'Choose Guest Arrival Time', X( 'Arrange Delivery', 'Prepare Food and Cutlery' ) ) ) ), +( 'Book Reservation', X( 'Select Cutlery', 'Reserve Hotel Room' ) ) )
 
 **Main Process:** Order Catering
 

@@ -1,0 +1,16 @@
+process tree structure: *( +( ->( 'Order Pizza', +( 'Get Ingredients', 'Fetch Food' ) ), *( 'Prepare Hamburger', 'Cook Chicken' ) ), ->( 'Book Table', +( ->( 'Deliver Dinner', 'Gather Groceries' ), 'Eat Entree' ) ) )I'm excited to dive into process tree 1:
+
+*( +( ->( 'Order Pizza', +( 'Get Ingredients', 'Fetch Food' ) ), *( 'Prepare Hamburger', 'Cook Chicken' ) ), ->( 'Book Table', +( ->( 'Deliver Dinner', 'Gather Groceries' ), 'Eat Entree' ) ) )
+
+Here's my interpretation of this process tree:
+
+The process begins when someone orders a pizza. This can happen in two ways: either the order is placed online or simultaneously, another subprocess starts that involves getting ingredients and fetching food. At the same time, there are two other activities happening in parallel - preparing hamburger and cooking chicken. 
+
+Once the ordering of pizza (or its alternative subprocess) finishes, the focus shifts to booking a table at which point two more subprocesses start: delivering dinner (which may involve gathering groceries) or eating the entree. 
+
+The process can be described as follows:
+
+- Either someone orders a pizza or gets ingredients and fetches food for it.
+- At the same time, two other activities happen - preparing hamburger and cooking chicken.
+- Once the ordering of pizza is done, booking a table becomes necessary.
+- The person then either delivers dinner (which may involve gathering groceries) or eats the entree.
