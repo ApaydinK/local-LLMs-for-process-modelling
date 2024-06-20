@@ -1,17 +1,3 @@
-process tree structure: ->( X( 'Order Parts', 'Computer' ), X( 'Design Product', +( 'Test Prototype', ->( 'Assemble Final Product', 'Box' ) ) ) )What a delightful process tree! Let me walk you through the illustrative and realistic process it describes.
+process tree structure: ->( X( 'Order Parts', 'Computer' ), X( 'Design Product', +( 'Test Prototype', ->( 'Assemble Final Product', 'Box' ) ) ) )
 
-**Top-Level Process:** The entire process is represented by the arrow (`->`) pointing to the sequence of two subprocesses: `Order Parts` and `Design Product`.
-
-**Subprocess 1: Order Parts**
-The first subprocess, represented by `X('Order Parts', 'Computer')`, indicates that the ordering of parts necessary for the product's assembly will be performed using a computer. This might involve creating a purchase order, selecting parts from an inventory system, or submitting a request to suppliers.
-
-**Subprocess 2: Design Product**
-The second subprocess, represented by `X('Design Product', +( 'Test Prototype', ->( 'Assemble Final Product', 'Box' ) ) )`, is more complex. It's a sequence of three subprocesses:
-
-1. **Test Prototype**: This subprocess represents the testing and validation phase for a product prototype. The `+` operator indicates that this subprocess can be executed in parallel with the next one.
-2. **Assemble Final Product** (loop): Once the prototype has been tested, the process enters a loop where the final product is assembled. The `->` arrow indicates that this subprocess will be executed until some condition is met (e.g., all products are assembled). The `'Box'` at the end of this subprocess suggests that the finished products will be packaged and prepared for shipping.
-3. **Design Product** (sequence): This subprocess represents the overall design process, which will only start once the prototype has been tested and the final product has been assembled.
-
-In summary, the process starts by ordering parts using a computer. Once the parts are received, the design process begins with the creation of a product prototype. The prototype is then tested in parallel with the assembly of the final product. When all products have been assembled, they will be packaged and prepared for shipping.
-
-This process tree effectively captures the complexities involved in designing, testing, and manufacturing a new product, highlighting the interdependencies between different subprocesses.
+The process starts with ordering parts using a computer. After ordering the parts, the design process begins. This involves testing the prototype and, in parallel, assembling the final product. Once the prototype is tested, the final product is continuously assembled and boxed for shipment.
