@@ -1,1 +1,1 @@
-This rather simple process begins in parallel with 'analyze' and a sequence. The first element of the sequence is 'thankYouNote' and 'positiveFeedback', in no particular order. Afterwards, the second element of the sequence is 'escalateToSupport' and 'negativeFeedback', again, in no particular order. Lastly, the process terminates.
+his rather simple process begins with 'analyze' and, simultaneously, giving a positive feedback and sending a thank you note. Then, both giving negative Feedback and escalating to support are conducted. Lastly, the process terminates.
