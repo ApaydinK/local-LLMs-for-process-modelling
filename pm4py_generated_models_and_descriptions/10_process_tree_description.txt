@@ -1,26 +1,3 @@
-process tree structure: *( X( 'prepare order', 'order receipt' ), ->( 'processing start', ->( 'data collection', 'report generation' ) ) )A delightful example of a process tree! Let me break it down for you:
+process tree structure: *( X( 'prepare order', 'order receipt' ), ->( 'processing start', ->( 'data collection', 'report generation' ) ) )
 
-***(X('prepare order', 'order receipt'))**: This is the outermost loop, which means that the entire process will be repeated multiple times. The X operator indicates that we have two alternatives to choose from: either "prepare an order" or "receive an order". Think of this as a sales workflow where customers can either place a new order (prepare order) or receive a confirmation of their existing order (order receipt).
-
-**->('processing start', ->('data collection', 'report generation'))**: This is the process flow that will be executed for each iteration of the outer loop. The -> operator indicates a sequence, meaning that these activities must be performed in this order.
-
-* 'processing start' is the starting point of processing an order (either new or existing). This might involve setting up the necessary infrastructure, allocating resources, or triggering any automated workflows.
-* 'data collection' involves gathering relevant data related to the order. This could include retrieving customer information, product details, shipping addresses, and so on.
-* 'report generation' is where we generate a report or output based on the collected data. This might be an invoice, a packing slip, or any other type of documentation.
-
-Putting it all together, here's how this process tree plays out:
-
-1. The outer loop repeats for each order (either new or existing).
-2. For each iteration, the process starts by either preparing an order or receiving an order.
-3. Once the order is prepared or received, the processing flow begins:
-	* 'processing start' initializes the workflow.
-	* Then, we collect relevant data about the order.
-	* Finally, we generate a report based on that data.
-
-This process tree can be applied to various scenarios, such as:
-
-* Sales workflows: Processing customer orders from new or existing customers.
-* Inventory management: Managing stock levels, tracking product availability, and generating reports for inventory control.
-* Medical billing: Handling patient records, collecting medical information, and generating claims reports.
-
-As a process modeling expert, I can assure you that this process tree is not only visually appealing but also accurately represents the flow of activities in many real-world scenarios.
+The following work can be repeated over and over. We have two alternatives to choose from: either "prepare an order" or "receive an order". Think of this as a sales workflow where customers can either place a new order (prepare order) or receive a confirmation of their existing order (order receipt). Following, starting point of processing an order (either new or existing). This might involve setting up the necessary infrastructure, allocating resources, or triggering any automated workflows. gathering relevant data related to the order. This could include retrieving customer information, product details, shipping addresses, and so on we generate a report or output based on the collected data. This might be an invoice, a packing slip, or any other type of documentation.
