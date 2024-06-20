@@ -30,3 +30,7 @@ Imagine a researcher working on a research paper that requires analyzing existin
 In this process tree, the analyst can choose between analyzing data or reports, while simultaneously reviewing and preparing the content for inclusion in the research paper. The parallel nature of the process allows the researcher to make progress on both fronts simultaneously, ultimately streamlining the overall research paper preparation process.
 
 How's that? Did I accurately interpret the process tree?
+
+================================================================
+
+This process contains two sub processes that run simultaneously. The first is the parallel execution of 'Analyze' and the exclusive choice of 'Data' or 'Report'. The second is first 'Review', then 'Prepare'. After both sub processes have been finished, the process terminates.

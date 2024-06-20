@@ -41,3 +41,7 @@ By analyzing this process tree, we can infer several insights:
 * The team's input is essential for either briefing them or discussing the report with stakeholders.
 
 This process model demonstrates the value of using process trees to visualize complex workflows, identify key dependencies, and highlight the relationships between various activities.
+
+================================================================
+
+We start this complex process with a choice. Then it is either 'to approve document', followed by 'to draft proposal' or 'to finalize budget', not both. Then the process would end. Or we would start with 'to create document', after which the process might end or continue. If it continues, we must distinguish between two possible proceedings: Either 'to send email to group about document', followed by 'to notify stakeholders about report', finally followed by 'to share document with group'. Or the execution of 'to brief team' and 'to discuss report with stakeholders' in no particular order. Either way, the process then returns to the task 'to create document'.

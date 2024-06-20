@@ -32,3 +32,7 @@ The **loop** symbol indicates that these two tasks are performed in parallel and
 5. Create Presentation and Finalize Report (loop): Simultaneously design a presentation and complete the written report.
 
 This process tree represents a realistic scenario for preparing quarterly reports in various industries, such as finance, marketing, or operations management. The subprocesses are connected to form a coherent workflow that ensures all necessary tasks are performed to create a comprehensive report.
+
+================================================================
+
+The process at hand consists of four parts. It starts with the parallel execution of the first part (simply 'Review Reports'), and the second part, which again is a parallel execution of the choice of either 'Download Files' or 'Analyze Data', and the third part. The third part is again a parallel execution of simply 'Edit Documents' and the fourth part, which finally is 'Create Presentation' followed by either 'Finalize Report' (forming a loop with 'Create Presentation'), or the termination of the process, should the former parts of the process all have been concluded.

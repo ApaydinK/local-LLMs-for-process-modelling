@@ -33,3 +33,8 @@ To save time, the team leader sends an email to all team members asking them to 
 The `Write Report` subprocess can be executed in parallel with these other tasks, as it involves gathering information from various sources (data analysis, interview, and document review) and writing a comprehensive report. The team leader can allocate resources accordingly, ensuring that all necessary tasks are completed efficiently.
 
 In this illustrative example, the process tree reflects the concurrent nature of the subprocesses, allowing the team to work on multiple fronts simultaneously while still achieving their overall goal: producing a high-quality written report for the project.
+
+
+================================================================
+
+The process presented here starts with two parallel branches. The first branch contains the activity 'Write Report'. The second branch is the simultaneous execution of two sub branches. The first sub branch is either 'Analyze Data' and 'Create Presentation' in parallel order. Or it is the choice of either 'Send Email' or 'conduct Interview'. The second sub branch is both 'Make Phone Call' and 'Review Documents' in any order. After 'Write Report' and both sub branches, the process terminates.

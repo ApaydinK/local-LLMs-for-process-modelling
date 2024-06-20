@@ -39,3 +39,7 @@ This process tree can be applied in various domains, such as:
 * Auditing: verifying financial statements by creating reports and reviewing documents, while also analyzing transactional data
 
 This process tree demonstrates the power of process modeling using operators to represent complex workflows. The loop and parallel operators allow for iterative refinement and concurrent processing, making it an efficient and realistic representation of a verification process.
+
+================================================================
+
+Either I Verify Information, after which I am done. Or I Create a Report and Review Document in any order. After I have completed both, I am either done, or, depending on the situation, I Analyze Data if I haven't or I Summarize Findings if I have. After this, I go back to Creating a Report and Reviewing a Document.

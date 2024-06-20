@@ -32,3 +32,7 @@ This process ensures that:
 2. Negative feedback is escalated efficiently, addressing issues and improving overall service quality.
 
 In a real-world scenario, this process might involve various tools, systems, or platforms for analyzing, processing, and communicating with customers (e.g., CRM software, chatbots, email templates). The Support team would work together to investigate, resolve, and track the negative feedback issues.
+
+================================================================
+
+This rather simple process begins in parallel with 'analyze' and a sequence. The first element of the sequence is 'thankYouNote' and 'positiveFeedback', in no particular order. Afterwards, the second element of the sequence is 'escalateToSupport' and 'negativeFeedback', again, in no particular order. Lastly, the process terminates.

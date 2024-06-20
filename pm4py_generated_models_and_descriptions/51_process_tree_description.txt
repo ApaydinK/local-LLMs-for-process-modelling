@@ -32,3 +32,7 @@ Here's how the process flows:
 4. The process continues until all orders are fulfilled and inventory management and quality control tasks are completed.
 
 This process tree represents a realistic scenario in an e-commerce or retail setting, where customer service, order fulfillment, and inventory management are critical components of the overall process.
+
+================================================================
+
+The process starts with 'process_orders'. Then comes 'handle_customer_service", while simultaneously the following happens: Two sub processes start in parallel. In one, either 'manage_inventory' happens, or 'conduct_quality_control' appears. In the other, 'check_order_availability' is executed. Afterwards, either 'ship_products' happens and then 'check_order_availability' again, triggering a loop, or after the choice of 'manage_inventory' or 'conducty_quality_control' the process ends.

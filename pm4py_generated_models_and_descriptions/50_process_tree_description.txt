@@ -28,3 +28,8 @@ Process 2: `->( 'Fill Order', 'Package and Ship' )`
 In summary, this process model represents a parallel workflow that involves preparing an order while simultaneously reviewing the order details, processing payment, filling the order, and packaging/shipping it. The `+` operator ensures that both processes are executed concurrently, which is essential in many e-commerce scenarios where orders need to be processed quickly to ensure customer satisfaction.
 
 Now, if you'll excuse me, I have some process trees to analyze!
+
+
+================================================================
+
+This process has two sub processes that run in parallel. The first one is the parallel execution of 'Prepare Order' and the sequence of first 'Review Order' and then 'Process Payment'. The second one is just a 'Fill Order' and then 'Package and Ship'.
