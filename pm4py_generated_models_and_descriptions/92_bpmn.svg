@@ -8,253 +8,253 @@
  viewBox="0.00 0.00 1154.00 292.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 288)">
 <polygon fill="white" stroke="none" points="-4,4 -4,-288 1150,-288 1150,4 -4,4"/>
-<!-- 1600897127696 -->
+<!-- 2277444291344 -->
 <g id="node1" class="node">
-<title>1600897127696</title>
+<title>2277444291344</title>
 <ellipse fill="green" stroke="black" cx="18" cy="-143" rx="18" ry="18"/>
 </g>
-<!-- 1600897131856 -->
+<!-- 2277444299280 -->
 <g id="node2" class="node">
-<title>1600897131856</title>
+<title>2277444299280</title>
 <polygon fill="none" stroke="black" points="99,-161 72,-143 99,-125 126,-143 99,-161"/>
 <text text-anchor="middle" x="99" y="-139.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897127696&#45;&gt;1600897131856 -->
+<!-- 2277444291344&#45;&gt;2277444299280 -->
 <g id="edge1" class="edge">
-<title>1600897127696&#45;&gt;1600897131856</title>
+<title>2277444291344&#45;&gt;2277444299280</title>
 <path fill="none" stroke="black" d="M36.14,-143C43.11,-143 51.47,-143 59.75,-143"/>
 <polygon fill="black" stroke="black" points="59.75,-146.5 69.75,-143 59.75,-139.5 59.75,-146.5"/>
 </g>
-<!-- 1600897135056 -->
+<!-- 2277444302864 -->
 <g id="node3" class="node">
-<title>1600897135056</title>
+<title>2277444302864</title>
 <polygon fill="none" stroke="black" points="189,-188 162,-170 189,-152 216,-170 189,-188"/>
 <text text-anchor="middle" x="189" y="-166.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897131856&#45;&gt;1600897135056 -->
+<!-- 2277444299280&#45;&gt;2277444302864 -->
 <g id="edge2" class="edge">
-<title>1600897131856&#45;&gt;1600897135056</title>
+<title>2277444299280&#45;&gt;2277444302864</title>
 <path fill="none" stroke="black" d="M118.23,-148.59C130.03,-152.21 145.65,-157.01 159.11,-161.14"/>
 <polygon fill="black" stroke="black" points="157.76,-164.38 168.34,-163.97 159.81,-157.69 157.76,-164.38"/>
 </g>
-<!-- 1600897205136 -->
+<!-- 2277443780688 -->
 <g id="node4" class="node">
-<title>1600897205136</title>
+<title>2277443780688</title>
 <polygon fill="none" stroke="black" points="189,-134 162,-116 189,-98 216,-116 189,-134"/>
 <text text-anchor="middle" x="189" y="-112.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897131856&#45;&gt;1600897205136 -->
+<!-- 2277444299280&#45;&gt;2277443780688 -->
 <g id="edge3" class="edge">
-<title>1600897131856&#45;&gt;1600897205136</title>
+<title>2277444299280&#45;&gt;2277443780688</title>
 <path fill="none" stroke="black" d="M118.23,-137.41C130.03,-133.79 145.65,-128.99 159.11,-124.86"/>
 <polygon fill="black" stroke="black" points="159.81,-128.31 168.34,-122.03 157.76,-121.62 159.81,-128.31"/>
 </g>
-<!-- 1600897132560 -->
+<!-- 2277443796048 -->
 <g id="node5" class="node">
-<title>1600897132560</title>
+<title>2277443796048</title>
 <polygon fill="none" stroke="black" points="279,-230 252,-212 279,-194 306,-212 279,-230"/>
 <text text-anchor="middle" x="279" y="-208.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897135056&#45;&gt;1600897132560 -->
+<!-- 2277444302864&#45;&gt;2277443796048 -->
 <g id="edge4" class="edge">
-<title>1600897135056&#45;&gt;1600897132560</title>
+<title>2277444302864&#45;&gt;2277443796048</title>
 <path fill="none" stroke="black" d="M205.33,-177.32C218.25,-183.48 237,-192.43 252.23,-199.7"/>
 <polygon fill="black" stroke="black" points="250.65,-202.83 261.19,-203.98 253.67,-196.51 250.65,-202.83"/>
 </g>
-<!-- 1600897207696 -->
+<!-- 2277443785360 -->
 <g id="node6" class="node">
-<title>1600897207696</title>
+<title>2277443785360</title>
 <polygon fill="none" stroke="black" points="706,-184 560,-184 560,-148 706,-148 706,-184"/>
 <text text-anchor="middle" x="633" y="-162.9" font-family="Times New Roman,serif" font-size="12.00">Review Financial Statements</text>
 </g>
-<!-- 1600897135056&#45;&gt;1600897207696 -->
+<!-- 2277444302864&#45;&gt;2277443785360 -->
 <g id="edge5" class="edge">
-<title>1600897135056&#45;&gt;1600897207696</title>
+<title>2277444302864&#45;&gt;2277443785360</title>
 <path fill="none" stroke="black" d="M216.33,-169.76C280.39,-169.18 446.61,-167.68 548.39,-166.76"/>
 <polygon fill="black" stroke="black" points="548.38,-170.26 558.35,-166.67 548.32,-163.26 548.38,-170.26"/>
 </g>
-<!-- 1600897207376 -->
+<!-- 2277443782992 -->
 <g id="node7" class="node">
-<title>1600897207376</title>
+<title>2277443782992</title>
 <polygon fill="none" stroke="black" points="894,-136 777,-136 777,-100 894,-100 894,-136"/>
 <text text-anchor="middle" x="835.5" y="-114.9" font-family="Times New Roman,serif" font-size="12.00">Create Budget Report</text>
 </g>
-<!-- 1600897205136&#45;&gt;1600897207376 -->
+<!-- 2277443780688&#45;&gt;2277443782992 -->
 <g id="edge6" class="edge">
-<title>1600897205136&#45;&gt;1600897207376</title>
+<title>2277443780688&#45;&gt;2277443782992</title>
 <path fill="none" stroke="black" d="M216.47,-116.08C309.66,-116.37 624.57,-117.35 765.42,-117.79"/>
 <polygon fill="black" stroke="black" points="765.35,-121.29 775.36,-117.82 765.37,-114.29 765.35,-121.29"/>
 </g>
-<!-- 1600897216336 -->
+<!-- 2277443783376 -->
 <g id="node8" class="node">
-<title>1600897216336</title>
+<title>2277443783376</title>
 <polygon fill="none" stroke="black" points="279,-90 252,-72 279,-54 306,-72 279,-90"/>
 <text text-anchor="middle" x="279" y="-68.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897205136&#45;&gt;1600897216336 -->
+<!-- 2277443780688&#45;&gt;2277443783376 -->
 <g id="edge7" class="edge">
-<title>1600897205136&#45;&gt;1600897216336</title>
+<title>2277443780688&#45;&gt;2277443783376</title>
 <path fill="none" stroke="black" d="M205.33,-108.34C218.45,-101.77 237.6,-92.2 252.95,-84.52"/>
 <polygon fill="black" stroke="black" points="254.11,-87.86 261.49,-80.25 250.98,-81.59 254.11,-87.86"/>
 </g>
-<!-- 1600897138128 -->
+<!-- 2277444296912 -->
 <g id="node10" class="node">
-<title>1600897138128</title>
+<title>2277444296912</title>
 <polygon fill="none" stroke="black" points="488,-284 343,-284 343,-248 488,-248 488,-284"/>
 <text text-anchor="middle" x="415.5" y="-262.9" font-family="Times New Roman,serif" font-size="12.00">Develop Marketing Strategy</text>
 </g>
-<!-- 1600897132560&#45;&gt;1600897138128 -->
+<!-- 2277443796048&#45;&gt;2277444296912 -->
 <g id="edge8" class="edge">
-<title>1600897132560&#45;&gt;1600897138128</title>
+<title>2277443796048&#45;&gt;2277444296912</title>
 <path fill="none" stroke="black" d="M295.96,-219.23C308.42,-224.81 326.21,-232.63 342,-239 345.77,-240.52 349.67,-242.06 353.6,-243.59"/>
 <polygon fill="black" stroke="black" points="352.05,-246.75 362.64,-247.07 354.56,-240.21 352.05,-246.75"/>
 </g>
-<!-- 1600897133776 -->
+<!-- 2277443783568 -->
 <g id="node11" class="node">
-<title>1600897133776</title>
+<title>2277443783568</title>
 <polygon fill="none" stroke="black" points="489,-230 342,-230 342,-194 489,-194 489,-230"/>
 <text text-anchor="middle" x="415.5" y="-208.9" font-family="Times New Roman,serif" font-size="12.00">Research Market Conditions</text>
 </g>
-<!-- 1600897132560&#45;&gt;1600897133776 -->
+<!-- 2277443796048&#45;&gt;2277443783568 -->
 <g id="edge9" class="edge">
-<title>1600897132560&#45;&gt;1600897133776</title>
+<title>2277443796048&#45;&gt;2277443783568</title>
 <path fill="none" stroke="black" d="M306.89,-212C313.9,-212 321.84,-212 330.15,-212"/>
 <polygon fill="black" stroke="black" points="330.15,-215.5 340.15,-212 330.15,-208.5 330.15,-215.5"/>
 </g>
-<!-- 1600897136080 -->
+<!-- 2277444302288 -->
 <g id="node9" class="node">
-<title>1600897136080</title>
+<title>2277444302288</title>
 <polygon fill="none" stroke="black" points="835.5,-190 808.5,-172 835.5,-154 862.5,-172 835.5,-190"/>
 <text text-anchor="middle" x="835.5" y="-168.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897207696&#45;&gt;1600897136080 -->
+<!-- 2277443785360&#45;&gt;2277444302288 -->
 <g id="edge10" class="edge">
-<title>1600897207696&#45;&gt;1600897136080</title>
+<title>2277443785360&#45;&gt;2277444302288</title>
 <path fill="none" stroke="black" d="M706.39,-168.17C737.37,-169.09 772.22,-170.14 797.74,-170.9"/>
 <polygon fill="black" stroke="black" points="797.49,-174.39 807.59,-171.19 797.7,-167.4 797.49,-174.39"/>
 </g>
-<!-- 1600897211472 -->
+<!-- 2277443780880 -->
 <g id="node12" class="node">
-<title>1600897211472</title>
+<title>2277443780880</title>
 <polygon fill="none" stroke="black" points="957,-136 930,-118 957,-100 984,-118 957,-136"/>
 <text text-anchor="middle" x="957" y="-114.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897207376&#45;&gt;1600897211472 -->
+<!-- 2277443782992&#45;&gt;2277443780880 -->
 <g id="edge11" class="edge">
-<title>1600897207376&#45;&gt;1600897211472</title>
+<title>2277443782992&#45;&gt;2277443780880</title>
 <path fill="none" stroke="black" d="M894.5,-118C902.37,-118 910.27,-118 917.67,-118"/>
 <polygon fill="black" stroke="black" points="917.67,-121.5 927.67,-118 917.67,-114.5 917.67,-121.5"/>
 </g>
-<!-- 1600897217808 -->
+<!-- 2277443789520 -->
 <g id="node13" class="node">
-<title>1600897217808</title>
+<title>2277443789520</title>
 <polygon fill="none" stroke="black" points="741,-90 525,-90 525,-54 741,-54 741,-90"/>
 <text text-anchor="middle" x="633" y="-68.9" font-family="Times New Roman,serif" font-size="12.00">Identify Key Performance Indicators (KPIs)</text>
 </g>
-<!-- 1600897216336&#45;&gt;1600897217808 -->
+<!-- 2277443783376&#45;&gt;2277443789520 -->
 <g id="edge12" class="edge">
-<title>1600897216336&#45;&gt;1600897217808</title>
+<title>2277443783376&#45;&gt;2277443789520</title>
 <path fill="none" stroke="black" d="M306.75,-72C350.39,-72 439.48,-72 513.39,-72"/>
 <polygon fill="black" stroke="black" points="513.14,-75.5 523.14,-72 513.14,-68.5 513.14,-75.5"/>
 </g>
-<!-- 1600897216784 -->
+<!-- 2277443790992 -->
 <g id="node14" class="node">
-<title>1600897216784</title>
+<title>2277443790992</title>
 <polygon fill="none" stroke="black" points="471,-40 360,-40 360,-4 471,-4 471,-40"/>
 <text text-anchor="middle" x="415.5" y="-18.9" font-family="Times New Roman,serif" font-size="12.00">Plan Product Launch</text>
 </g>
-<!-- 1600897216336&#45;&gt;1600897216784 -->
+<!-- 2277443783376&#45;&gt;2277443790992 -->
 <g id="edge13" class="edge">
-<title>1600897216336&#45;&gt;1600897216784</title>
+<title>2277443783376&#45;&gt;2277443790992</title>
 <path fill="none" stroke="black" d="M297.03,-65.67C311.54,-60.27 333.29,-52.19 354.15,-44.44"/>
 <polygon fill="black" stroke="black" points="355.36,-47.72 363.51,-40.96 352.92,-41.16 355.36,-47.72"/>
 </g>
-<!-- 1600897131664 -->
+<!-- 2277444298128 -->
 <g id="node15" class="node">
-<title>1600897131664</title>
+<title>2277444298128</title>
 <polygon fill="none" stroke="black" points="1047,-159 1020,-141 1047,-123 1074,-141 1047,-159"/>
 <text text-anchor="middle" x="1047" y="-137.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897136080&#45;&gt;1600897131664 -->
+<!-- 2277444302288&#45;&gt;2277444298128 -->
 <g id="edge14" class="edge">
-<title>1600897136080&#45;&gt;1600897131664</title>
+<title>2277444302288&#45;&gt;2277444298128</title>
 <path fill="none" stroke="black" d="M858.13,-168.8C894.83,-163.37 969.5,-152.32 1012.84,-145.91"/>
 <polygon fill="black" stroke="black" points="1013.3,-149.38 1022.68,-144.45 1012.27,-142.45 1013.3,-149.38"/>
 </g>
-<!-- 1600897133264 -->
+<!-- 2277443781200 -->
 <g id="node16" class="node">
-<title>1600897133264</title>
+<title>2277443781200</title>
 <polygon fill="none" stroke="black" points="633,-238 606,-220 633,-202 660,-220 633,-238"/>
 <text text-anchor="middle" x="633" y="-216.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897138128&#45;&gt;1600897133264 -->
+<!-- 2277444296912&#45;&gt;2277443781200 -->
 <g id="edge15" class="edge">
-<title>1600897138128&#45;&gt;1600897133264</title>
+<title>2277444296912&#45;&gt;2277443781200</title>
 <path fill="none" stroke="black" d="M488.26,-250.68C526.35,-242.55 571.23,-232.97 600.58,-226.71"/>
 <polygon fill="black" stroke="black" points="601.24,-230.15 610.29,-224.64 599.78,-223.3 601.24,-230.15"/>
 </g>
-<!-- 1600897133776&#45;&gt;1600897133264 -->
+<!-- 2277443783568&#45;&gt;2277443781200 -->
 <g id="edge16" class="edge">
-<title>1600897133776&#45;&gt;1600897133264</title>
+<title>2277443783568&#45;&gt;2277443781200</title>
 <path fill="none" stroke="black" d="M489.46,-214.71C525.09,-216.03 566.4,-217.56 595.35,-218.64"/>
 <polygon fill="black" stroke="black" points="594.93,-222.13 605.05,-219 595.19,-215.13 594.93,-222.13"/>
 </g>
-<!-- 1600897211472&#45;&gt;1600897131664 -->
+<!-- 2277443780880&#45;&gt;2277444298128 -->
 <g id="edge17" class="edge">
-<title>1600897211472&#45;&gt;1600897131664</title>
+<title>2277443780880&#45;&gt;2277444298128</title>
 <path fill="none" stroke="black" d="M977.09,-122.99C988.51,-125.97 1003.26,-129.83 1016.19,-133.21"/>
 <polygon fill="black" stroke="black" points="1014.92,-136.49 1025.48,-135.64 1016.69,-129.72 1014.92,-136.49"/>
 </g>
-<!-- 1600897211728 -->
+<!-- 2277443791824 -->
 <g id="node17" class="node">
-<title>1600897211728</title>
+<title>2277443791824</title>
 <polygon fill="none" stroke="black" points="835.5,-82 808.5,-64 835.5,-46 862.5,-64 835.5,-82"/>
 <text text-anchor="middle" x="835.5" y="-60.9" font-family="Times New Roman,serif" font-size="12.00">X</text>
 </g>
-<!-- 1600897217808&#45;&gt;1600897211728 -->
+<!-- 2277443789520&#45;&gt;2277443791824 -->
 <g id="edge18" class="edge">
-<title>1600897217808&#45;&gt;1600897211728</title>
+<title>2277443789520&#45;&gt;2277443791824</title>
 <path fill="none" stroke="black" d="M741.29,-67.72C761.82,-66.9 781.95,-66.1 798.23,-65.45"/>
 <polygon fill="black" stroke="black" points="797.98,-68.96 807.83,-65.06 797.7,-61.97 797.98,-68.96"/>
 </g>
-<!-- 1600897216016 -->
+<!-- 2277443791568 -->
 <g id="node18" class="node">
-<title>1600897216016</title>
+<title>2277443791568</title>
 <polygon fill="none" stroke="black" points="690,-36 576,-36 576,0 690,0 690,-36"/>
 <text text-anchor="middle" x="633" y="-14.9" font-family="Times New Roman,serif" font-size="12.00">Analyze Sales Trends</text>
 </g>
-<!-- 1600897216784&#45;&gt;1600897216016 -->
+<!-- 2277443790992&#45;&gt;2277443791568 -->
 <g id="edge19" class="edge">
-<title>1600897216784&#45;&gt;1600897216016</title>
+<title>2277443790992&#45;&gt;2277443791568</title>
 <path fill="none" stroke="black" d="M471.44,-20.98C499.74,-20.45 534.51,-19.81 564.45,-19.25"/>
 <polygon fill="black" stroke="black" points="564.21,-22.76 574.15,-19.07 564.08,-15.76 564.21,-22.76"/>
 </g>
-<!-- 1600897126160 -->
+<!-- 2277444300816 -->
 <g id="node19" class="node">
-<title>1600897126160</title>
+<title>2277444300816</title>
 <ellipse fill="orange" stroke="black" cx="1128" cy="-141" rx="18" ry="18"/>
 </g>
-<!-- 1600897131664&#45;&gt;1600897126160 -->
+<!-- 2277444298128&#45;&gt;2277444300816 -->
 <g id="edge23" class="edge">
-<title>1600897131664&#45;&gt;1600897126160</title>
+<title>2277444298128&#45;&gt;2277444300816</title>
 <path fill="none" stroke="black" d="M1074.75,-141C1082.38,-141 1090.73,-141 1098.47,-141"/>
 <polygon fill="black" stroke="black" points="1098.43,-144.5 1108.43,-141 1098.43,-137.5 1098.43,-144.5"/>
 </g>
-<!-- 1600897133264&#45;&gt;1600897136080 -->
+<!-- 2277443781200&#45;&gt;2277444302288 -->
 <g id="edge20" class="edge">
-<title>1600897133264&#45;&gt;1600897136080</title>
+<title>2277443781200&#45;&gt;2277444302288</title>
 <path fill="none" stroke="black" d="M653.59,-215.31C688.55,-206.94 761.94,-189.37 803.7,-179.37"/>
 <polygon fill="black" stroke="black" points="804.45,-182.79 813.36,-177.06 802.82,-175.99 804.45,-182.79"/>
 </g>
-<!-- 1600897211728&#45;&gt;1600897211472 -->
+<!-- 2277443791824&#45;&gt;2277443780880 -->
 <g id="edge21" class="edge">
-<title>1600897211728&#45;&gt;1600897211472</title>
+<title>2277443791824&#45;&gt;2277443780880</title>
 <path fill="none" stroke="black" d="M852.12,-71.06C871.78,-79.94 905.85,-95.34 929.59,-106.07"/>
 <polygon fill="black" stroke="black" points="928.06,-109.21 938.61,-110.14 930.94,-102.84 928.06,-109.21"/>
 </g>
-<!-- 1600897216016&#45;&gt;1600897211728 -->
+<!-- 2277443791568&#45;&gt;2277443791824 -->
 <g id="edge22" class="edge">
-<title>1600897216016&#45;&gt;1600897211728</title>
+<title>2277443791568&#45;&gt;2277443791824</title>
 <path fill="none" stroke="black" d="M690.38,-30.94C727.19,-39.38 773.84,-50.08 803.92,-56.98"/>
 <polygon fill="black" stroke="black" points="802.96,-60.35 813.49,-59.18 804.52,-53.53 802.96,-60.35"/>
 </g>
