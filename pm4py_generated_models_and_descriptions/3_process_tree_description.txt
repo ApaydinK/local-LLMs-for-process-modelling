@@ -1,2 +1,2 @@
-############## Improve Description - e.g. nothing to change #####################
+############## Improve Description - e.g. less use negation #####################
 Optimization and processing has to be done once but it does not matter when next to the main work. The main work starts with designing. Then compiling the designed code into an executable form. Evaluate the compiled code against a set of predefined criteria or metrics, such as performance, security, or usability. Sometimes the evaluation is done first and then the generation. If generations and evaluations are performed then this leads to a restart of compile. Finally the compiled code is ready to be either validated by a focus group or tested by the developer. 

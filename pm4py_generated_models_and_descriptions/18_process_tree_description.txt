@@ -1,1 +1,2 @@
+############## Improve Description - e.g. start with 2 options if you need a product, then order product. If the product was ordered, then process review invoce or create purchase...######## ########
 Either order a product or review an invoice or create a purchase order. If you review an invoice or create a purchase order then please authorize the transaction while you also make a payment package. Always and your work by processing a claim and then by deciding to ship goods or verify all information is accurate and complete. 

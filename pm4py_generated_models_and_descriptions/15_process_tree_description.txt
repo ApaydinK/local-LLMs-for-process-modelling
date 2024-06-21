@@ -1,1 +1,2 @@
-Our work is simple, everytime we just initiate loan applications or get customer information or send notification emails. Sometimes our work requires a second activity. Whenever we need to approve loan applications, we also verify the credit history of our customers. 
+############## Improve Description - e.g. first path is to initiate loan application, 2nd is if the loan application is available #####################
+Our work is simple, everytime we just initiate loan applications or get customer information or send notification emails. Sometimes our work requires a second activity, whenever we need to approve loan applications, we also verify the credit history of our customers. 

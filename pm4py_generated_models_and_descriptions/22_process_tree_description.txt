@@ -1,3 +1,4 @@
+############## Improve Description - e.g. state the end point of subprocesses, mention iterations to continuous analyze_samples #####################
 1. Analyzing individual samples by extracting features and storing results.
 2. Preparing data for analysis by cleaning, transforming, or aggregating it.
 3. Running parallel analyses on the prepared data to generate insights.
