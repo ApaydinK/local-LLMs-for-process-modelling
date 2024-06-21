@@ -1,4 +1,4 @@
-process tree structure: +( ->( +( 'sales_team', ->( 'meeting_preparation', 'setting_up_materials' ) ), *( 'marketing_department', 'creating_content' ) ), *( 'overseeing', *( 'implementing_features', X( 'feature_development', 'conducting_tests' ) ) ) )
+############## Improve Description - e.g. the marketing department is creating content only after the prior activities and not simultaneously to them #####################
 
 The process starts with the Sales Team and the Marketing Department working in parallel. In the Sales Team branch, the team first engages in Meeting Preparation, setting the stage for a successful meeting, followed by Setting Up Materials, where they gather necessary items such as presentation slides and product demos. Simultaneously, the Marketing Department focuses on Creating Content, developing materials like blog posts, social media campaigns, and video scripts to engage their target audience.
 

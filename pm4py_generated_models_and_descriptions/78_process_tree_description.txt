@@ -1,5 +1,4 @@
-process tree structure: +( 'Download Files', X( X( 'Analyze Error', ->( 'Send Report', *( 'Gather Data', 'Process File' ) ) ), +( 'Prepare Data', X( 'Extract Features', 'Train Model' ) ) ) )
-
+############## Improve Description - e.g. the process does not always start with doenloading files, instead it jsut has to be performed once during the entire process indepentend of the time #############
 The process begins with Downloading Files, which involves obtaining relevant datasets from various sources. Next, Analyze Error is performed to understand the nature of the errors, which may involve manual review or automated tools. The process then takes two parallel paths: 
 
 In the first path, Gather Data involves collecting information about the software application, such as logs or configuration files, followed by Process File, which includes tasks like parsing log files or transforming raw data. 

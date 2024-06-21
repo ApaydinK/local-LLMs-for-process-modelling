@@ -1,6 +1,4 @@
-process tree structure: ->( X( +( 'Prepare', 'Submit' ), *( 'Create', 'Test' ) ), ->( 'Develop', ->( 'Conduct', 'Report' ) ) )
-
 Use Case: Product development
 - If the resources are not available, process starts with parallel processes Prepare (preparing resources or material needed for the project) and Submit (available materials to authorities or stakeholders)
 - If the resources are available, process starts with Create the design, report or prototype and then do a test. If anything changes in criteria/alerts during test phase, then return to Create step
-- Both of two above starting points continue process with Develop step which involves refining or elaborating on the created item. Once development is complete, the process moves on to Conduct the tasks (e.g., testing or evaluation) and then does Report for the results.   
+- Both of two above starting points continue the process with the Develop step which involves refining or elaborating on the created item. Once development is complete, the process moves on to Conduct the tasks (e.g., testing or evaluation) and then does Report for the results.   

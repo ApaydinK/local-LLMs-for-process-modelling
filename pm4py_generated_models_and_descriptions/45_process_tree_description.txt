@@ -1,5 +1,3 @@
-process tree structure: X( 'Conduct Interview', X( 'Review Document', +( 'Plan Meeting', X( 'Schedule Follow-up', 'Send Report' ) ) ) )
-
 Use case: Recruitment/Panel-discussion
 
 This process model begins with Conduct Interview, gathering crucial insights and information. It then offers an alternative path to Review Document, which involves thoroughly examining relevant materials. The process continues with Plan Meeting, organizing a session for further discussion. This step provides two additional options: Schedule Follow-up, arranging a subsequent meeting for ongoing dialogue, or Send Report, disseminating findings and decisions. 

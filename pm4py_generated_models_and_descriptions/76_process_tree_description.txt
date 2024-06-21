@@ -1,3 +1,2 @@
-process tree structure: ->( X( 'Order Parts', 'Computer' ), X( 'Design Product', +( 'Test Prototype', ->( 'Assemble Final Product', 'Box' ) ) ) )
-
+############## Improve Description - e.g. no choice stated #####################
 The process starts with ordering parts using a computer. After ordering the parts, the design process begins. This involves testing the prototype and, in parallel, assembling the final product. Once the prototype is tested, the final product is continuously assembled and boxed for shipment.

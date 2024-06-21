@@ -1,3 +1,3 @@
-process tree structure: +( X( 'Prepare Report for Manager', ->( 'Review Document by Editor', 'Finalize Report' ) ), *( 'Check Email Inbox', ->( 'Respond to Important Message from Client', 'Update Project Status' ) ) )
+###### continue validation here ######
 
 The process begins with two parallel tasks: preparing a report for the manager and managing the email inbox. For the report preparation, the initial draft is created, reviewed by an editor, and then finalized based on feedback. Simultaneously, the email inbox is checked regularly, with important client messages being responded to promptly, followed by updating the project status as necessary. This structure ensures that both reporting and email management tasks are handled efficiently in parallel.

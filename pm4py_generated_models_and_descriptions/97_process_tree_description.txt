@@ -1,3 +1,3 @@
-process tree structure: *( 'generate_code', ->( *( 'write_unit_test', +( 'integrate_module', X( 'add_features', 'test_case' ) ) ), ->( 'release_update', 'design_pattern' ) ) )
+###### continue validation here ######
 
 The process begins with generating code, which involves a series of repeated steps. Initially, unit tests are written repeatedly for the developed code. Concurrently, the module is integrated into the main codebase, and new features along with corresponding test cases are iteratively added to ensure thorough coverage. Following this, updates to the codebase are released sequentially. Finally, design patterns are applied to the updated codebase for refactoring, performance improvement, and adherence to best practices. This workflow ensures that code generation, unit testing, feature addition, and updates follow a structured pattern with continuous improvements until the desired outcome is achieved.

@@ -1,3 +1,1 @@
-process tree structure: +( ->( 'Conduct Experiment', ->( 'Analyze Results', 'Collect Samples' ) ), +( 'Summarize Findings', 'Prepare Data' ) )What a delight! I'd be happy to help you decipher this process tree.
-
 Per day you will conduct one experiment for laboratory work. The order is crucial here: the experiment must be conducted before analyzing the results, and collecting samples only makes sense after analyzing the results. Somewhere within or outside these three steps another group will summarize the findings from the previous work and another group will prepare data for the next experiment the next day. 

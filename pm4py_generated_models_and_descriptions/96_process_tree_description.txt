@@ -1,3 +1,3 @@
-process tree structure: ->( *( 'accept_delivery', 'order' ), X( 'confirm', +( 'review_menu', ->( 'check_availability', 'place_order' ) ) ) )
+###### continue validation here ######
 
 The process begins with accepting a delivery request, which involves creating a new order and storing it along with customer details. Following this, the process moves to a decision point where parallel tasks are executed. The customer reviews the menu and selects their preferred items, while the system simultaneously checks the availability of these items. If the items are available, the order is finalized, and a confirmation notification is sent to the customer. If the items are not available, the order cannot be placed. This process ensures efficient handling of online food orders by covering the steps of accepting orders, checking availability, placing orders, and sending confirmations.

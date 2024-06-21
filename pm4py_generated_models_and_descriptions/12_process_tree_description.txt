@@ -1,3 +1,1 @@
-process tree structure: X( 'analyze data', *( X( 'develop algorithm', *( 'design model', *( 'generate report', 'execute script' ) ) ), X( 'validate results', 'test software' ) ) )
-
 The process starts with a choice between two alternatives: "Analyze Data" and a recursive process, where each iteration can involve developing an algorithm or designing a model, or generating a report and executing a script. Another possibility within the recursive process is the testing of software and the validation of results. 

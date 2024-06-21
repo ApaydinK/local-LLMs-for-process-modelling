@@ -1,3 +1,1 @@
-process tree structure: X( 'Initiate Loan Application', X( ->( 'Approve Loan Application', 'Verify Credit History' ), X( 'Get Customer Information', 'Send Notification Email' ) ) )What a fascinating process! Let me break it down for you.
-
 Our work is simple, everytime we just initiate loan applications or get customer information or send notification emails. Sometimes our work requires a second activity. Whenever we need to approve loan applications, we also verify the credit history of our customers. 

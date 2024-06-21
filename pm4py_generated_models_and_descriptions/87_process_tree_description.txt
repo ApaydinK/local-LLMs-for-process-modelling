@@ -1,3 +1,3 @@
-process tree structure: X( X( X( 'Create Report', X( 'Deliver Report', 'Edit Report' ) ), *( 'Gather Requirements', 'Analyze Data' ) ), *( 'Finalize Design', 'Build Prototype' ) )
+###### continue validation here ######
 
 The process starts with creating a report, which involves either delivering the initial draft or editing it as needed. Following this, requirements are gathered from stakeholders, and data is analyzed to inform the report's content. Once the necessary data is collected and analyzed, the design of the report is finalized, and a prototype is built. After the prototype is ready, the report undergoes further editing to refine its content. Finally, the completed report is delivered. This structured process ensures that each step, from gathering requirements and analyzing data to finalizing the design and delivering the report, is thoroughly addressed to produce a high-quality, comprehensive business report.

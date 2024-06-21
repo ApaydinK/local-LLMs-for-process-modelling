@@ -1,5 +1,4 @@
-process tree structure: X( 'Verify Report', *( X( 'Conduct Interview', 'Review Application' ), X( 'Evaluate Candidate', 'Generate Proposal' ) ) )
-
+############## Improve Description - e.g. no parallel process #####################
 The process starts with verifying the report. This is followed by two parallel paths:
 
  1. Conduct Interview & Review Application:

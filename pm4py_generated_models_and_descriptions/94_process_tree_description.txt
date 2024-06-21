@@ -1,4 +1,4 @@
-process tree structure: X( +( X( 'Create Document', X( 'Edit Report', 'Submit Proposal' ) ), X( 'Review Draft', X( 'Hire Consultant', X( 'Interview Candidate', 'Finalize Contract' ) ) ) ), *( 'Gather Requirements', 'Approve Request' ) )
+###### continue validation here ######
 
 The process involves creating a comprehensive proposal for a consulting project, involving several key activities to ensure the proposal meets client requirements.
 
