@@ -1,7 +1,1 @@
-1. `Review Invoice`: This activity reviews the invoice for the product being ordered.
-2. `Create Purchase Order`: After the invoice is reviewed, this activity creates a new purchase order.
-1. `Ship Goods`: This activity ships the goods related to the product being ordered.
-2. `Verify Information`: After shipping, this activity verifies that all information is accurate and complete.
-1. The system reviews the invoice (Review Invoice) and creates a new purchase order (Create Purchase Order).
-2. In parallel, the system processes any claims related to the product being ordered.
-3. For each claim, the system ships the goods (Ship Goods) and then verifies that all information is accurate and complete (Verify Information).
+Either order a product or review an invoice or create a purchase order. If you review an invoice or create a purchase order then please authorize the transaction while you also make a payment package. Always and your work by processing a claim and then by deciding to ship goods or verify all information is accurate and complete. 

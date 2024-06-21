@@ -1,2 +1,3 @@
-A process that dispatches notifications, extracts relevant information, and assigns or handles it accordingly.
-Simultanously, capturing and processing data, while searching for specific patterns or insights.
+Your mate dispatches notifications, extracts relevant information, and assigns or handles it accordingly.
+Simultanously, you capture, fetch and generate data that is then beeing indexed while also browsed. 
+After indexing and browsing are completed, fetch and generated more data. Either hand over the generated data for indexing and browsing again or otherwise repeat the process at capture data. Finally, continue your work until you have captured enough data. When enough data is capture and all steps from your mate are completed, finish your shift. 
