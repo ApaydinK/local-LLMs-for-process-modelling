@@ -1,3 +1,3 @@
-process tree structure: *( 'Place Order', +( 'Check Payment', ->( 'Process Payment', *( 'Packaging', 'Prepare Order' ) ) ) )
+############## Improve Description - e.g. the process could end directly after place order and there is no sequentiality needed between process payment and check payment #####################
 
 The process starts with Place Order by the customer. Next, the system engages in Check Payment, verifying if the payment has been received and is valid. Upon successful payment verification, the process moves to Process Payment, which triggers two sequential subprocesses: Packaging and Prepare Order. In the Packaging step, the ordered items are packed for shipping. Once packaging is complete, the process continues with Prepare Order, which includes tasks such as printing shipping labels, updating the order status, and preparing any necessary documentation.

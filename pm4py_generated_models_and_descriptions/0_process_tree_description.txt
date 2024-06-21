@@ -1,8 +1,1 @@
-process tree structure: ->( X( 'Receive_Order', +( 'Place_Order_for_Supply_Chains', 'Fill_Consolidation_Orders' ) ), ->( 'Confirm_Product_Return', 'Process_Returned_Items' ) )
-
-Simple description: 
-A process in the context of supply chain management, specifically in the area of product returns.
-The process either starts with receive order or with the two activities "place order for supply chains" and "fill consolidation order" whose order does not matter. Afterwards the sales department confirms the product return, so that the returned items are processed. 
-
-Detailed description: 
 The initial trigger that sets off the entire process is either the receival of an order or a parallel subprocess. The parallel subprocess consists of the activities "place order for supply chains" and "fill consolidation order". Once the receival of an order or the parallel subprocesses finishes, the focus shifts to handling product returns. For this, the product return has to be confirmed. Once the return is confirmed, the returned items are processed. 

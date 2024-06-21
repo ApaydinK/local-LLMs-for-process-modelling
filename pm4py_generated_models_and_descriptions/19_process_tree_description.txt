@@ -1,6 +1,2 @@
-process tree structure: +( *( 'Capture', *( ->( 'Fetch', 'Generate' ), +( 'Browse', 'Index' ) ) ), ->( 'Dispatch', ->( 'Extract', X( 'Assign', 'Handle' ) ) ) )What a delightful process model!
-
-Let me break it down for you:
-
 A process that dispatches notifications, extracts relevant information, and assigns or handles it accordingly.
 Simultanously, capturing and processing data, while searching for specific patterns or insights.

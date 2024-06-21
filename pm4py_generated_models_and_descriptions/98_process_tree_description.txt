@@ -1,3 +1,3 @@
-process tree structure: +( +( X( 'create report', +( 'generate summary', 'deliver package' ) ), *( 'handle complaint', 'book flight' ) ), X( 'process claim', X( 'order package', 'pay invoice' ) ) )
+###### continue validation here ######
 
 The process begins with two independent sequences running simultaneously. The first sequence involves creating a report, which includes generating a summary and delivering a package in parallel. Concurrently, customer complaints are handled, and flights are booked repeatedly until all issues are resolved. The second sequence is another parallel operation, where claims are processed, and depending on the situation, packages are ordered, and invoices are paid. This workflow ensures that report generation, customer complaint handling, and claims processing are conducted efficiently, with multiple activities running in parallel and repeated until the desired outcomes are achieved.

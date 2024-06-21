@@ -1,5 +1,3 @@
-process tree structure: ->( ->( 'Oversee Project Meeting', +( 'Hold Project Meeting', 'Conduct Team Review' ) ), *( 'Review Reports', *( 'Review Report Content', X( 'Review Report Format', 'Submit Report' ) ) ) )
-
 Use Case: Project meeting
 
 This process begins with Oversee Project Meeting, ensuring that the meeting is effectively planned and coordinated. It then progresses to two parallel tasks: Hold Project Meeting to facilitate discussion and Conduct Team Review to evaluate team performance. Following these activities, it transitions to Review Reports, focusing on analyzing and assessing report details. This step involves a detailed review of Report Content, ensuring accuracy and completeness, followed by two alternatives: Review Report Format to ensure proper formatting or Submit Report, finalizing the process. 

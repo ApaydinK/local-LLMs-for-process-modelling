@@ -1,5 +1,3 @@
-process tree structure: *( +( 'Schedule Meetings', ->( 'Send Notifications', X( 'Hold Discussions', 'Conduct Interviews' ) ) ), ->( 'Analyze Data', 'Prepare Report' ) )
-
 Use Case: recruitment process
 This process begins with Schedule Meetings with candidates. Parallel process is to Send Notifications, informing participants and stakeholders. Following this, it offers two alternative activities: Hold Discussions to facilitate conversation or Conduct Interviews for gathering in-depth information. Concurrently, the process includes Analyze Data to understand and interpret information, leading to Prepare Report, where insights are compiled into a comprehensive document. This is aiming for further activities like planning, executing, and documenting.
 

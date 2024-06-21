@@ -1,4 +1,2 @@
-process tree structure: *( 'Process Customer Order', *( 'Verify Product Availability', +( 'Prepare Shipping Box', ->( 'Process Order', 'Ship Package' ) ) ) )
-
 Use Case: Process Customer Order, might be common workflow in e-commerce
 This process begins with Process Customer Order, handling the initial stages of an order. It then moves to Verify Product Availability, ensuring that the requested items are in stock. Following verification, it branches into Prepare Shipping Box, readying the package for dispatch. The next step involves Process Order, completing the order procedures, and then Ship Package, ensuring the package is sent to the customer. This sequence ensures a comprehensive and efficient workflow from order processing and product verification to preparation and shipping.

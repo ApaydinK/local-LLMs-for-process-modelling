@@ -1,4 +1,4 @@
-process tree structure: X( ->( 'Check', +( +( 'Estimate', 'Design' ), *( 'Gather', 'Certify' ) ) ), X( 'Verify', 'Finance' ) )
+###### continue validation here ######
 
 The process begins with two parallel branches.
 

@@ -1,4 +1,2 @@
-process tree structure: *( 'Review Meeting', X( +( 'Assign Task', *( 'Conduct Research Study', 'Analyze Data' ) ), +( 'Write Report', ->( 'Prepare Presentation', 'Obtain Stakeholder Feedback' ) ) ) )
-
 Use Case: Conducting a Research Study with Stakeholder Feedback
 This process model begins with Review Meeting, where the team gathers to assess progress and discuss plans. It then branches into two alternative paths. The first path involves Assign Task, followed by two parallel activities: Conduct Research Study to gather insights and Analyze Data to interpret findings. The second path starts with Write Report, documenting the results, and continues with Prepare Presentation, creating a visual summary. This path also involves Obtain Stakeholder Feedback, gathering input and approval from key stakeholders. 

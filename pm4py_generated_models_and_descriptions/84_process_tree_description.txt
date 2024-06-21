@@ -1,4 +1,4 @@
-process tree structure: +( *( ->( +( 'File Invoice', *( 'Process Invoices', 'Update Database' ) ), X( 'Handle Order', 'Confirm Shipment' ) ), ->( 'File Invoice', 'Confirm Shipment' ) ), *( 'Get Order', 'Bill Customer' ) )
+###### continue validation here ######
 
 The process begins with handling invoices and orders in parallel with obtaining orders and billing customers. Initially, there is a sequence where filing an invoice triggers the process. This sequence involves two parallel tasks: processing invoices, where invoices are verified and processed, and updating the database with the processed invoice information. Alongside, there is a choice between handling orders, which involves processing orders or updating their status, and confirming shipment, which involves confirming the shipment with the customer.
 

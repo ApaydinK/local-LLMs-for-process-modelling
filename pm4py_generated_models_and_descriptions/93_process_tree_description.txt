@@ -1,3 +1,3 @@
-process tree structure: *( +( *( 'Hire Manager', +( 'h', 'Assessment' ) ), X( 'Interview', 'g' ) ), X( 'Train Employee', X( 'Mentor', 'Team Lead' ) ) )
+###### continue validation here ######
 
 The process begins with two main tasks: hiring a manager and training employees. For hiring, it starts by finding a suitable candidate for the manager position, which includes an assessment. If the hiring and assessment are successful, the process moves forward. At the same time, interviews and approvals are conducted in parallel. Once a manager is hired, the focus shifts to training. The new employee undergoes training, which includes mentoring from a team lead. This entire process is repeated as needed to ensure the hiring and training are thorough and effective.

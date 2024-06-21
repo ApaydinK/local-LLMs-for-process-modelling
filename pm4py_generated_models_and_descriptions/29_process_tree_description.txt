@@ -1,4 +1,2 @@
-process tree structure: *( +( ->( 'Order Pizza', +( 'Get Ingredients', 'Fetch Food' ) ), *( 'Prepare Hamburger', 'Cook Chicken' ) ), ->( 'Book Table', +( 'Eat Entree', ->( 'Deliver Dinner', 'Gather Groceries' ) ) ) )
-
 Use Case: restaurant or food delivery service
 This process begins with Ordering Pizza, where one can either Get Ingredients by themselves or Fetch Food with prepared food from the restaurant. Concurrently, there are steps to Prepare Hamburger and Cook Chicken, focusing on diverse meal preparation. Alternatively, it offers an option to Book Table at a restaurant, followed by enjoying the Eat Entree. It then splits into Deliver Dinner, arranging meal delivery, or Gather Groceries for future meals, creating a dynamic and flexible approach to meal planning and dining.

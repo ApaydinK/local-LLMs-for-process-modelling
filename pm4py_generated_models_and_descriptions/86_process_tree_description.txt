@@ -1,4 +1,4 @@
-process tree structure: ->( X( +( 'Extract', 'Sort' ), *( 'Create', 'f' ) ), X( 'Files', 'Delete' ) )
+###### continue validation here ######
 
 The process involves organizing and cleaning up files. It starts with two main branches executed sequentially.
 

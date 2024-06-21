@@ -1,7 +1,5 @@
-process tree structure: ->( 'Prepare Order', +( 'Review Invoice', ->( 'Process Payment', *( 'Pack Item', 'Ship Package' ) ) ) )
-
 Use Case: Delivery Service of e-commerce company
 
-The process contains in total 5 activities from beginning to the end with three main parts: order preparation, order processing and shipment. When the order comes, the process starts when the shop owner does 'prepare order'. Afterward there are two parallel processes 'review invoice' and 'process payment'. The invoice is reviewed to ensure all information from customers are correct including quantities of items, prices, special offers, applied taxes, etc and end of the first process. Simultanously, payment is also processed by checking payment method and validation. The item is packed afterward in box or bag. If there is more items, the current package gets shipped the next item gets packed.
+The process contains in total 5 activities from beginning to the end with three main parts: order preparation, order processing and shipment. When the order comes, the process starts when the shop owner does 'prepare order'. Afterward there are two parallel processes 'review invoice' and 'process payment'. The invoice is reviewed to ensure all information from customers are correct including quantities of items, prices, special offers, applied taxes, etc. Simultanously, payment is also processed by checking payment method and validation. The item is packed afterwards in box or bag. If there are more items, the current package gets shipped and the next item gets packed.
 
 

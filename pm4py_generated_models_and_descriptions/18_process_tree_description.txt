@@ -1,5 +1,3 @@
-process tree structure: ->( X( 'Order Product', ->( X( 'Review Invoice', 'Create Purchase Order' ), +( 'Authorize Transaction', 'Make Payment Package' ) ) ), ->( 'Process Claim', X( 'Ship Goods', 'Verify Information' ) ) )What a delightful process tree!
-
 1. `Review Invoice`: This activity reviews the invoice for the product being ordered.
 2. `Create Purchase Order`: After the invoice is reviewed, this activity creates a new purchase order.
 1. `Ship Goods`: This activity ships the goods related to the product being ordered.

@@ -1,5 +1,3 @@
-process tree structure: *( +( 'Design Prototype', X( 'Develop Algorithm', X( 'Evaluate Data', 'Conduct Experiment' ) ) ), ->( 'Finalize Report', 'Prepare Materials' ) )
-
 Use Case: Product development
 
 The process is about designing and developing a new product, which involves prototyping, algorithm development, data evaluation, experimentation, reporting, and material preparation. 

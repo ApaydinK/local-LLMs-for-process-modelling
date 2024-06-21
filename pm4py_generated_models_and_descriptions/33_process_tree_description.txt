@@ -1,5 +1,3 @@
-process tree structure: *( +( 'Send Invitation', X( 'Wait Response', +( 'Prepare Report', 'Fill Form' ) ) ), X( *( 'Conduct Interview', 'Gather Data' ), ->( 'Call Meeting', 'Hold Discussion' ) ) )
-
 Use Case: Recruitment
 
 This process starts with Send Invitation, setting the stage for further activities. It then offers two parallel paths: Wait Response, to anticipate feedback, or a sequence where Prepare Report and Fill Form are done simultaneously. In the next phase, there are two sets of alternatives: one is to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making.

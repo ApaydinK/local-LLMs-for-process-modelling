@@ -1,3 +1,3 @@
-process tree structure: *( 'Prepare Order', X( 'Verify Payment', +( 'Process Credit Card', ->( 'Ship Package', 'Track Delivery' ) ) ) )
+###### continue validation here ######
 
 The process begins with preparing an order, which is repeated until all necessary steps are complete. Once the order is prepared, payment verification occurs. If the payment is verified, the process continues with processing the credit card information. After the payment is processed, the package is prepared for shipment. Following this, the delivery of the package is tracked to ensure it reaches the customer. This cycle is repeated for each order, ensuring that orders are prepared, payments are verified and processed, and shipments are tracked effectively.

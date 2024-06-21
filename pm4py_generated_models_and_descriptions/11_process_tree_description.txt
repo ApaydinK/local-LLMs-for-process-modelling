@@ -1,3 +1,1 @@
-process tree structure: X( ->( 'Create Menu', +( 'Prepare Order', 'Pack Goods' ) ), X( 'Process Payment', +( 'Verify Card', 'Authorize Transaction' ) ) )
-
 The process represents an online food ordering and payment system. Where a customer creates a menu and then the restaurant is preparing an order while also packing goods. The payment system is indepentend from the rest and either is solely done by processing a payment or should be shown as simultaneously verifying cards and authorizing transactions.

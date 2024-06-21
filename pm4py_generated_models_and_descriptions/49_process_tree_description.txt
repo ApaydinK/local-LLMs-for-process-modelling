@@ -1,5 +1,3 @@
-process tree structure: X( +( 'Confirm Order Details', *( 'Process Order', X( 'Process the Order', +( 'Add Additional Product Information', 'Ship the Order' ) ) ) ), *( 'Gather Product Information', +( 'Handle Product Returns', +( 'h', 'Update Inventory' ) ) ) )
-
 Use Case: e-commerce
 This process contains 2 paths to choose. Path 1 begins with Confirm Order Details, ensuring that all the order information is accurate and complete. It then branches into two concurrent options. The first option involves Process Order, where the initial processing takes place, with an alternative option to Process the Order again, ensuring thorough handling. This option also includes Add Additional Product Information, enriching the order with more details, followed by Ship the Order, dispatching the product to the customer.
 

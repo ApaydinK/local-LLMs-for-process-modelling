@@ -1,5 +1,3 @@
-process tree structure: X( X( +( 'Book Editor', 'Research' ), X( 'Review', *( 'Paper', 'Article' ) ) ), +( 'Submit', *( 'Journal', +( 'Findings', 'Research' ) ) ) )
-
 Process: Academic Paper Publishing Process
 
 Overview: The process starts with research and editing a book manuscript. The manuscript then undergoes review by experts in the field. Once approved, the paper is submitted to a journal for publication. The findings from the research are also published in a separate article or report.
