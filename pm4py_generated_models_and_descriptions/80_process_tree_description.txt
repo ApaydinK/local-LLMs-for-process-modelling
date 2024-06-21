@@ -1,3 +1,7 @@
 ############## Improve Description - e.g. the process could end directly after place order and there is no sequentiality needed between process payment and check payment #####################
 
 The process starts with Place Order by the customer. Next, the system engages in Check Payment, verifying if the payment has been received and is valid. Upon successful payment verification, the process moves to Process Payment, which triggers two sequential subprocesses: Packaging and Prepare Order. In the Packaging step, the ordered items are packed for shipping. Once packaging is complete, the process continues with Prepare Order, which includes tasks such as printing shipping labels, updating the order status, and preparing any necessary documentation.
+
+
+*********************************** Yorck ***********************************
+The process starts with placeing an order. In some cases, that is all there is to do, and we are done. Most ofen, after placing an order we need to both process the payment and check the payment. When processing the payment, we need to take care of packaging, and then maybe preparing an order and packaging again. When done with packaging and checking the payment, we can place another order, which may or may not end the process.

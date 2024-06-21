@@ -5,3 +5,7 @@ The process begins with two parallel branches.
 In the Left Branch, the process starts with Check, an initial feasibility study. Following this, the process includes two parallel activities: Estimate and Design, where the project time, cost, and resources are estimated, and the software architecture and system structure are designed. Then, there is a loop of Gather and Certify, which involves gathering requirements and certifying them until all requirements are met.
 
 In the Right Branch, the process involves Verify, ensuring the software meets specified requirements, and Finance, handling budgeting, cost tracking, and ensuring expenses are within limits.
+
+
+*********************************** Yorck ***********************************
+For this process, it is either the choice of Verify or Finance. Or we begin with Check. Then it is both Estimate, Design, and Gather. Gather can cause Certify, which leads back to Gather. When Estimate, Design, and Gather are done, or when Verify or Finance is done, the process ends.

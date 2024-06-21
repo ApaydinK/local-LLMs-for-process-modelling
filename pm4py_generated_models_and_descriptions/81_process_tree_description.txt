@@ -7,3 +7,7 @@ In the Design Development Track, the process starts with the creation of Design 
 Simultaneously, the Planning Track begins with creating a Plan, refined through iterative Edit (reviews and revisions) and Draft (improvement) stages.
 
 The two tracks converge when the design elements and the plan are finalized, ready for implementation.
+
+
+*********************************** Yorck ***********************************
+This process has two parallel lines of work. The first starts off with design. Then, if also the second line has finished, the process can end. Otherwise, the first line can proceed with either blueprints or specifications, and then back to design. The second line of work is either plan or edit. If edit, it can draft. This means going back to edit. If it does not draft, after design and either plan or edit, the process can end.
