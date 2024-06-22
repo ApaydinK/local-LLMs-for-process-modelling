@@ -1,3 +1,7 @@
 ###### continue validation here ######
 
 The process begins with two main tasks: hiring a manager and training employees. For hiring, it starts by finding a suitable candidate for the manager position, which includes an assessment. If the hiring and assessment are successful, the process moves forward. At the same time, interviews and approvals are conducted in parallel. Once a manager is hired, the focus shifts to training. The new employee undergoes training, which includes mentoring from a team lead. This entire process is repeated as needed to ensure the hiring and training are thorough and effective.
+
+
+*********************************** Yorck ***********************************
+I start by either conducting an Interview, or executing 'g', while simultaneously hiring a manager. After hiring a manager, I have the option to do both 'h' and an assessment in any order, before hiring a manager again. If I don't and have either the Interview or 'g' done, this might be sufficient for the process to end. Alternatively, it goes on with any one of Mentor, Team Lead, or Train Employee. After any of those, I go back to hiring a manager.

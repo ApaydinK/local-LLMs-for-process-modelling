@@ -7,3 +7,8 @@ The process starts with creating a document that outlines the proposed solution.
 In the first branch, a consultant reviews the draft proposal and provides feedback. If the proposal is acceptable, the process moves forward with finalizing the contract with the client. This branch also includes interviewing candidates to assess their qualifications for the project.
 
 In the second branch, internal processes are carried out, such as gathering all necessary requirements from the client and seeking approval for the proposal. These activities are repeated as necessary to ensure all conditions are met.
+
+
+*********************************** Yorck ***********************************
+This process can start in two ways.
+On the one hand, I have to deal with two sub processes at the same time. The first is a choice of either Creating a Document, or chosing between editing a report or submitting a proposal. Any of those ends the subprocess. The second is the choice between Review Draft and several other choices. The first is to either hire a consultant or decide; interview a candidate or finalize a contract. When any of those es done and the first sub process has ended, the entire process ends. On the other hand, I start with Gather Requirements. Then I can either quit and be done, or I can Approve Requests. In that case, I have to Gather Requirements again. 

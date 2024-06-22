@@ -1,3 +1,7 @@
 ###### continue validation here ######
 
 The process begins with two independent sequences running simultaneously. The first sequence involves creating a report, which includes generating a summary and delivering a package in parallel. Concurrently, customer complaints are handled, and flights are booked repeatedly until all issues are resolved. The second sequence is another parallel operation, where claims are processed, and depending on the situation, packages are ordered, and invoices are paid. This workflow ensures that report generation, customer complaint handling, and claims processing are conducted efficiently, with multiple activities running in parallel and repeated until the desired outcomes are achieved.
+
+
+*********************************** Yorck ***********************************
+For this process, two streams of work happen in parallel. For the first one, a choice must be made between creating a report and generating a summary as well as delivering a package. When either the report or the summary and the package are done, this part is finished. At the same time, complaints need to be handled. More often than not, this comes repeatedly, with booking fligths in-between. The second stream of work is either processing a claim or one of two: order a package or pay an invoice. When any one on these is done, and the first half as well, the process ends.

@@ -1,3 +1,7 @@
 ###### continue validation here ######
 
 The process begins with preparing an order, which is repeated until all necessary steps are complete. Once the order is prepared, payment verification occurs. If the payment is verified, the process continues with processing the credit card information. After the payment is processed, the package is prepared for shipment. Following this, the delivery of the package is tracked to ensure it reaches the customer. This cycle is repeated for each order, ensuring that orders are prepared, payments are verified and processed, and shipments are tracked effectively.
+
+
+*********************************** Yorck ***********************************
+This is a simple process. I start by preparing an order. Then I am either done, or I face a choice: I either verify a payment, or I process a credit card and ship a package, or vice versa. After shipping a package, I must track the delivery. When either verify payment or both process credit card and track delivery are done, the process reverts to preparing order, which is the only activity, after which a process can normally end.
