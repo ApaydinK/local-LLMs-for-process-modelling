@@ -1,3 +1,7 @@
 ###### continue validation here ######
 
 The process starts with booking an order. Then, the order is validated to ensure it meets criteria. After validation, the book is shipped. Following shipping, there's a choice: if "Pay" is chosen, payment is processed and the book is shipped to the customer; if "Deliver" is chosen, the book is delivered in-store or there's an issue with shipping. This workflow handles booking, validating, shipping, and finalizing book orders efficiently.
+
+
+*********************************** Yorck ***********************************
+The process starts with booking an order. Then, the order is validated to ensure it meets criteria. After validation, the book is shipped. Following shipping, there's a choice: if "Pay" is chosen, payment is processed and the book is shipped to the customer; if "Deliver" is chosen, the book is delivered in-store or there's an issue with shipping. This workflow handles booking, validating, shipping, and finalizing book orders efficiently.

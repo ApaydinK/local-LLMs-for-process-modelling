@@ -7,3 +7,7 @@ In the first branch, relevant information is extracted from the files and sorted
 The second branch focuses on cleanup. It identifies files that need to be deleted, such as duplicates or unnecessary versions, and removes them. This step helps to free up storage space and maintain a tidy file system.
 
 Overall, this process efficiently manages files by organizing important data and eliminating unnesessary.
+
+
+*********************************** Yorck ***********************************
+The process can start in two ways. Either it is both extract and sort, in any order. Or it is create. Following create, we might do 'f' and then go back to create. After either way the process startet, it finishes with either Files or Delete.
