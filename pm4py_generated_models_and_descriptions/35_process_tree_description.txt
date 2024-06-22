@@ -1,3 +1,5 @@
+##include manage project ## specify restart and end of process ##
+
 Use Case: Project management workflow
 
 This process begins with Conduct Interviews, where you gather qualitative insights. Parallel work is the task Analyze Data, which involves examining and interpreting the information collected. Afterward, Create Report is proceeded, where findings are documented and summarized, focusing on overseeing and coordinating project activities. 

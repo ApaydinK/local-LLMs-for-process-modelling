@@ -1,3 +1,4 @@
+### include group interviews ### specify the 4 possible loops ### specify that the process only can end then the last interview of a candidate is done at the end of the day ## 
 Use Case: Recruitment
 This process model begins with Interview Candidate, who is one of potential new hires. Following this, it progresses to Hire Manager, where a managerial position is filled. The next step involves Train Trainer, focusing on preparing a trainer for their role. 
 Concurrently, it offers two alternative paths. The first path involves Recruit Recruiter, bringing on someone to handle future recruitment processes, and continues with Screen Applicants, reviewing potential candidates, and Group Interviews, conducting collective candidate assessments.

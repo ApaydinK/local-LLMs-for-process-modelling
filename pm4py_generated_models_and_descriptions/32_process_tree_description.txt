@@ -1,4 +1,5 @@
+### Verify Order can happen at any time during the process ### 
 Use Case: Product delivery
 
-This process starts with Verify Order, ensuring that all details are accurate. Parallel to this is Process Payment, handling the financial transaction. After processing payment, it proceeds to Send Invoice to the customer. This step leads to preparing two parallel tasks: Prepare Shipment for dispatching the order and Receive Return for handling any returned items. Concurrently, the process offers two alternative tasks: Track Package to monitor the shipment's status or Notify Customer to keep them informed. This can be applied for order verification to shipment tracking and customer communication.
+This process starts with Verify Order, ensuring that all details are accurate. Parallel to this is Process Payment, handling the financial transaction. After processing payment, it proceeds to Send Invoice to the customer. This step leads to preparing two parallel tasks: Prepare Shipment for dispatching the order and Receive Return for handling any returned items. Alternatively to all the tasks before: Track Package to monitor the shipment's status and Notify Customer at the same time to keep them informed. This can be applied for order verification to shipment tracking and customer communication.
 

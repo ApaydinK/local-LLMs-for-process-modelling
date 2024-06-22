@@ -1,4 +1,5 @@
+### Send Invitation can happen at any time during the first process part ### specify restart and end of process ###
 Use Case: Recruitment
 
-This process starts with Send Invitation, setting the stage for further activities. It then offers two parallel paths: Wait Response, to anticipate feedback, or a sequence where Prepare Report and Fill Form are done simultaneously. In the next phase, there are two sets of alternatives: one is to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making.
+This process starts with Send Invitation, setting the stage for further activities. It then offers two parallel paths: Wait Response, to anticipate feedback, or a phase where Prepare Report and Fill Form are done simultaneously. In the next phase, there are two sets of alternatives: one is to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making.
  

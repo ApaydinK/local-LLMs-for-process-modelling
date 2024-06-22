@@ -1,3 +1,5 @@
+### don't inlude to training data as model labels are to far off the standard ###
+
 Process: Academic Paper Publishing Process
 
 Overview: The process starts with research and editing a book manuscript. The manuscript then undergoes review by experts in the field. Once approved, the paper is submitted to a journal for publication. The findings from the research are also published in a separate article or report.
