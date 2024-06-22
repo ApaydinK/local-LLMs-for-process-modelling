@@ -1,4 +1,5 @@
+## Design Prototyp is concurrent to all activities of the first part of the process ## ## specify restart and end of process ##
 Use Case: Product development
 
 The process is about designing and developing a new product, which involves prototyping, algorithm development, data evaluation, experimentation, reporting, and material preparation. 
-This process starts with Design Prototype, initiating the creation of a preliminary model. Parallel operation is that the process branches into two paths: Develop Algorithm, focusing on creating computational methods, or choosing between Evaluate Data, which involves analyzing collected data, and Conduct Experiment, for testing hypotheses. After that Finalize Report is conducted, where findings are compiled, followed by Prepare Materials, ensuring all necessary documentation and resources are ready. 
+This process starts with Design Prototype, initiating the creation of a preliminary model. Parallel operation is that the process offers three options: Develop Algorithm, focusing on creating computational methods, Evaluate Data, which involves analyzing collected data, and Conduct Experiment for testing hypotheses. After that Finalize Report is conducted, where findings are compiled, followed by Prepare Materials, ensuring all necessary documentation and resources are ready. 

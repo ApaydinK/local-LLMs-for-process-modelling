@@ -1,2 +1,4 @@
 Use Case: Recruitment Process
+
 During Recruitment Process, Recruiting Team needs to Prepare Proposal, drafting a comprehensive plan, and then Hire Candidate, and completes the process. Concurrently, team Conducts Interviews, gathering important information. Additional task is to Review Budget for the recuitment. This can end up when the Interviews are conducted or budget is accepted. If there are multiple positions and need to make decisions about which options are mostly relevant, then options are evaluated. Also with this case, other member needs to develop design or generate requirements about the job descriptions and all the criteria. The features are parallel finalized. When all are completed, then budget is again reviewed until all criteria is fulfilled.
+
