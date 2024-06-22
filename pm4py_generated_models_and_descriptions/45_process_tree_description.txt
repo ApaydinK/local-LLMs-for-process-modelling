@@ -1,4 +1,3 @@
-##plan meeting and the parallel path is a third option to execute the entire process ###
 Use case: Recruitment/Panel-discussion
 
-This process model begins and end with Conduct Interview, gathering crucial insights and information. Othwise the model begins and ends with Review Document, which involves thoroughly examining relevant materials. The process continues with Plan Meeting, organizing a session for further discussion. This step provides two additional options: Schedule Follow-up, arranging a subsequent meeting for ongoing dialogue, or Send Report, disseminating findings and decisions. 
+When company demands to hire more people. The interviews need to be conducted during the following workload. Recruiters share tasks together. One will Review Document, other schedules follow-up and send report, also simultanously plan meeting. This ends up the process.
