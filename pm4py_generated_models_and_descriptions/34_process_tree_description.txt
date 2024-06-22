@@ -1,8 +1,6 @@
-### don't inlude to training data as model labels are to far off the standard ###
-
 Process: Academic Paper Publishing Process
 
 Overview: The process starts with research and editing a book manuscript. The manuscript then undergoes review by experts in the field. Once approved, the paper is submitted to a journal for publication. The findings from the research are also published in a separate article or report.
 
-The process starts with both book editing and research, indicating that these tasks are intertwined. The choice between these options likely depends on the scope and goals of the project. Next, the research or manuscript undergoes review by experts in the field. This review can lead to two possible outcomes: either publishing a paper (e.g., an article) or an article (perhaps a research report). In parallel, the manuscript is submitted to a journal for publication. The outcome of this submission depends on the findings from the research, which can also be published separately.
+As request, book is editted and researched, indicating that these tasks are intertwined. The choice between these options likely depends on the scope and goals of the project. Next, the research or manuscript undergoes review by experts in the field. This review can lead to two possible outcomes: either publishing a paper (e.g., an article) or an article (perhaps a research report). Then the process is done. In parallel, the manuscript is submitted to a journal for publication. The outcome of this submission depends on the findings from the research, which can also be published separately. This also markdowns process end.
 

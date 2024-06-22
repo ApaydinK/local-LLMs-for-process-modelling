@@ -1,5 +1,3 @@
-##include manage project ## specify restart and end of process ##
-
 Use Case: Project management workflow
 
-This process begins with Conduct Interviews, where you gather qualitative insights. Parallel work is the task Analyze Data, which involves examining and interpreting the information collected. Afterward, Create Report is proceeded, where findings are documented and summarized, focusing on overseeing and coordinating project activities. 
+When new project is decided. Analytics team need to Conduct Interviews, where they gather qualitative insights about markets or competitors. Parallel work is the task Analyze Data, which involves examining and interpreting the information collected. This can be done. If the boss requires to continue the project, then Create Report is proceeded, where findings are documented and summarized, focusing on overseeing and coordinating project activities. Then project is managed by manager and report is continuously created if further updates come. It continues with new data is requested to be analysed and interviews with other users are conducted. The process restarts when new projects come.

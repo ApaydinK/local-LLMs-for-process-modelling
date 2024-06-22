@@ -1,5 +1,4 @@
-### Send Invitation can happen at any time during the first process part ### specify restart and end of process ###
-Use Case: Recruitment
+Use Case: Conducting Event or Recruitment
 
-This process starts with Send Invitation, setting the stage for further activities. It then offers two parallel paths: Wait Response, to anticipate feedback, or a phase where Prepare Report and Fill Form are done simultaneously. In the next phase, there are two sets of alternatives: one is to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making.
+When recruiment is requested, invidations for interviews or for events will be sent and simultanously representatives Waits Responses. Another task is to Prepare Report and Fill Form before proceeding any interview or event. Then it ends up process. If it relates to recruiting process, recruiters extend process to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making. The extended process restarts with sending invitations until all events or recruitment completed.
  
