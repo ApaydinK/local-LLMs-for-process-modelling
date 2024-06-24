@@ -22,12 +22,12 @@ def view_tree_as_png(tree: pm4py.visualization.process_tree) -> None:
     pm4py.view_process_tree(tree)
 
 
-from UI_customTK import retrieve_file_path
+from FileHandling import retrieve_file_path
 
 
 number_of_generated_examples = 100
 def load_and_convert_all_process_trees_to_svg():
-    for process_id in range(3):
+    for process_id in range(number_of_generated_examples):
         ptml_file_path = retrieve_file_path("ptml", process_id)
         process_tree = pm4py.read_ptml(ptml_file_path)
         viz = pt_visualizer.apply(process_tree,
@@ -43,6 +43,15 @@ def load_and_convert_all_process_trees_to_bpmn_and_then_to_svg():
         viz_bpmn = bpmn_visualizer.apply(bpmn_graph, parameters={pt_visualizer.Variants.WO_DECORATION.value.Parameters.FORMAT: "svg"})
         bpmn_svg_file_path = f"../pm4py_generated_models_and_descriptions/{process_id}_bpmn.svg"
         pm4py.visualization.bpmn.visualizer.save(viz_bpmn, bpmn_svg_file_path)
+
+def load_and_convert_all_process_trees_to_petri_nets_and_then_to_svg():
+    for process_id in range(number_of_generated_examples):
+        ptml_file_path = retrieve_file_path("ptml", process_id)
+        process_tree = pm4py.read_ptml(ptml_file_path)
+        net, initial_marking, final_marking = pm4py.convert_to_petri_net(process_tree)
+        viz_petri_net = pm4py.visualization.petri_net.visualizer.apply(net, initial_marking, final_marking, parameters={pt_visualizer.Variants.WO_DECORATION.value.Parameters.FORMAT: "svg"})
+        petri_net_svg_file_path = f"../pm4py_generated_models_and_descriptions/{process_id}_petri_net.svg"
+        pm4py.visualization.petri_net.visualizer.save(viz_petri_net, petri_net_svg_file_path)
 
 def view_tree_as_svg(tree: pm4py.visualization.process_tree) -> None:
     # View tree as SVG graphic
@@ -93,5 +102,6 @@ ps = "X( ->( 'Create Menu', +( 'Prepare Order', 'Pack Goods' ) ), X( 'Process Pa
 # tree_to_bpmn(t1)
 # string_to_petri_net(ps)
 #string_to_bpmn(ps)
-load_and_convert_all_process_trees_to_svg()
-load_and_convert_all_process_trees_to_bpmn_and_then_to_svg()
+#load_and_convert_all_process_trees_to_svg()
+#load_and_convert_all_process_trees_to_bpmn_and_then_to_svg()
+#load_and_convert_all_process_trees_to_petri_nets_and_then_to_svg()
