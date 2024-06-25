@@ -68,7 +68,7 @@ def process_tree_to_text(process_tree: ProcessTree):
         "sequence2": "..."
 
     }
-from UI_customTK import retrieve_file_path
+from FileHandling import retrieve_file_path
 import os
 number_of_generated_examples = 100
 
