@@ -30,7 +30,12 @@ def describe_with_local_llm_and_store_description(process_tree, description_of_p
             'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
                        f'You are an expert in process modeling, especially by using process trees and you can easily '
                        f'interpret process models. Describe an illustrative and realistic process in detail based on this process tree: {process_tree}'
-            ,
+                       f'The description should be in human-readable text without operators or process tree. No yapping.'
+                       f' This is what I exemplary expect you to do: '
+                       f"\n process tree 1: ->( 'Order_Pizza', ->( X( *( 'Cut_Toppings', 'Assemble_Slices' ), 'Design_Pattern' ), ->( 'Bake_Crust', 'Serve_Fresh' ) ) )"
+                       f'\n The expected description 1: Every Process begins when a pizza is ordered. Some pizzas only require designing a pattern before the crust is baked and everything is served fresh, other pizzas require toppings that needs to be cut before the crust is baked and the pizza is freshly served. Rarely toppings need not only to be cut but also followed by an assembly of the topping slices. If the slices need to be assembled then toppings need to be cut again. As soon as all toppings are cut and no further assembling of slices is needed, the curst can be baked and the pizza can be served fresh. '
+                       f"\n process tree 2: *( 'Hire Engineer', ->( 'Review Proposal', *( 'Design Blueprint', ->( 'Implement Plan', 'Approve Budget' ) ) ) )"
+                       f"\n The expected description 2: The process starts with hiring an engineer, which either ends the process directly or triggers a review of an proposal by the engineer. Sometimes our engineers review a proposal so that they can design a blueprint afterwards. If the bluebprint involves to hire a new engineer than another engineer is hired and the process could end again or as well trigger the reviewal of a new proposal from the new engineer. If the blueprint does not demand to hiere a new engineer than a plan is implemented which always leads to approvement of the budget. This implementing plan and approving budget procedure than leads back to design blueprint from where the process continues as described. "
         },
     ])
     #print( response['message']['content'])
