@@ -1,4 +1,4 @@
 Use Case: Conducting Event or Recruitment
 
-When recruiment is requested, invidations for interviews or for events will be sent and simultanously representatives Waits Responses. Another task is to Prepare Report and Fill Form before proceeding any interview or event. Then it ends up process. If it relates to recruiting process, recruiters extend process to Conduct Interview and Gather Data, focusing on collecting detailed information, while the other involves Call Meeting and Hold Discussion sequentially, facilitating planning and decision-making. The extended process restarts with sending invitations until all events or recruitment completed.
- 
+When a recruitment is requested an invitation for interviews or for events will be sent and simultaneously representatives wait for responses or if the response already happened a form is filled, and a report is getting prepared in unison. After that the process is finished if there is no response or the decision has been done. Alternatively, the recruitment process continues. Either by a meeting or an interview.  If a meeting is chosen a Call Meeting has been done and after that a discussion about the participants is hold. If the Interview is chosen the interview is conducted and if necessary, further data is gathered and another interview has been organized. After both possibilities the process restarts.
+
