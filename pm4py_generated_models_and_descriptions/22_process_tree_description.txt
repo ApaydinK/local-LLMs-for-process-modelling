@@ -1,6 +1,6 @@
-############## Improve Description - e.g. state the end point of subprocesses, mention iterations to continuous analyze_samples #####################
-1. Analyzing individual samples by extracting features and storing results.
+This process is a reoccurring part of my work which I structured step by step to recognize.
+1. Analyzing individual samples, if necessary, extract features and store the results if needed. Continue the extraction of features until finished. Then return to analyzing individual samples. If all data is analyzed end the process.
 2. Preparing data for analysis by cleaning, transforming, or aggregating it.
-3. Running parallel analyses on the prepared data to generate insights.
-4. Interpreting the results and presenting findings in a meaningful way.
-5 present findings with statistics and diagrams
+3. Running parallel analyses on the prepared data to generate insights. If there is no more interpretation needed return to step 1.
+4. Interpreting the results. If there is no further presentation of findings necessary return to step 2.
+5. Present findings with statistics and diagrams.

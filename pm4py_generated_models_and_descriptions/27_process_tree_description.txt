@@ -1,4 +1,3 @@
-Use Case: Product development
-- If the resources are not available, process starts with parallel processes Prepare (preparing resources or material needed for the project) and Submit (available materials to authorities or stakeholders)
-- If the resources are available, process starts with Create the design, report or prototype and then do a test. If anything changes in criteria/alerts during test phase, then return to Create step
+- If the resources are not available, the process starts with the parallel processes Prepare (preparing resources or materials needed for the project) and Submit (submitting the product which should be developed).
+- If the resources are available, the process starts with the creation of the design, report or prototype and then a test can be done. After that return to the create phase and finish creating the product.
 - Both of two above starting points continue the process with the Develop step which involves refining or elaborating on the created item. Once development is complete, the process moves on to Conduct the tasks (e.g., testing or evaluation) and then does Report for the results.   

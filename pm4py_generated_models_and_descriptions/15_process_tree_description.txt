@@ -1,2 +1,1 @@
-############## Improve Description - e.g. first path is to initiate loan application, 2nd is if the loan application is available #####################
-Our work is simple, everytime we just initiate loan applications or get customer information or send notification emails. Sometimes our work requires a second activity, whenever we need to approve loan applications, we also verify the credit history of our customers. 
+Our work is simple, every time we just initiate loan applications or get customer information or send notification emails. Sometimes our work requires a second activity if the loan application is available. Then we need to approve the loan applications and we also verify the credit history of our customers.
