@@ -1,1 +1,1 @@
-This process has two sub processes that run in parallel. The first one is the parallel execution of 'Prepare Order' and the sequence of first 'Review Order' and then 'Process Payment'. The second one is just a 'Fill Order' and then 'Package and Ship'.
+This process has two sub processes that run in parallel. The first one is the parallel execution of 'Prepare Order' and the sequence of first 'Review Order' and then 'Process Payment'. The second one is just a 'Fill Order' and then 'Package and Ship'. When all sub processes are finished the full process is done.

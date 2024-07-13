@@ -1,17 +1,1 @@
-############## Improve Description - e.g. no parallel process #####################
-The process starts with verifying the report. This is followed by two parallel paths:
-
- 1. Conduct Interview & Review Application:
-        Conduct Interview: Interview the candidate to assess their communication skills, personality, and fit for the role.
-        Review Application: Review the candidate's application materials to evaluate their background and qualifications.
-
- 2. Evaluate Candidate & Generate Proposal:
-        Evaluate Candidate: Assess the candidate's skills and experience against job requirements and company culture.
-        Generate Proposal: Create a proposal detailing why the candidate is a good fit for the role.
-
-Both paths must be completed before the report can be verified, ensuring a thorough evaluation of the candidate for the position.
-
-
-
-*********************************** Yorck ***********************************
-If I have to verify a report, I do that, and then I am finished. If not, then that means that I either have to conduct an interview, or review an application. After either, the process may end. Or another step is neccessary, requiring me to either evaluate a candidate oder generate a proposal. When that is done, I would have to again conduct an interview or review an application.
+If I have to verify a report, I do that, and then I am finished. If not, then that means that I either have to conduct an interview or review an application. After either, the process may end. Or another step is necessary, requiring me to either evaluate a candidate or generate a proposal. When that is done, I would have to again conduct an interview or review an application.

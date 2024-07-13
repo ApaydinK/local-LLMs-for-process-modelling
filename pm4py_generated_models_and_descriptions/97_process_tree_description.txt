@@ -1,7 +1,1 @@
-###### continue validation here ######
-
-The process begins with generating code, which involves a series of repeated steps. Initially, unit tests are written repeatedly for the developed code. Concurrently, the module is integrated into the main codebase, and new features along with corresponding test cases are iteratively added to ensure thorough coverage. Following this, updates to the codebase are released sequentially. Finally, design patterns are applied to the updated codebase for refactoring, performance improvement, and adherence to best practices. This workflow ensures that code generation, unit testing, feature addition, and updates follow a structured pattern with continuous improvements until the desired outcome is achieved.
-
-
-*********************************** Yorck ***********************************
 The process begins with generating code, after which the process may abruptly end. If it does not, it continues with writing a unit test. Following that, it is either both integrating a module and a choice of testing a case or adding a feature, with no regards to the order. After that, it is back to writing unit tests. Or, after writing unit tests you may instead take care of releasing an update, which directly leads to designing a pattern. This in turn forces you to generate code again. The process can only ever end directly after generating code.

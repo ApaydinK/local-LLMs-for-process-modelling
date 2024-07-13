@@ -1,6 +1,1 @@
-############## Improve Description - e.g. that does a parallel choice mean? #####################
-The process begins with two parallel choices: checking inventory and packing fresh fruits, or preparing and wrapping gifts. Once these tasks are completed, the process moves into a loop where it repeatedly delivers the items and either checks the status of existing orders or processes new orders until all orders are fulfilled.
-
-
-*********************************** Yorck ***********************************
-The first half of the process can take any of two directions. Either I check the inventory and pack fresh fruits. Order does not matter here. Or I need to either make preparations or wrap gifts. Anyway, when that is done, the second part comes. I start with a delivery. Sometimes, that's it and we are done. Mostly, I need to either check the status or give orders, then do a delivery again.
+The first half of the process can take any of two directions. I can check the inventory and pack fresh fruits. Order does not matter here. Or I need to either prepare or wrap gifts. Anyway, when that is done, the second part comes. I start with a delivery. Sometimes, that's it and we are done. Mostly, I need to either check the status or give orders, then do a delivery again.

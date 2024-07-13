@@ -1,1 +1,1 @@
-This process contains two sub processes that run simultaneously. The first is the parallel execution of 'Analyze' and the exclusive choice of 'Data' or 'Report'. The second is first 'Review', then 'Prepare'. After both sub processes have been finished, the process terminates.
+This process contains two auxiliary processes that run simultaneously. The first is the aligned execution of 'Analyze' and the exclusive choice of 'Data' or 'Report'. The second is first 'Review', then 'Prepare'. After both auxiliary processes have been finished, the process terminates.

@@ -1,11 +1,1 @@
-############## Improve Description - e.g. the process does not always start with doenloading files, instead it jsut has to be performed once during the entire process indepentend of the time #############
-The process begins with Downloading Files, which involves obtaining relevant datasets from various sources. Next, Analyze Error is performed to understand the nature of the errors, which may involve manual review or automated tools. The process then takes two parallel paths: 
-
-In the first path, Gather Data involves collecting information about the software application, such as logs or configuration files, followed by Process File, which includes tasks like parsing log files or transforming raw data. 
-
-In the second path, Prepare Data involves cleaning, formatting, or aggregating data, followed by Extract Features, which identifies key characteristics or features in the data for model development. Finally, Train Model uses the extracted features to train a machine learning model. The process then combines these two paths, and a Send Report summarizing the findings is generated and sent to stakeholders. This simplified process tree represents a scenario where data scientists analyze software applications to identify potential errors, streamlining the steps involved in the analysis.
-
-
-*********************************** Yorck ***********************************
-
-When starting with downloading files, I also have a choice to make. Either it is a choice between analyzing an error, or sending a report. Or it is preparing data while also either extracting features or training a model. When sending a report, I also always gather data. Following up on gathering data, it may happen that I have to process a file, before I gather data again.
+When I will start downloading my files, I also have a choice to make. Either it is a choice between analyzing an error or sending a report. Or it is preparing data while also either extracting features or training a model. When sending a report, I also always gather data. Following up on gathering data, it may happen that I must process a file, before I gather data again.

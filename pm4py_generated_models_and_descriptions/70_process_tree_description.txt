@@ -1,1 +1,1 @@
-We start by extracting reports, then proceed with checking invoices while processing payments, and if we are not finished then, we need to analyze financials or generate balance sheets, before extracting reports again.
+We start by extracting reports, then proceed with checking invoices while processing payments as well, and if we are not finished then, we need to analyze financials or generate balance sheets, before extracting reports again.

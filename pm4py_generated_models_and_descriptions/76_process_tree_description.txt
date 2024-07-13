@@ -1,7 +1,1 @@
-############## Improve Description - e.g. no choice stated #####################
-The process starts with ordering parts using a computer. After ordering the parts, the design process begins. This involves testing the prototype and, in parallel, assembling the final product. Once the prototype is tested, the final product is continuously assembled and boxed for shipment.
-
-
-*********************************** Yorck ***********************************
-
-I start by either ordering parts or using my computer. Afterwards, I either design a product, or I test a prototype while simultaneously assembling the final product. After assembling the final product, I also put it in a box.
+I start by either ordering parts or using my computer. Afterwards, I can decide if I want to design a product, or if I want to test a prototype while simultaneously assembling the final product. After assembling the final product, I also put it in a box.

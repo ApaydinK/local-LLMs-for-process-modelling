@@ -1,7 +1,1 @@
-###### continue validation here ######
-
-The process starts with creating a report, which involves either delivering the initial draft or editing it as needed. Following this, requirements are gathered from stakeholders, and data is analyzed to inform the report's content. Once the necessary data is collected and analyzed, the design of the report is finalized, and a prototype is built. After the prototype is ready, the report undergoes further editing to refine its content. Finally, the completed report is delivered. This structured process ensures that each step, from gathering requirements and analyzing data to finalizing the design and delivering the report, is thoroughly addressed to produce a high-quality, comprehensive business report.
-
-
-*********************************** Yorck ***********************************
-This process has a lot of choices to be made. One option would be to start with Finalize Design. Then the process can either end, or we Build a prototype, Phich then loops back to Finalize Design. Or we have the choice of Gather Requirements (again, potentially ending the process, or leading to Analyze Data, which loops back to Gather Requirements), or of one of Create Report, Deliver Report, or Edit Report.
+This process has a lot of choices to be made. One option would be to start with Finalize Design. Then the process can either end, or we Build a prototype, which then loops back to Finalize Design. Or we have the choice of Gather Requirements (again, potentially ending the process, or leading to Analyze Data, which loops back to Gather Requirements), or the third option where we can choose one of Create Report, Deliver Report, or Edit Report. After these choices the process terminates.

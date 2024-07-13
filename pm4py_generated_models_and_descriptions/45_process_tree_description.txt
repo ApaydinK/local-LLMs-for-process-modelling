@@ -1,3 +1,4 @@
 Use case: Recruitment/Panel-discussion
 
-When company demands to hire more people. The interviews need to be conducted during the following workload. Recruiters share tasks together. One will Review Document, other schedules follow-up and send report, also simultanously plan meeting. This ends up the process.
+When our company demands to hire more people, we have three different options to satisfy this demand. First off, we can conduct an interview, if we already have sorted the participants. A second option is to review the documents we got to find someone who fits. And if we do not have enough information, we plan a meeting with our bosses, while we write and send a report as well as scheduling a follow up. After each option this is all that we can do.
+

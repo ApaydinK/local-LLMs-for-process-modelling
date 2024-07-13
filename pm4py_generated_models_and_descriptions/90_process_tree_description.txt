@@ -1,7 +1,1 @@
-###### continue validation here ######
-
-The process starts with planning the project, where the scope, goals, and timelines are defined. Once planning is complete, a detailed blueprint is created to guide subsequent activities. Following this, the process branches into two parallel paths. One path focuses on designing the overall architecture of the project. The other path involves two activities that can be executed concurrently: testing a prototype to validate the design and identify potential issues, and developing software components that will be part of the overall system. This process model illustrates a realistic scenario for developing a complex system or software product, ensuring that high-level planning and detailed design are completed before implementation.
-
-
-*********************************** Yorck ***********************************
-This is a three-step process. First, we need to Plan Project. Then, we must Create Blueprint. For the last step, Design Architecture, Test Prototype, and Develop Software must all be conducted, but their order is irrelevant.
+This is a three-step process. First, we need to plan the Project. Then, we must create a Blueprint. For the last step we need to design the Architecture, test the Prototype, and develop the Software, all of this must all be conducted before the process can finish, but their order is irrelevant.

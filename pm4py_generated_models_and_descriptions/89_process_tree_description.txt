@@ -1,7 +1,1 @@
-###### continue validation here ######
-
-The process begins with the design and marketing efforts for a new product. Initially, the team generates requirements based on customer needs and develops a prototype. After the prototype is ready, the design is finalized, and technical specifications are created. Concurrently, market research is conducted to understand the target market, followed by analyzing customer feedback. This feedback informs the development of a marketing strategy, and sales materials are then created to promote the product. This approach ensures that both design and marketing activities progress in parallel, with insights from market research and customer feedback guiding the overall strategy.
-
-
-*********************************** Yorck ***********************************
 This process has two halves that run in parallel. The first half starts with Design New Product and Generate Requirements. Generate Requirements is followed by Develop Prototype. Once these three are done, the next step is Finalize Design, followed by Create Technical Specifications, closing the first half. The second half starts with either Conduct Market Research, or with Develop Marketing Strategy. Conduct Market Research would lead to Analyze Customer Feedback, while after Develop Marketing Strategy comes Create Sales Materials. When either Analyze Customer Feedback or Create Sales Materials is finished, the second half is concluded. When both process halves are finished, the process itself is complete.
