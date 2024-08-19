@@ -363,7 +363,7 @@ def capitalize_words_custom(s):
     capitalized_words = [word.capitalize() for word in words]  # Capitalize each word
     return ' '.join(capitalized_words)  # Join the words back with spaces
 
-load_and_update_all_process_trees_activity_labels_again()
+#load_and_update_all_process_trees_activity_labels_again()
 #load_and_update_all_process_trees_activity_labels()
 """
 # Example usage:
