@@ -117,7 +117,8 @@ class GUI(customtkinter.CTk):
         self.label_progress_updates.destroy()
 
         self.generate_another_example_button.destroy()
-
+        load_dotenv(override=True)
+        total_number_of_processes = int(os.environ.get("NUMBER_OF_PROCESS_MODELS"))
         nav_button = customtkinter.CTkButton(self.nav_rows_frame, text=f"process {total_number_of_processes}", anchor="center",
                                              font=("Maitree", 20), width=60, height=25)
         nav_button.configure(

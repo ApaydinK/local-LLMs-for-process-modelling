@@ -162,12 +162,23 @@ async def replace_activity_names(process_tree):
         'llama3',
         [
             {
+                "role": "system",
+                "content": "You are an expert in process trees. Process trees allow to model processes that comprise a control-flow hierarchy. "
+                           "A process tree is a mathematical tree, where the internal vertices are operators, and leaves are activities.  "
+                           "Operators specify how their children, i.e., sub-trees, need to be combined from a control-flow perspective. "
+                           "There are four operators and each operator has two children:  "
+                           "The sequence operator -> specifies sequential behavior, e.g., ->(X, Y) means that first X is executed and then Y. "
+                           "The choice operator X specifies a choice, e.g., X(X, Y) means that either X is executed or Y is executed. "
+                           "The parallel operator + specifies simultaneous behavior or indifferent executing order, e.g., +(X, Y) means that X is executed while Y is also executed or that X and Y are both executed independently from another. "
+                           "The loop operator * specifies repetitive behaviour, e.g., *(X, Y) means that after X is executed, Y could be executed. If Y is executed then X has to be executed again. This implies that the loop only can be left after X is executed. "
+
+            },
+            {
                 'role': 'user',
-                'content': f'The operators used in a proces tree are: ->(...) sequence, X(...) choice, +(...) parallel, *(...) loop. '
-                           f"You are an expert in process modelling with process trees. I will present you a structure of a process tree "
+                'content': f"You are an expert in process trees. I will present you a structure of a process tree "
                            f"where the activities are abstracted by letters. Make an illustrative and realistic "
                            f"example based on the following process tree structure be suggesting how each letter "
-                           f"should be replaced by one verb followed by one noun to represent a real activity:" +
+                           f"should be replaced by one verb followed by one noun to represent a real activity: " +
                            f"{process_tree}" +
                            "Describe the process in detail after replacing the letters with activities.  Finally "
                            "complete this dictionary that represents the mapping of the letters with your activities: "
@@ -198,6 +209,8 @@ async def replace_activity_names(process_tree):
                 ,
             },
         ]
+
+
     )
     # Assuming the response structure you need to adjust to your actual response format
     answer_with_mappings = response['message']['content']

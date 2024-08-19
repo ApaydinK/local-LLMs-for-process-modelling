@@ -6,7 +6,7 @@ import ProcessTree
 import asyncio
 
 
-def generate_and_view_one_example():
+def deprecated_generate_and_view_one_example():
     activities = ActivityNames.generate_random_activities(6)
 
     random_process_tree = CustomRandomProcessTree(activities)
@@ -30,7 +30,7 @@ def generate_and_view_one_example():
     ModelDescription.description_with_local_llm(process_tree)
 
 
-def generate_and_store_examples(number_of_examples):
+def deprecated_generate_and_store_examples(number_of_examples):
     for i in range(number_of_examples):
         activities = ActivityNames.generate_random_activities(6)
 
@@ -69,7 +69,7 @@ import os
 def generate_describe_and_store_one_process_model(update_progress, generation_finished):
     number_of_files_already_in_folder = int(os.environ.get("NUMBER_OF_PROCESS_MODELS"))
 
-    number_of_activities = number_of_files_already_in_folder % 5 + 5
+    number_of_activities = 4 #number_of_files_already_in_folder % 5 + 5
 
     update_progress_text = f"{number_of_files_already_in_folder=}"
     update_progress_text += f"\n{number_of_activities=}"
@@ -79,12 +79,13 @@ def generate_describe_and_store_one_process_model(update_progress, generation_fi
 
     process_tree = ProcessTree.pm4py_process_tree_generator(number_of_activities)
 
-    update_progress_text += f"\nReplacing abtract activity labels with realistic ones"
+    update_progress_text += f"\nReplacing abstract activity labels with realistic ones"
     update_progress(update_progress_text)
 
     # TODO check if all activities got replaced
     loop = asyncio.new_event_loop()
     loop.run_until_complete(ActivityNames.replace_activity_names(process_tree))
+    ActivityNames.update_activity_labels_in_process_tree_to_adhere_to_the_verb_noun_standard(process_tree)
 
     update_progress_text += f"\nSaving all Visualizations"
     update_progress(update_progress_text)

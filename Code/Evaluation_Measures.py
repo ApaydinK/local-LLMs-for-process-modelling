@@ -17,6 +17,8 @@ def export_all_process_models_and_process_descriptions():
 
     for process_id in range(total_number_of_processes):
         number_of_activities = process_id % 5 + 5
+        if process_id > 99:
+            number_of_activities = 4
         ptml_file_path = retrieve_file_path("ptml", process_id)
         process_tree = pm4py.read_ptml(ptml_file_path)
         process_tree_string = str(process_tree)

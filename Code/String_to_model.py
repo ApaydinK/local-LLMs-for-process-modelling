@@ -26,6 +26,26 @@ from FileHandling import retrieve_file_path
 
 
 number_of_generated_examples = 100
+
+def create_new_visualizations_for_process_tree(process_id):
+    ptml_file_path = retrieve_file_path("ptml", process_id)
+    process_tree = pm4py.read_ptml(ptml_file_path)
+
+    process_tree_image_file_path = f"../pm4py_generated_models_and_descriptions/{process_id}_process_tree.png"
+    pm4py.vis.save_vis_process_tree(process_tree, process_tree_image_file_path)
+    print(process_tree)
+
+    # convert process tree to a BPMN graph and store the visualization
+    bpmn_graph = pm4py.convert_to_bpmn(process_tree)
+    bpmn_image_file_path = f"../pm4py_generated_models_and_descriptions/{process_id}_bpmn.png"
+    pm4py.vis.save_vis_bpmn(bpmn_graph, bpmn_image_file_path)
+
+    # convert process tree to a petri net and store the visualization
+    net, im, fm = pm4py.convert_to_petri_net(process_tree)
+    petri_net_image_file_path = f"../pm4py_generated_models_and_descriptions/{process_id}_petri_net.png"
+    pm4py.vis.save_vis_petri_net(net, im, fm, petri_net_image_file_path)
+
+#create_new_visualizations_for_process_tree(107)
 def load_and_convert_all_process_trees_to_svg():
     for process_id in range(number_of_generated_examples):
         ptml_file_path = retrieve_file_path("ptml", process_id)
