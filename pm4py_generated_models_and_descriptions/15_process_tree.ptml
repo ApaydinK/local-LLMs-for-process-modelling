@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <ptml>
-  <processTree name="6ce74acc-5a5f-4514-960c-2153308a1b17" root="f79adbc7-0a6f-44c9-89d2-96c59386d528" id="c9d311d8-d6ef-4ce0-a5aa-22327620488c">
-    <xor name="" id="f79adbc7-0a6f-44c9-89d2-96c59386d528"/>
-    <manualTask name="Initiate Loan Application" id="b6865174-10df-4bff-966f-7761f3304aa2"/>
-    <xor name="" id="d416c8f1-ccf6-416f-9623-0adc42f43643"/>
-    <sequence name="" id="f8e05b35-3584-4156-9ce1-a002428ec566"/>
-    <xor name="" id="5e3fa9d3-cc0d-48d1-820d-1fc7399afb69"/>
-    <manualTask name="Approve Loan Application" id="0e314cfd-4fea-4fed-aca2-b7d391206dd1"/>
-    <manualTask name="Verify Credit History" id="07692505-64eb-4676-a0cc-a022244dbd32"/>
-    <manualTask name="Get Customer Information" id="c26e7495-f78c-46c3-b1c6-8d0d5b758958"/>
-    <manualTask name="Send Notification Email" id="5391c81e-9eb5-44de-bbe3-b019e2e5e291"/>
-    <parentsNode id="758969b0-77c3-42bd-8d8f-f0a04e5a5490" sourceId="f79adbc7-0a6f-44c9-89d2-96c59386d528" targetId="b6865174-10df-4bff-966f-7761f3304aa2"/>
-    <parentsNode id="a4c0a27b-04b3-4a3b-9d86-de7185c55cb0" sourceId="f79adbc7-0a6f-44c9-89d2-96c59386d528" targetId="d416c8f1-ccf6-416f-9623-0adc42f43643"/>
-    <parentsNode id="230c5376-d8fe-4bda-945a-a4beb739ebc5" sourceId="d416c8f1-ccf6-416f-9623-0adc42f43643" targetId="f8e05b35-3584-4156-9ce1-a002428ec566"/>
-    <parentsNode id="cb3e1dff-bfd2-44a3-93e4-f3803482ae05" sourceId="d416c8f1-ccf6-416f-9623-0adc42f43643" targetId="5e3fa9d3-cc0d-48d1-820d-1fc7399afb69"/>
-    <parentsNode id="29bea249-d51e-4e0c-846d-2736f8745325" sourceId="f8e05b35-3584-4156-9ce1-a002428ec566" targetId="0e314cfd-4fea-4fed-aca2-b7d391206dd1"/>
-    <parentsNode id="918c2051-8c70-4a72-92cc-21de9832370b" sourceId="f8e05b35-3584-4156-9ce1-a002428ec566" targetId="07692505-64eb-4676-a0cc-a022244dbd32"/>
-    <parentsNode id="5e2ea5d6-2ba8-44cc-93a3-782ecb7c7323" sourceId="5e3fa9d3-cc0d-48d1-820d-1fc7399afb69" targetId="c26e7495-f78c-46c3-b1c6-8d0d5b758958"/>
-    <parentsNode id="79fc7c53-48ab-4b11-93d2-64f95d689a77" sourceId="5e3fa9d3-cc0d-48d1-820d-1fc7399afb69" targetId="5391c81e-9eb5-44de-bbe3-b019e2e5e291"/>
+  <processTree name="93c8510f-ecca-4a04-8621-ee05f45e3fdb" root="f74d7f0d-3696-4cf9-84e7-ba03abbb620a" id="19aadb85-0f55-48a1-a7b6-a2de9a61dfa0">
+    <xor name="" id="f74d7f0d-3696-4cf9-84e7-ba03abbb620a"/>
+    <xor name="" id="f5190984-add0-49c9-aaf7-5ebe31afc21f"/>
+    <manualTask name="Initiate Loan Application" id="e135cf7c-d737-4536-8792-c4247f1ce1b2"/>
+    <sequence name="" id="7e5afa47-f59c-4201-bd1d-5b22ef874c2f"/>
+    <xor name="" id="4effe116-a27e-4c16-9cfd-6d9e4a62b86e"/>
+    <manualTask name="Approve Loan Application" id="866ecfc7-83cc-453f-a3b7-f37d9d542108"/>
+    <manualTask name="Verify Credit History" id="08f1bce2-3209-4e79-ae18-9cdc24c3cc29"/>
+    <manualTask name="Send Notification Email" id="6176b1ef-f120-41e9-8d9a-815038d9256b"/>
+    <manualTask name="Get Customer Information" id="fc6eba60-38a6-481b-876f-e1fe0be980a6"/>
+    <parentsNode id="756d3b36-4a56-4638-9a60-239a445a2c2e" sourceId="f74d7f0d-3696-4cf9-84e7-ba03abbb620a" targetId="f5190984-add0-49c9-aaf7-5ebe31afc21f"/>
+    <parentsNode id="08b280ee-22b2-4245-9f7c-173b13a28ffc" sourceId="f74d7f0d-3696-4cf9-84e7-ba03abbb620a" targetId="e135cf7c-d737-4536-8792-c4247f1ce1b2"/>
+    <parentsNode id="57964a1f-bc97-406d-b210-b306b678798e" sourceId="f5190984-add0-49c9-aaf7-5ebe31afc21f" targetId="7e5afa47-f59c-4201-bd1d-5b22ef874c2f"/>
+    <parentsNode id="7956c936-904a-4142-b0d3-c591a68080d4" sourceId="f5190984-add0-49c9-aaf7-5ebe31afc21f" targetId="4effe116-a27e-4c16-9cfd-6d9e4a62b86e"/>
+    <parentsNode id="186250ac-8e46-4638-a5cd-6a4f82d7adfa" sourceId="7e5afa47-f59c-4201-bd1d-5b22ef874c2f" targetId="866ecfc7-83cc-453f-a3b7-f37d9d542108"/>
+    <parentsNode id="4fc00bb4-4582-4204-a853-8641feb1cd96" sourceId="7e5afa47-f59c-4201-bd1d-5b22ef874c2f" targetId="08f1bce2-3209-4e79-ae18-9cdc24c3cc29"/>
+    <parentsNode id="2699122a-268f-46bf-a442-da3f1ad69ab6" sourceId="4effe116-a27e-4c16-9cfd-6d9e4a62b86e" targetId="6176b1ef-f120-41e9-8d9a-815038d9256b"/>
+    <parentsNode id="11d76fe0-74dc-4ca2-b556-aec874139778" sourceId="4effe116-a27e-4c16-9cfd-6d9e4a62b86e" targetId="fc6eba60-38a6-481b-876f-e1fe0be980a6"/>
   </processTree>
 </ptml>

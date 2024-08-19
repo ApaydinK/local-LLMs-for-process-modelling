@@ -182,18 +182,18 @@ async def replace_activity_names(process_tree):
                            "'h'=''," +
                            "'i'=''," +
                            "'j'=''," +
-                           #"'k'=''," +
-                           #"'l'=''," +
-                           #"'m'=''," +
-                           #"'n'=''," +
-                           #"'o'=''," +
-                           #"'p'=''," +
-                           #"'q'=''," +
-                           #"'r'=''," +
-                           #"'s'=''," +
-                           #"'t'=''," +
-                           #"'u'=''," +
-                           #"'v'=''," +
+                           # "'k'=''," +
+                           # "'l'=''," +
+                           # "'m'=''," +
+                           # "'n'=''," +
+                           # "'o'=''," +
+                           # "'p'=''," +
+                           # "'q'=''," +
+                           # "'r'=''," +
+                           # "'s'=''," +
+                           # "'t'=''," +
+                           # "'u'=''," +
+                           # "'v'=''," +
                            "}"
                 ,
             },
@@ -265,6 +265,126 @@ def replace_activity_labels_in_process_tree(root_node: ProcessTree, activity_map
         elif child.children:
             replace_activity_labels_in_process_tree(child, activity_mappings)
 
+
+import re
+from FileHandling import retrieve_file_path
+import pm4py
+import shutil
+import os
+
+number_of_generated_examples = 100
+
+
+def load_and_update_all_process_trees_activity_labels_again():
+    for process_id in range(number_of_generated_examples):
+        ptml_file_path = retrieve_file_path("ptml", process_id)
+        process_tree = pm4py.read_ptml(ptml_file_path)
+        # store visualization of the process graph
+        update_activity_labels_in_process_tree_to_adhere_to_the_verb_noun_standard(process_tree)
+
+        pm4py.write_ptml(process_tree, f"../updated_process_trees/{process_id}_process_tree.ptml")
+
+
+def load_and_update_all_process_trees_activity_labels():
+    for process_id in range(number_of_generated_examples):
+        ptml_file_path = retrieve_file_path("ptml", process_id)
+        process_tree = pm4py.read_ptml(ptml_file_path)
+        # store visualization of the process graph
+        update_activity_labels_in_process_tree_to_adhere_to_the_verb_noun_standard(process_tree)
+
+        process_tree_image_file_path = f"../process_models_and_descriptions/{process_id}_process_tree.png"
+        pm4py.vis.save_vis_process_tree(process_tree, process_tree_image_file_path)
+        print(process_tree)
+
+        # convert process tree to a BPMN graph and store the visualization
+        bpmn_graph = pm4py.convert_to_bpmn(process_tree)
+        bpmn_image_file_path = f"../process_models_and_descriptions/{process_id}_bpmn.png"
+        pm4py.vis.save_vis_bpmn(bpmn_graph, bpmn_image_file_path)
+
+        # convert process tree to a petri net and store the visualization
+        net, im, fm = pm4py.convert_to_petri_net(process_tree)
+        petri_net_image_file_path = f"../process_models_and_descriptions/{process_id}_petri_net.png"
+        pm4py.vis.save_vis_petri_net(net, im, fm, petri_net_image_file_path)
+
+        # Copy the description.txt file to the new destination folder
+        source_description_file = retrieve_file_path("process_tree_description", process_id)
+        destination_folder = f"../process_models_and_descriptions"
+        shutil.copy(source_description_file, destination_folder)
+
+        # Copy the .ptml file
+        source_description_file = retrieve_file_path("ptml", process_id)
+        shutil.copy(source_description_file, destination_folder)
+
+
+def update_activity_labels_in_process_tree_to_adhere_to_the_verb_noun_standard(root_node: ProcessTree):
+    for child in root_node.children:
+        if not child.children:
+            try:
+                child.label = update_activity_label_to_adhere_to_the_verb_noun_standard(child.label)
+            except:
+                "activity couldn't be replaced, continue.."
+        elif child.children:
+            update_activity_labels_in_process_tree_to_adhere_to_the_verb_noun_standard(child)
+
+
+def update_activity_label_to_adhere_to_the_verb_noun_standard(activity_label):
+    if is_camel_case(activity_label) or is_pascal_case(activity_label):
+        # Convert camelCase or PascalCase to snake_case
+        activity_label = re.sub(r'(?<!^)(?=[A-Z])', '_', activity_label).lower()
+
+    # Split the snake_case string into words
+    activity_label = activity_label.replace('_', ' ')
+
+    activity_label = capitalize_words_custom(activity_label)
+
+    return activity_label
+
+
+def is_camel_case(s):
+    # Regular expression to match camelCase
+    camel_case_pattern = re.compile(r'^[a-z]+[a-zA-Z0-9]*[A-Z][a-zA-Z0-9]*$')
+    return bool(camel_case_pattern.match(s))
+
+
+def is_pascal_case(s):
+    # Regular expression to match PascalCase
+    pascal_case_pattern = re.compile(r'^[A-Z][a-zA-Z0-9]*$')
+    return bool(pascal_case_pattern.match(s))
+
+
+def is_snake_case(s):
+    # Regular expression to match snake_case
+    snake_case_pattern = re.compile(r'^[a-z]+(_[a-z0-9]+)*$')
+    return bool(snake_case_pattern.match(s))
+
+
+def capitalize_words_custom(s):
+    words = s.split()  # Split the string into words
+    capitalized_words = [word.capitalize() for word in words]  # Capitalize each word
+    return ' '.join(capitalized_words)  # Join the words back with spaces
+
+load_and_update_all_process_trees_activity_labels_again()
+#load_and_update_all_process_trees_activity_labels()
+"""
+# Example usage:
+input_string_1 = "runFast"
+input_string_2 = "Run_fast"
+input_string_3 = "jumpHigh"
+input_string_4 = "jump High"
+input_string_5 = "Jump high"
+input_string_6 = "jump"
+input_string_7 = "Jump a_meter"
+input_string_8 = "JumpReallyHigh"
+
+print(f"{input_string_1}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_1}"))
+print(f"{input_string_2}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_2}"))
+print(f"{input_string_3}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_3}"))
+print(f"{input_string_4}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_4}"))
+print(f"{input_string_5}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_5}"))
+print(f"{input_string_6}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_6}"))
+print(f"{input_string_7}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_7}"))
+print(f"{input_string_8}: " + update_activity_labels_to_adhere_to_the_verb_noun_standard(f"{input_string_8}"))
+"""
 
 """
 I have tried using word libraries and installed their word databases but it contains too many words that we wouldn't use

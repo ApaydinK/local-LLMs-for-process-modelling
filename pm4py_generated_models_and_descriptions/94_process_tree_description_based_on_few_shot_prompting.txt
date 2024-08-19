@@ -1,1 +1,0 @@
-process tree structure: X( *( 'Gather Requirements', 'Approve Request' ), +( X( 'Create Document', X( 'Edit Report', 'Submit Proposal' ) ), X( 'Review Draft', X( 'Hire Consultant', X( 'Finalize Contract', 'Interview Candidate' ) ) ) ) )
