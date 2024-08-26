@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="891a67cf-4ae0-47bb-9bc7-e8aafdc611d0" root="a7d13950-fde3-417f-9a33-61d53dc78b30" id="8b6a1303-ee6c-4604-8afd-93f028406376">
+    <sequence name="" id="a7d13950-fde3-417f-9a33-61d53dc78b30"/>
+    <manualTask name="Plan Production Run" id="5e5331d0-8cbd-48c6-aa42-3e0b8174317d"/>
+    <sequence name="" id="1a01bdcb-81fd-4940-8d30-faa81834a7b1"/>
+    <manualTask name="Set Up Machines" id="598267a7-fbb2-493e-b4f6-faedab8dc59b"/>
+    <sequence name="" id="6d19baa1-19c0-4674-8ae1-d103474a0f24"/>
+    <manualTask name="Assemble Products" id="cf1db4f3-9ad3-4b11-a1cc-626efb38e114"/>
+    <manualTask name="Inspect Final Product" id="74f046c9-7039-4c97-b944-b3999162485a"/>
+    <parentsNode id="5bee923e-fe42-4933-a8e6-ad0dd89e77be" sourceId="a7d13950-fde3-417f-9a33-61d53dc78b30" targetId="5e5331d0-8cbd-48c6-aa42-3e0b8174317d"/>
+    <parentsNode id="71661191-0650-4f80-a29a-331c8d71f0e7" sourceId="a7d13950-fde3-417f-9a33-61d53dc78b30" targetId="1a01bdcb-81fd-4940-8d30-faa81834a7b1"/>
+    <parentsNode id="92a63cbf-68b7-413e-be80-41c48dcbc9a7" sourceId="1a01bdcb-81fd-4940-8d30-faa81834a7b1" targetId="598267a7-fbb2-493e-b4f6-faedab8dc59b"/>
+    <parentsNode id="1ab01970-c8c5-41a6-a1a8-11ad5cbbb08c" sourceId="1a01bdcb-81fd-4940-8d30-faa81834a7b1" targetId="6d19baa1-19c0-4674-8ae1-d103474a0f24"/>
+    <parentsNode id="b6b4dea1-1f4a-4081-915e-07d5b762e03e" sourceId="6d19baa1-19c0-4674-8ae1-d103474a0f24" targetId="cf1db4f3-9ad3-4b11-a1cc-626efb38e114"/>
+    <parentsNode id="737fb034-c1ae-44cc-a319-91414879e9e5" sourceId="6d19baa1-19c0-4674-8ae1-d103474a0f24" targetId="74f046c9-7039-4c97-b944-b3999162485a"/>
+  </processTree>
+</ptml>

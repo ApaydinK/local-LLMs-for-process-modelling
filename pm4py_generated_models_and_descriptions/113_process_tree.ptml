@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="06d84256-263d-4a10-bd59-4f4d35771a79" root="f847e51f-bdf1-45e8-acbf-2142559684c2" id="9123e663-f675-4923-893d-73433154bde5">
+    <and name="" id="f847e51f-bdf1-45e8-acbf-2142559684c2"/>
+    <and name="" id="eee4b243-b65a-4ba0-8c8d-8a010fde1525"/>
+    <and name="" id="80ee3783-ffdb-46c1-a0f2-4218fd77b347"/>
+    <manualTask name="Prepare Ingredients" id="e6ab59d4-0cc4-41a7-9693-1a6d31918373"/>
+    <manualTask name="Cook Meal" id="5585ca7f-2179-4d57-8a40-ef1972657aae"/>
+    <manualTask name="Set Table" id="e5949380-4464-4b17-9d1e-b9202d2c7323"/>
+    <manualTask name="Serve Food" id="310c2e0f-082a-434d-89a1-9b39939f0966"/>
+    <parentsNode id="53d9e393-a5c4-487d-a1df-524ecba54ad4" sourceId="f847e51f-bdf1-45e8-acbf-2142559684c2" targetId="eee4b243-b65a-4ba0-8c8d-8a010fde1525"/>
+    <parentsNode id="916e5669-0352-4544-842f-bf12698faad1" sourceId="f847e51f-bdf1-45e8-acbf-2142559684c2" targetId="80ee3783-ffdb-46c1-a0f2-4218fd77b347"/>
+    <parentsNode id="6136eaa5-ba03-4a7c-9750-32731e580bdc" sourceId="eee4b243-b65a-4ba0-8c8d-8a010fde1525" targetId="e6ab59d4-0cc4-41a7-9693-1a6d31918373"/>
+    <parentsNode id="03d0ae56-bf5a-46a7-bc24-6fc97141c176" sourceId="eee4b243-b65a-4ba0-8c8d-8a010fde1525" targetId="5585ca7f-2179-4d57-8a40-ef1972657aae"/>
+    <parentsNode id="a2f846ec-c419-427e-95f2-fcd47a348efd" sourceId="80ee3783-ffdb-46c1-a0f2-4218fd77b347" targetId="e5949380-4464-4b17-9d1e-b9202d2c7323"/>
+    <parentsNode id="1f02e7d5-91dc-4bf5-8174-ddd391089c91" sourceId="80ee3783-ffdb-46c1-a0f2-4218fd77b347" targetId="310c2e0f-082a-434d-89a1-9b39939f0966"/>
+  </processTree>
+</ptml>

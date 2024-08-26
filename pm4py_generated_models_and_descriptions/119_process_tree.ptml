@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="f4ace1f6-17dd-4726-8bd9-3ed72f0e7675" root="22138f17-4790-4835-9be2-f7f34fe0c210" id="9413eac0-daf9-47fe-b3fa-056888ba46ea">
+    <and name="" id="22138f17-4790-4835-9be2-f7f34fe0c210"/>
+    <sequence name="" id="a4091d3a-3421-4302-b5b2-e9dcd224faf8"/>
+    <sequence name="" id="43c133d3-bb1d-41a0-b646-16932ca14b92"/>
+    <manualTask name="Prepare Report" id="874daace-3836-462f-91a3-cb4e7b0682e0"/>
+    <manualTask name="Review Document" id="f1832396-9c4e-409b-aec6-801d02e346c9"/>
+    <manualTask name="Conduct Interview" id="e317c889-1ae7-4933-928f-8e99ae0ba971"/>
+    <manualTask name="Analyze Results" id="235416a6-f6d5-4817-935d-2551f4908050"/>
+    <parentsNode id="e8a2e19f-28fe-4760-b72a-9398d8866f69" sourceId="22138f17-4790-4835-9be2-f7f34fe0c210" targetId="a4091d3a-3421-4302-b5b2-e9dcd224faf8"/>
+    <parentsNode id="c57d230e-0f83-42fc-b2d3-8e90040ec77a" sourceId="22138f17-4790-4835-9be2-f7f34fe0c210" targetId="43c133d3-bb1d-41a0-b646-16932ca14b92"/>
+    <parentsNode id="28d57606-13bc-4318-8161-b8bc625cbb82" sourceId="a4091d3a-3421-4302-b5b2-e9dcd224faf8" targetId="874daace-3836-462f-91a3-cb4e7b0682e0"/>
+    <parentsNode id="1fbc7737-7c3d-4f5b-862e-3333b89a16fc" sourceId="a4091d3a-3421-4302-b5b2-e9dcd224faf8" targetId="f1832396-9c4e-409b-aec6-801d02e346c9"/>
+    <parentsNode id="15f5fc61-2a64-4f86-9311-fc1a6e2f805e" sourceId="43c133d3-bb1d-41a0-b646-16932ca14b92" targetId="e317c889-1ae7-4933-928f-8e99ae0ba971"/>
+    <parentsNode id="cf701192-432a-4168-8ed8-65bbac2db3e7" sourceId="43c133d3-bb1d-41a0-b646-16932ca14b92" targetId="235416a6-f6d5-4817-935d-2551f4908050"/>
+  </processTree>
+</ptml>

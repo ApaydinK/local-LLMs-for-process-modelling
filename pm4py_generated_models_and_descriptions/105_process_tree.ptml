@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="d8438b1d-3123-425b-ae73-26cdc5b0e10f" root="3092bfa6-2e73-4f80-97c0-80a5acf3c7bf" id="f30310f6-4650-4dca-ad1a-32464da2ca9f">
+    <xor name="" id="3092bfa6-2e73-4f80-97c0-80a5acf3c7bf"/>
+    <sequence name="" id="c6da65a2-3677-4bcb-a9bd-033e69a312d0"/>
+    <sequence name="" id="e32d6c86-d04e-4de1-8712-8daeb0c5a24d"/>
+    <manualTask name="Create A Business Case" id="4b0e6530-931f-45ec-843f-e0b7c9be3689"/>
+    <manualTask name="Create Budget Plan" id="8e968b50-d54a-42cd-b884-c6a22ce3d0ff"/>
+    <manualTask name="Acquire Necessary Resources" id="d6c12505-d610-4ce0-9d09-c7a3ad1cb143"/>
+    <manualTask name="Conduct Risk Analysis" id="19fdb98f-6a1d-4136-aecf-09f5f66e31ae"/>
+    <parentsNode id="d5086a75-a659-40dd-a09c-d00b2e0e2a37" sourceId="3092bfa6-2e73-4f80-97c0-80a5acf3c7bf" targetId="c6da65a2-3677-4bcb-a9bd-033e69a312d0"/>
+    <parentsNode id="bbdfdb82-1b2a-4d32-813d-8762332d153d" sourceId="3092bfa6-2e73-4f80-97c0-80a5acf3c7bf" targetId="e32d6c86-d04e-4de1-8712-8daeb0c5a24d"/>
+    <parentsNode id="83ae3f52-454f-41b3-881d-374046d3ccb4" sourceId="c6da65a2-3677-4bcb-a9bd-033e69a312d0" targetId="4b0e6530-931f-45ec-843f-e0b7c9be3689"/>
+    <parentsNode id="d214da9b-1713-49ed-83b9-51f82dc803e9" sourceId="c6da65a2-3677-4bcb-a9bd-033e69a312d0" targetId="8e968b50-d54a-42cd-b884-c6a22ce3d0ff"/>
+    <parentsNode id="024704ac-f27f-4e7d-8398-8f3687c00694" sourceId="e32d6c86-d04e-4de1-8712-8daeb0c5a24d" targetId="d6c12505-d610-4ce0-9d09-c7a3ad1cb143"/>
+    <parentsNode id="f1e8759d-21b6-4959-90ca-9d6854541b02" sourceId="e32d6c86-d04e-4de1-8712-8daeb0c5a24d" targetId="19fdb98f-6a1d-4136-aecf-09f5f66e31ae"/>
+  </processTree>
+</ptml>

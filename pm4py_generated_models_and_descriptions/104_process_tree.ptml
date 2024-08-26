@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="7a69a66b-78cf-4fef-8276-e7a2a4c7168f" root="0380115a-a5fc-4be1-b7b2-ab8c8556a25d" id="09468017-f08d-4802-82cf-23f99d435739">
+    <xorLoop name="" id="0380115a-a5fc-4be1-b7b2-ab8c8556a25d"/>
+    <manualTask name="Prepare Invoice" id="a008e545-98a5-4654-af73-7c97596f50d8"/>
+    <and name="" id="2e2c03ec-c9b8-47d0-b456-cfe8c2b685d6"/>
+    <automaticTask name="" id="ff6c9feb-3051-4085-a68a-860d27b574b7"/>
+    <manualTask name="Send Reminder" id="fc2db001-3dc6-44a5-b09f-4a69bfac8061"/>
+    <xorLoop name="" id="977416e9-84ca-4c53-a250-a946d92b003d"/>
+    <manualTask name="Process Order" id="e7200084-e4a1-49d6-aae3-5b7ce7c91937"/>
+    <manualTask name="Process Payment" id="38c7da53-cd6c-420a-8d92-3cebfd4683b1"/>
+    <automaticTask name="" id="4c9a654d-bacf-40d7-8c38-e60f8d0422c1"/>
+    <parentsNode id="ad4c86c2-96be-41e3-a93f-d65a0fd103eb" sourceId="0380115a-a5fc-4be1-b7b2-ab8c8556a25d" targetId="a008e545-98a5-4654-af73-7c97596f50d8"/>
+    <parentsNode id="8d46b091-b9b4-4a7b-9caf-b22f79f976f3" sourceId="0380115a-a5fc-4be1-b7b2-ab8c8556a25d" targetId="2e2c03ec-c9b8-47d0-b456-cfe8c2b685d6"/>
+    <parentsNode id="bc49a9e3-1a02-4c58-8822-345f7b5b5df2" sourceId="0380115a-a5fc-4be1-b7b2-ab8c8556a25d" targetId="ff6c9feb-3051-4085-a68a-860d27b574b7"/>
+    <parentsNode id="19ef5543-ff58-4ebc-8c71-d68ddba636c8" sourceId="2e2c03ec-c9b8-47d0-b456-cfe8c2b685d6" targetId="fc2db001-3dc6-44a5-b09f-4a69bfac8061"/>
+    <parentsNode id="5d076078-4dba-4c8f-9038-4fc5ef9f883b" sourceId="2e2c03ec-c9b8-47d0-b456-cfe8c2b685d6" targetId="977416e9-84ca-4c53-a250-a946d92b003d"/>
+    <parentsNode id="b87b79f5-5146-4586-8863-fd7925499e45" sourceId="977416e9-84ca-4c53-a250-a946d92b003d" targetId="e7200084-e4a1-49d6-aae3-5b7ce7c91937"/>
+    <parentsNode id="40ce0d19-dcb6-4aaf-a769-a97532ce7bed" sourceId="977416e9-84ca-4c53-a250-a946d92b003d" targetId="38c7da53-cd6c-420a-8d92-3cebfd4683b1"/>
+    <parentsNode id="d3731673-e75a-488b-80eb-d3bf39d6b5ae" sourceId="977416e9-84ca-4c53-a250-a946d92b003d" targetId="4c9a654d-bacf-40d7-8c38-e60f8d0422c1"/>
+  </processTree>
+</ptml>

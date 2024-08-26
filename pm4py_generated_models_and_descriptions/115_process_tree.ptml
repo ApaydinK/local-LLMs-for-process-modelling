@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="807f14a8-3c05-490b-92ba-fc0bf6b10dd9" root="92fd43de-69eb-41dd-b82b-f58e0fbe3843" id="da185962-a17e-4845-bdb4-49f4a24679b6">
+    <xorLoop name="" id="92fd43de-69eb-41dd-b82b-f58e0fbe3843"/>
+    <manualTask name="Meet Quality Threshold" id="edaeeb79-0dbb-49e2-a665-9ba78944a5a7"/>
+    <sequence name="" id="18616368-3cb3-4a94-92ba-1354961e7381"/>
+    <automaticTask name="" id="16a2b8d9-4d6e-461f-b150-52c4da149e63"/>
+    <manualTask name="Prepare Materials" id="913e46ab-be9e-47d8-98ca-427ea4bba9ac"/>
+    <sequence name="" id="c8f4e723-c892-4bf2-965b-da2f576679ce"/>
+    <manualTask name="Assemble Components" id="4960bfb0-06a3-44a2-9724-a3e970b205af"/>
+    <manualTask name="Test Prototype" id="8bdb06d4-752c-49fc-a4a1-81722c68a3fd"/>
+    <parentsNode id="42233edf-2574-4131-9161-ed61cc459953" sourceId="92fd43de-69eb-41dd-b82b-f58e0fbe3843" targetId="edaeeb79-0dbb-49e2-a665-9ba78944a5a7"/>
+    <parentsNode id="d1385d8b-7320-4cd4-9f5d-8916aaf227f0" sourceId="92fd43de-69eb-41dd-b82b-f58e0fbe3843" targetId="18616368-3cb3-4a94-92ba-1354961e7381"/>
+    <parentsNode id="7793b20f-421b-4ba4-859f-027a3a8b9d57" sourceId="92fd43de-69eb-41dd-b82b-f58e0fbe3843" targetId="16a2b8d9-4d6e-461f-b150-52c4da149e63"/>
+    <parentsNode id="70e5a8e3-d25f-4812-a486-0fe57c2996ce" sourceId="18616368-3cb3-4a94-92ba-1354961e7381" targetId="913e46ab-be9e-47d8-98ca-427ea4bba9ac"/>
+    <parentsNode id="08cbe356-cdc5-4886-9e03-62fc8d7eb277" sourceId="18616368-3cb3-4a94-92ba-1354961e7381" targetId="c8f4e723-c892-4bf2-965b-da2f576679ce"/>
+    <parentsNode id="ef100544-d0bc-42db-bd07-6a802125de08" sourceId="c8f4e723-c892-4bf2-965b-da2f576679ce" targetId="4960bfb0-06a3-44a2-9724-a3e970b205af"/>
+    <parentsNode id="dc9d0bf5-78b7-4196-bb1d-32ab65396fd6" sourceId="c8f4e723-c892-4bf2-965b-da2f576679ce" targetId="8bdb06d4-752c-49fc-a4a1-81722c68a3fd"/>
+  </processTree>
+</ptml>

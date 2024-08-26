@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="dd356408-86b9-4015-a6a5-e280af70f27c" root="0cccacda-d6e3-423a-8988-29b91e895a3a" id="9c2cc2f6-bde0-4d34-b74f-d0d90fcef8c7">
+    <sequence name="" id="0cccacda-d6e3-423a-8988-29b91e895a3a"/>
+    <manualTask name="Interview Candidate" id="d616f406-eb29-4506-ad03-dd22f5e1e03f"/>
+    <xor name="" id="aa2f07d5-4b1a-4131-95ac-3e37b33730cc"/>
+    <manualTask name="Hire Candidate" id="cf85f39b-1635-4aac-87f4-9418d588ece9"/>
+    <sequence name="" id="a8537a59-f8ef-4a33-9a52-135bf7d5aea9"/>
+    <manualTask name="Ask References" id="d573e6e8-bb6f-47ec-9f86-80771d27df24"/>
+    <manualTask name="Verify Experience" id="5536da81-5f37-432f-a856-cf682c43a4a7"/>
+    <parentsNode id="c7b19a23-8147-43f6-af23-016ed23f1f2e" sourceId="0cccacda-d6e3-423a-8988-29b91e895a3a" targetId="d616f406-eb29-4506-ad03-dd22f5e1e03f"/>
+    <parentsNode id="67bcc533-dd97-4a38-b059-8b615bd2ba31" sourceId="0cccacda-d6e3-423a-8988-29b91e895a3a" targetId="aa2f07d5-4b1a-4131-95ac-3e37b33730cc"/>
+    <parentsNode id="834e410c-c9e6-4045-9073-288cbdff7813" sourceId="aa2f07d5-4b1a-4131-95ac-3e37b33730cc" targetId="cf85f39b-1635-4aac-87f4-9418d588ece9"/>
+    <parentsNode id="5a68147c-e8e1-44bd-9762-524c4f7588c8" sourceId="aa2f07d5-4b1a-4131-95ac-3e37b33730cc" targetId="a8537a59-f8ef-4a33-9a52-135bf7d5aea9"/>
+    <parentsNode id="c3893457-b602-456a-96ea-9fd74d4869b3" sourceId="a8537a59-f8ef-4a33-9a52-135bf7d5aea9" targetId="d573e6e8-bb6f-47ec-9f86-80771d27df24"/>
+    <parentsNode id="7bc08782-8388-48de-8e0d-b04f5521aae6" sourceId="a8537a59-f8ef-4a33-9a52-135bf7d5aea9" targetId="5536da81-5f37-432f-a856-cf682c43a4a7"/>
+  </processTree>
+</ptml>

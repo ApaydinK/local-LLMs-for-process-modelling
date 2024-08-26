@@ -110,15 +110,17 @@ def pm4py_process_tree_generator(number_of_activities, parameters: dict = None):
 following a little example on how you would manually build a process tree
 """
 # Leaf nodes (activities)
-A = ProcessTree(label='a')
-B = ProcessTree(label='b')
-C = ProcessTree(label='c')
-D = ProcessTree(label='d')
-E = ProcessTree(label='e')
-F = ProcessTree(label='f')
+A = ProcessTree(label='Log In')
+B = ProcessTree(label='Select Items')
+C = ProcessTree(label='Set Payment Method')
+D = ProcessTree(label='Pay')
+E = ProcessTree(label='Complete Installment Agreement')
+F = ProcessTree(label='Return Items')
+G = ProcessTree(label='Deliver Item')
 
 # Inner nodes (operators)
-seq_node = ProcessTree(operator=Operator.SEQUENCE, children=[E, F])
+seq_node = ProcessTree(operator=Operator.SEQUENCE, children=[A, F])
+
 choice_node = ProcessTree(operator=Operator.XOR, children=[D, seq_node])
 loop_node = ProcessTree(operator=Operator.LOOP, children=[choice_node])
 root_node = ProcessTree(operator=Operator.SEQUENCE, children=[A, loop_node])
@@ -131,9 +133,27 @@ D.parent = choice_node
 E.parent = seq_node
 F.parent = seq_node
 
+"""
+or easier by parsing the process tree string
+"""
 
-# pm4py.view_process_tree(root_node)
+import pm4py.utils as u
+process_tree_string = "->('Log In',+('Select Items', 'Set Payment Method'),+('Choose Reward',X('Pay', 'Complete Installment Agreement')), *('Deliver Item', 'Return Item'))"
+process_tree = u.parse_process_tree(process_tree_string)
+pm4py.view_process_tree(process_tree)
 # print(root_node)
+index = 0
+#Save as Test Dataset
+process_tree_image_file_path = f"../PET_Test_Data/{index}_process_tree.png"
+pm4py.vis.save_vis_process_tree(process_tree, process_tree_image_file_path)
+print(process_tree)
+
+pm4py.write_ptml(process_tree, f"../PET_Test_Data/{index}_process_tree.ptml")
+
+# convert process tree to a BPMN graph and store the visualization
+bpmn_graph = pm4py.convert_to_bpmn(process_tree)
+bpmn_image_file_path = f"../PET_Test_Data/{index}_bpmn.png"
+pm4py.vis.save_vis_bpmn(bpmn_graph, bpmn_image_file_path)
 
 def pm4py_process_tree_string_to_object(process_tree_string):
     with open("../pm4py_generated_models_and_descriptions/0_process_tree_revised_byChatGPT.txt", "r") as file:

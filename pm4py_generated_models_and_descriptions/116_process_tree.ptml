@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="7f0bbd9d-2870-412f-8317-634bafe33477" root="1a6fa97b-1cb6-4632-821d-1939b792d7e6" id="73943de1-be36-4672-a802-62f4922f388d">
+    <sequence name="" id="1a6fa97b-1cb6-4632-821d-1939b792d7e6"/>
+    <and name="" id="75da21c4-90c6-443d-90df-d4ece362eb16"/>
+    <xor name="" id="38e843ec-e400-4794-947d-53188e515f22"/>
+    <manualTask name="Create Document" id="40104bc9-54e8-4e9b-90c8-be029c0d3414"/>
+    <manualTask name="Backup Files" id="3f918889-4a51-4782-8e93-4973369d6832"/>
+    <manualTask name="Delete Junk Data" id="52dc0b51-08cf-4007-b1a1-471d259e2b2b"/>
+    <manualTask name="Analyze Results" id="d28d3b64-aba9-4d57-8992-02c79c84b752"/>
+    <parentsNode id="93a28451-213e-47e3-b8c8-30eb9929fae1" sourceId="1a6fa97b-1cb6-4632-821d-1939b792d7e6" targetId="75da21c4-90c6-443d-90df-d4ece362eb16"/>
+    <parentsNode id="64cdb2fe-8da7-4bf2-9401-11c9a4c6a471" sourceId="1a6fa97b-1cb6-4632-821d-1939b792d7e6" targetId="38e843ec-e400-4794-947d-53188e515f22"/>
+    <parentsNode id="a4d62c80-ab1e-4e91-ab0b-14ba4bd07168" sourceId="75da21c4-90c6-443d-90df-d4ece362eb16" targetId="40104bc9-54e8-4e9b-90c8-be029c0d3414"/>
+    <parentsNode id="56f99b95-32f9-4f8b-9dfa-8362d4a1e5f6" sourceId="75da21c4-90c6-443d-90df-d4ece362eb16" targetId="3f918889-4a51-4782-8e93-4973369d6832"/>
+    <parentsNode id="7f8e0b65-1417-4bf3-87ab-18fbc5bad3f1" sourceId="38e843ec-e400-4794-947d-53188e515f22" targetId="52dc0b51-08cf-4007-b1a1-471d259e2b2b"/>
+    <parentsNode id="f2e89825-5cc1-4bc2-b128-afda628dfa50" sourceId="38e843ec-e400-4794-947d-53188e515f22" targetId="d28d3b64-aba9-4d57-8992-02c79c84b752"/>
+  </processTree>
+</ptml>

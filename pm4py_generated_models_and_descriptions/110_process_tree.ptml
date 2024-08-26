@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="9c7b0c3f-1d01-4062-9173-3ad0bd89baee" root="511e0d24-1c90-4971-ae4b-6b0e9779d725" id="a2c39ba5-75da-4336-8f12-a77ecdf667ad">
+    <sequence name="" id="511e0d24-1c90-4971-ae4b-6b0e9779d725"/>
+    <manualTask name="Plan Project" id="2f92abb7-17b4-4914-b8b0-ab75d284e912"/>
+    <sequence name="" id="ac753131-06ff-40de-b455-96df2706f786"/>
+    <manualTask name="Review Proposal" id="037029dc-6dd1-4cac-9ab2-796daf7877fc"/>
+    <and name="" id="a32d6c77-dcb1-48ac-945b-cf874b91a0a8"/>
+    <manualTask name="Develop Report" id="113331c7-5312-456d-9b85-6416771a228f"/>
+    <manualTask name="Finalize Recommendations" id="c6100d40-b19f-4c1d-8047-f2350b469980"/>
+    <parentsNode id="312a4886-d3c9-4010-aa65-474ef4a8c058" sourceId="511e0d24-1c90-4971-ae4b-6b0e9779d725" targetId="2f92abb7-17b4-4914-b8b0-ab75d284e912"/>
+    <parentsNode id="a72be2c3-4785-4643-80ac-0e2bbcf02b4d" sourceId="511e0d24-1c90-4971-ae4b-6b0e9779d725" targetId="ac753131-06ff-40de-b455-96df2706f786"/>
+    <parentsNode id="cb392ec2-16ba-4bb1-bf1b-ddcd03dc634e" sourceId="ac753131-06ff-40de-b455-96df2706f786" targetId="037029dc-6dd1-4cac-9ab2-796daf7877fc"/>
+    <parentsNode id="e5e65b71-2a52-4d58-ade6-e338514282f0" sourceId="ac753131-06ff-40de-b455-96df2706f786" targetId="a32d6c77-dcb1-48ac-945b-cf874b91a0a8"/>
+    <parentsNode id="a67d6f13-bbfd-4649-bfc1-066b2a886ee3" sourceId="a32d6c77-dcb1-48ac-945b-cf874b91a0a8" targetId="113331c7-5312-456d-9b85-6416771a228f"/>
+    <parentsNode id="6f771ad6-3a84-4258-bcf4-cc0f5cfb418e" sourceId="a32d6c77-dcb1-48ac-945b-cf874b91a0a8" targetId="c6100d40-b19f-4c1d-8047-f2350b469980"/>
+  </processTree>
+</ptml>

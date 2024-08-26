@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="334a0d91-d1c7-4cf4-9cab-09086886b02d" root="6d09162a-0b08-4221-8b34-9fa59cc53391" id="0b31143a-1a8e-4af6-9be8-3507302e0739">
+    <sequence name="" id="6d09162a-0b08-4221-8b34-9fa59cc53391"/>
+    <manualTask name="Prepare Invoice" id="629ed8ec-3266-46e3-b46a-bdf347925524"/>
+    <sequence name="" id="60d50f2f-105f-4ff1-861c-18c4fc83bf4f"/>
+    <manualTask name="Verify Receipt" id="84750207-9266-42a5-b096-92e686a61907"/>
+    <and name="" id="ddc02381-3fa4-4c17-a125-a2aa547e4ff8"/>
+    <manualTask name="Process Payment" id="400b7d58-bb4b-4b87-8c51-f22357b5a789"/>
+    <manualTask name="Generate Report" id="82c13627-960f-4ec4-be9d-50aa03fc7996"/>
+    <parentsNode id="0414b07d-8894-48e4-95ad-481d54998d37" sourceId="6d09162a-0b08-4221-8b34-9fa59cc53391" targetId="629ed8ec-3266-46e3-b46a-bdf347925524"/>
+    <parentsNode id="e359d448-83ba-41fb-a180-143ca1e00613" sourceId="6d09162a-0b08-4221-8b34-9fa59cc53391" targetId="60d50f2f-105f-4ff1-861c-18c4fc83bf4f"/>
+    <parentsNode id="b5e0a6da-2ffd-4db8-a42f-86c8c3aabbef" sourceId="60d50f2f-105f-4ff1-861c-18c4fc83bf4f" targetId="84750207-9266-42a5-b096-92e686a61907"/>
+    <parentsNode id="319e66f2-e249-49d5-a32e-193e6268e98c" sourceId="60d50f2f-105f-4ff1-861c-18c4fc83bf4f" targetId="ddc02381-3fa4-4c17-a125-a2aa547e4ff8"/>
+    <parentsNode id="ccc9feaa-8dfc-44d0-83b9-dfbcbce224e0" sourceId="ddc02381-3fa4-4c17-a125-a2aa547e4ff8" targetId="400b7d58-bb4b-4b87-8c51-f22357b5a789"/>
+    <parentsNode id="2bc7f5ec-e4e7-4caa-a414-0038f8618675" sourceId="ddc02381-3fa4-4c17-a125-a2aa547e4ff8" targetId="82c13627-960f-4ec4-be9d-50aa03fc7996"/>
+  </processTree>
+</ptml>

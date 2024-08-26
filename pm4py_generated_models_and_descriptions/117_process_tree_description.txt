@@ -1,0 +1,1 @@
+The process begins when an invoice needs to be prepared. Completing this initial step triggers a verification of a receipt, which ensures that all necessary information has been received before proceeding with the next steps leading into processing payment and generating a report. Both payment processing and report generation can occur independently from each other. 

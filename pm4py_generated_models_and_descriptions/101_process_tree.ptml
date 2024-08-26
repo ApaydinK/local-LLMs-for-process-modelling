@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="0fa0c789-7dfd-412c-874a-3dc86a5f1f2a" root="b8234c38-a4af-440e-9c95-c05d0e129115" id="32d665d0-1cdc-405f-bf8a-37fc1fb6aa02">
+    <xor name="" id="b8234c38-a4af-440e-9c95-c05d0e129115"/>
+    <sequence name="" id="4ad76322-8619-4a55-acc4-7c12b986c152"/>
+    <xor name="" id="fb80b36a-2c70-4324-aa05-2fb0999f5099"/>
+    <manualTask name="Scan Documents" id="059de614-ed4d-42dc-8b6a-481192e2a728"/>
+    <manualTask name="Save Data" id="1991d49d-c6ab-440e-b60f-c3a5e4c7a309"/>
+    <manualTask name="Retrieve Information" id="c75d35c2-ae90-4311-8852-b27cfb8f111d"/>
+    <manualTask name="Approve Reports" id="f2cefab9-0874-4aca-a7df-bcb8635cc4a2"/>
+    <parentsNode id="9a84b2df-203d-4dbd-8db9-d37d69dfa7c9" sourceId="b8234c38-a4af-440e-9c95-c05d0e129115" targetId="4ad76322-8619-4a55-acc4-7c12b986c152"/>
+    <parentsNode id="a84240f3-b051-47ca-a82f-d9bba3fab82c" sourceId="b8234c38-a4af-440e-9c95-c05d0e129115" targetId="fb80b36a-2c70-4324-aa05-2fb0999f5099"/>
+    <parentsNode id="e250429c-f6a7-49d5-9edc-9cf64e848507" sourceId="4ad76322-8619-4a55-acc4-7c12b986c152" targetId="059de614-ed4d-42dc-8b6a-481192e2a728"/>
+    <parentsNode id="e4a48f99-6346-40d1-80bb-0720c7974da3" sourceId="4ad76322-8619-4a55-acc4-7c12b986c152" targetId="1991d49d-c6ab-440e-b60f-c3a5e4c7a309"/>
+    <parentsNode id="099756a1-bfab-4202-b986-6876d463b407" sourceId="fb80b36a-2c70-4324-aa05-2fb0999f5099" targetId="c75d35c2-ae90-4311-8852-b27cfb8f111d"/>
+    <parentsNode id="45219734-84e5-4888-8b53-1bab933ff100" sourceId="fb80b36a-2c70-4324-aa05-2fb0999f5099" targetId="f2cefab9-0874-4aca-a7df-bcb8635cc4a2"/>
+  </processTree>
+</ptml>

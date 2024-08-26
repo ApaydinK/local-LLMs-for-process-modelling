@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="b37fbf3f-ea32-405f-b63a-09470559e76a" root="db0b4b11-cdff-47a2-9ba5-dce19e218892" id="9aac0f3b-90bf-47bb-b99a-0304fefa1bb2">
+    <sequence name="" id="db0b4b11-cdff-47a2-9ba5-dce19e218892"/>
+    <manualTask name="Prepare Order" id="4d745f05-fe2c-444f-96cc-f684c27ced4b"/>
+    <and name="" id="1ce1b675-c07c-42f8-ad9b-a1e21a1ead92"/>
+    <manualTask name="Handle Customer Query" id="e1017259-e264-430b-9321-a59112f3ae12"/>
+    <sequence name="" id="c21e0028-f453-4fd9-aadb-9769c4ec9f60"/>
+    <manualTask name="Process Payment" id="f9ce4d40-c0a2-47ce-881b-5c9530196bdb"/>
+    <manualTask name="Fulfill Order" id="bcbce702-0abc-431e-aa45-4f36d7b51521"/>
+    <parentsNode id="86b516c5-2e8c-41d6-89dd-8804ec4ac589" sourceId="db0b4b11-cdff-47a2-9ba5-dce19e218892" targetId="4d745f05-fe2c-444f-96cc-f684c27ced4b"/>
+    <parentsNode id="fccf7f8e-05a9-4e10-8775-5c58ca47c084" sourceId="db0b4b11-cdff-47a2-9ba5-dce19e218892" targetId="1ce1b675-c07c-42f8-ad9b-a1e21a1ead92"/>
+    <parentsNode id="2070c27e-8c02-452c-ba90-6dbcf5803776" sourceId="1ce1b675-c07c-42f8-ad9b-a1e21a1ead92" targetId="e1017259-e264-430b-9321-a59112f3ae12"/>
+    <parentsNode id="478e328c-25cb-4922-a54f-433617c821cb" sourceId="1ce1b675-c07c-42f8-ad9b-a1e21a1ead92" targetId="c21e0028-f453-4fd9-aadb-9769c4ec9f60"/>
+    <parentsNode id="b21e7e36-ebf6-44cf-9ff4-0ad6ecf82213" sourceId="c21e0028-f453-4fd9-aadb-9769c4ec9f60" targetId="f9ce4d40-c0a2-47ce-881b-5c9530196bdb"/>
+    <parentsNode id="11eb89ba-fe56-4b91-bea8-2ad858ea92a6" sourceId="c21e0028-f453-4fd9-aadb-9769c4ec9f60" targetId="bcbce702-0abc-431e-aa45-4f36d7b51521"/>
+  </processTree>
+</ptml>

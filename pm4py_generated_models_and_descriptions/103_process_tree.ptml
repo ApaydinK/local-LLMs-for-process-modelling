@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="3aed9159-4622-4d8c-bb29-812f693298d7" root="803bd71d-8435-41c8-a341-8cada7e9f973" id="3b0bae95-46f4-4851-9605-8ab40213356f">
+    <sequence name="" id="803bd71d-8435-41c8-a341-8cada7e9f973"/>
+    <manualTask name="Send Files" id="deb7ee78-3317-47ca-b762-973e37cc0a1a"/>
+    <xorLoop name="" id="f24b0eb8-4e14-492d-ad9b-76908b612add"/>
+    <manualTask name="Prepare Reports" id="2974c97c-3154-4b0c-aedb-daeeeff5da67"/>
+    <and name="" id="9ba4597f-a0b9-4848-910a-832e20d0b2b9"/>
+    <automaticTask name="" id="7309e9dd-0376-45f7-99c6-4c398726ef83"/>
+    <manualTask name="Review Documents" id="0ac4b547-0be4-4752-9eeb-3c2bc5f055fa"/>
+    <manualTask name="Receive Corrections" id="ab423984-465d-49d8-a4e3-1ec831005179"/>
+    <parentsNode id="d1ab7ada-38ca-4054-91e1-89d6c7c8e732" sourceId="803bd71d-8435-41c8-a341-8cada7e9f973" targetId="deb7ee78-3317-47ca-b762-973e37cc0a1a"/>
+    <parentsNode id="62195ade-dfbe-4a7c-ae63-b435844b77e7" sourceId="803bd71d-8435-41c8-a341-8cada7e9f973" targetId="f24b0eb8-4e14-492d-ad9b-76908b612add"/>
+    <parentsNode id="14b135c8-63ff-4869-9130-276dbf8da984" sourceId="f24b0eb8-4e14-492d-ad9b-76908b612add" targetId="2974c97c-3154-4b0c-aedb-daeeeff5da67"/>
+    <parentsNode id="3bd3f46d-fd85-4332-813f-44ed82ed1606" sourceId="f24b0eb8-4e14-492d-ad9b-76908b612add" targetId="9ba4597f-a0b9-4848-910a-832e20d0b2b9"/>
+    <parentsNode id="e58163ac-6a34-448b-9213-c85e7c0c1d8e" sourceId="f24b0eb8-4e14-492d-ad9b-76908b612add" targetId="7309e9dd-0376-45f7-99c6-4c398726ef83"/>
+    <parentsNode id="6a10073b-8288-439e-84ed-74aef325efba" sourceId="9ba4597f-a0b9-4848-910a-832e20d0b2b9" targetId="0ac4b547-0be4-4752-9eeb-3c2bc5f055fa"/>
+    <parentsNode id="44a1dd28-ebee-4b1f-b3e1-c81247d4160b" sourceId="9ba4597f-a0b9-4848-910a-832e20d0b2b9" targetId="ab423984-465d-49d8-a4e3-1ec831005179"/>
+  </processTree>
+</ptml>

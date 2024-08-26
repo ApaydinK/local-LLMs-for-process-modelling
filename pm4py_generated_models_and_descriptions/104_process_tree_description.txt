@@ -1,0 +1,4 @@
+The process begins with preparing an invoice. In most cases, the preparation of the invoice is a standalone step that ends the process. However, in some instances, the prepared invoice needs to be followed by sending reminders to customers or clients who have not yet paid their bills. This is done parallel to processing an order. The processing of the order involves handling the customer's request for goods or services and can be followed by processing payment. Processing payment entails receiving and verifying the payment made by the customer.
+
+The interesting part of this process is that both processing an order and processing payment can be ongoing tasks that are performed iteratively. Once the reminder has been sent and the order has been processed, the preparation of the invoice can start again. This is because invoices need to be constantly updated to reflect new orders and payments.
+

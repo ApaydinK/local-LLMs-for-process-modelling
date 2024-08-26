@@ -1,0 +1,1 @@
+The employee analyzes data and reviews documents iteratively. Whenever a report comes in, the employee starts to verify the report. Also, once a day, the employee will generate a summary about the previous days work. 

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="2c626f51-98a3-4129-86f0-6810ddcbf6fd" root="291def71-662b-4822-ad39-3da5daa5fe92" id="420f6556-dde9-4148-8e89-05756971e862">
+    <sequence name="" id="291def71-662b-4822-ad39-3da5daa5fe92"/>
+    <manualTask name="Analyze Data" id="1e8c367e-66a5-45c5-b4ca-0c67b6f8b9b7"/>
+    <sequence name="" id="1b9bcca8-d459-4c79-8dc6-4bfbb666791e"/>
+    <manualTask name="Verify Findings" id="311bbf97-0370-44de-aa82-189e8ac93eb4"/>
+    <sequence name="" id="fa479101-e6c0-4089-8de5-2af2c34f2ba5"/>
+    <manualTask name="Review Reports" id="e3857b08-c0a0-40ca-bc0e-359a75e162ee"/>
+    <manualTask name="Compile Summary" id="1edc7629-e2bf-4da2-911c-4038fa5777ca"/>
+    <parentsNode id="5fb9dd81-5c09-44a7-852c-b27c5306dd1b" sourceId="291def71-662b-4822-ad39-3da5daa5fe92" targetId="1e8c367e-66a5-45c5-b4ca-0c67b6f8b9b7"/>
+    <parentsNode id="cc06bb10-79a2-4b83-84cf-e8b1ad3be62e" sourceId="291def71-662b-4822-ad39-3da5daa5fe92" targetId="1b9bcca8-d459-4c79-8dc6-4bfbb666791e"/>
+    <parentsNode id="cbe2d4da-0a35-4e20-b7f8-8cf8a931c4af" sourceId="1b9bcca8-d459-4c79-8dc6-4bfbb666791e" targetId="311bbf97-0370-44de-aa82-189e8ac93eb4"/>
+    <parentsNode id="d08d790a-4326-4141-a570-e5a8aa70178d" sourceId="1b9bcca8-d459-4c79-8dc6-4bfbb666791e" targetId="fa479101-e6c0-4089-8de5-2af2c34f2ba5"/>
+    <parentsNode id="fba79c8b-37fe-496f-a1f6-278a80830d1d" sourceId="fa479101-e6c0-4089-8de5-2af2c34f2ba5" targetId="e3857b08-c0a0-40ca-bc0e-359a75e162ee"/>
+    <parentsNode id="56ded658-85fd-4308-b6d4-68acef6db427" sourceId="fa479101-e6c0-4089-8de5-2af2c34f2ba5" targetId="1edc7629-e2bf-4da2-911c-4038fa5777ca"/>
+  </processTree>
+</ptml>

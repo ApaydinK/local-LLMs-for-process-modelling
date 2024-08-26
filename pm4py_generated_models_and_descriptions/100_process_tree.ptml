@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="3b2c5168-de40-4e43-ba5b-146666f69858" root="e8f9871e-cd12-4e7a-afc9-392268c93eed" id="32a0f5d3-d909-4412-bde0-63ae4d0ab89d">
+    <xorLoop name="" id="e8f9871e-cd12-4e7a-afc9-392268c93eed"/>
+    <xor name="" id="3faf641b-cf40-4edc-8af2-9793967bbafc"/>
+    <and name="" id="a352a997-6bf6-4dda-974e-be194dc421aa"/>
+    <automaticTask name="" id="0735e296-4803-4f69-a1da-c3e1da193a7f"/>
+    <manualTask name="Approve Proposal" id="71e582aa-c623-46c9-b71b-117282537ee0"/>
+    <manualTask name="Classify Documents" id="61ff4fe0-6f53-447b-a69a-18c8290ca08a"/>
+    <manualTask name="Book Meeting" id="74aa9286-c739-4f28-bae1-7e9c3e162f10"/>
+    <manualTask name="Discuss Report" id="5559e484-2524-4d56-80ba-b2e098ed600f"/>
+    <parentsNode id="7ec4a361-2561-4487-be77-15862cb5f8d6" sourceId="e8f9871e-cd12-4e7a-afc9-392268c93eed" targetId="3faf641b-cf40-4edc-8af2-9793967bbafc"/>
+    <parentsNode id="b9715a45-3680-4ca7-8233-550c649e0ea3" sourceId="e8f9871e-cd12-4e7a-afc9-392268c93eed" targetId="a352a997-6bf6-4dda-974e-be194dc421aa"/>
+    <parentsNode id="aa5aa66f-492c-48bf-9e0a-c62cfca21ecd" sourceId="e8f9871e-cd12-4e7a-afc9-392268c93eed" targetId="0735e296-4803-4f69-a1da-c3e1da193a7f"/>
+    <parentsNode id="affaf953-ab2a-4d78-991a-78805a6126da" sourceId="3faf641b-cf40-4edc-8af2-9793967bbafc" targetId="71e582aa-c623-46c9-b71b-117282537ee0"/>
+    <parentsNode id="00c93c50-3caf-4ed2-beea-382dfaef4ae1" sourceId="3faf641b-cf40-4edc-8af2-9793967bbafc" targetId="61ff4fe0-6f53-447b-a69a-18c8290ca08a"/>
+    <parentsNode id="ab7444d4-0252-4933-bab8-045231f1a28e" sourceId="a352a997-6bf6-4dda-974e-be194dc421aa" targetId="74aa9286-c739-4f28-bae1-7e9c3e162f10"/>
+    <parentsNode id="920199a0-97e4-4948-bc95-df9a70f41d9b" sourceId="a352a997-6bf6-4dda-974e-be194dc421aa" targetId="5559e484-2524-4d56-80ba-b2e098ed600f"/>
+  </processTree>
+</ptml>

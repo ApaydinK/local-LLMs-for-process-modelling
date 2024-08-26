@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="e249eaa3-fbbb-4b64-917d-90852b3c9e97" root="7673d9df-3340-4950-bb5f-3196f76c8a4b" id="3dea1535-3fe1-4ccf-b092-06ae74a269ed">
+    <sequence name="" id="7673d9df-3340-4950-bb5f-3196f76c8a4b"/>
+    <manualTask name="Prepare Inventory" id="fd82487b-5990-4e75-8ac5-58e782cebcd1"/>
+    <sequence name="" id="f594b443-3150-48b1-aa6c-bf017d617e50"/>
+    <manualTask name="Conduct Quality Control" id="89ecca5e-e579-410e-9aa4-80159e572b57"/>
+    <xor name="" id="8b428bac-bab2-41da-9328-780c647f68f3"/>
+    <manualTask name="Implement Corrective Action" id="45e95d59-f5db-4b3c-9887-10bde1bc2286"/>
+    <manualTask name="Authorize Shipment" id="8dda9df9-20e6-46f3-848b-aedcffc7cd37"/>
+    <parentsNode id="6ce6391d-8374-4008-b23a-781a30ec3e35" sourceId="7673d9df-3340-4950-bb5f-3196f76c8a4b" targetId="fd82487b-5990-4e75-8ac5-58e782cebcd1"/>
+    <parentsNode id="3a92ba8f-d438-49b7-95e1-01aa6ad588ed" sourceId="7673d9df-3340-4950-bb5f-3196f76c8a4b" targetId="f594b443-3150-48b1-aa6c-bf017d617e50"/>
+    <parentsNode id="c01934ff-d591-4474-bf46-b34d682db62e" sourceId="f594b443-3150-48b1-aa6c-bf017d617e50" targetId="89ecca5e-e579-410e-9aa4-80159e572b57"/>
+    <parentsNode id="8bfa1ddc-f2fd-4100-aa4a-1ecf23b75a5f" sourceId="f594b443-3150-48b1-aa6c-bf017d617e50" targetId="8b428bac-bab2-41da-9328-780c647f68f3"/>
+    <parentsNode id="a2c0c84d-324c-4391-b38c-be9a5ea807fc" sourceId="8b428bac-bab2-41da-9328-780c647f68f3" targetId="45e95d59-f5db-4b3c-9887-10bde1bc2286"/>
+    <parentsNode id="51c46fe1-a537-414a-b1a8-c0bc0b00071e" sourceId="8b428bac-bab2-41da-9328-780c647f68f3" targetId="8dda9df9-20e6-46f3-848b-aedcffc7cd37"/>
+  </processTree>
+</ptml>

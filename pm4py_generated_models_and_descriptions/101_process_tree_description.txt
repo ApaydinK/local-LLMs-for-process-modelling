@@ -1,0 +1,1 @@
+The work is simple, usually documents need to be scanned to extract valuable information. Once the documents are scanned, the relevant data is saved. Otherwise, either information needs to be retrieved from various sources or reports that were submitted overnight needs to be approved. 

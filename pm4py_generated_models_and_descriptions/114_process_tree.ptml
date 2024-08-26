@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ptml>
+  <processTree name="53f668fb-57b2-40e3-9810-ab59d8377388" root="82c71af7-3da9-4004-aefe-95d906bd779f" id="3735bc47-564e-49af-83e1-aab96f4c2727">
+    <and name="" id="82c71af7-3da9-4004-aefe-95d906bd779f"/>
+    <manualTask name="Prepare Materials" id="8b2dfdcf-9d46-45a8-9b0a-923f1cbdd0fa"/>
+    <sequence name="" id="cea8a6a0-5f8f-4e6c-be8a-f0185fe69f42"/>
+    <manualTask name="Review Specifications" id="4fee8580-2862-4f67-9531-a2a7bba20fab"/>
+    <xor name="" id="536e7e7a-3062-423e-b231-9bc654f5456f"/>
+    <manualTask name="Design Blueprints" id="10dd5153-d31a-47e1-bb43-3dc7e5d34a9f"/>
+    <manualTask name="Test Prototypes" id="976fd21c-1214-4560-bacc-f1b2a0653c41"/>
+    <parentsNode id="d92a66c0-961f-44c0-80a0-983557855e47" sourceId="82c71af7-3da9-4004-aefe-95d906bd779f" targetId="8b2dfdcf-9d46-45a8-9b0a-923f1cbdd0fa"/>
+    <parentsNode id="527647f5-e893-4f60-9a8c-674e035fd0f8" sourceId="82c71af7-3da9-4004-aefe-95d906bd779f" targetId="cea8a6a0-5f8f-4e6c-be8a-f0185fe69f42"/>
+    <parentsNode id="16b7b5fc-63e3-46ad-a10e-d35415dd8998" sourceId="cea8a6a0-5f8f-4e6c-be8a-f0185fe69f42" targetId="4fee8580-2862-4f67-9531-a2a7bba20fab"/>
+    <parentsNode id="0c8dc866-ffc3-4b83-9d0b-98be23d8e978" sourceId="cea8a6a0-5f8f-4e6c-be8a-f0185fe69f42" targetId="536e7e7a-3062-423e-b231-9bc654f5456f"/>
+    <parentsNode id="76532e2a-58b1-4847-95ff-2c008304aa67" sourceId="536e7e7a-3062-423e-b231-9bc654f5456f" targetId="10dd5153-d31a-47e1-bb43-3dc7e5d34a9f"/>
+    <parentsNode id="4b64d807-ccc6-42e5-9412-29c31fc36cf0" sourceId="536e7e7a-3062-423e-b231-9bc654f5456f" targetId="976fd21c-1214-4560-bacc-f1b2a0653c41"/>
+  </processTree>
+</ptml>
